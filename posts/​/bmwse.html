@@ -50,29 +50,21 @@
         padding: 15px 0;
         position: relative;
     }
-.menu-trigger {
-        position: absolute;
-        left: 30px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        z-index: 10001;
-    }
+/* --- CONTAINER CHO MENU THẢ XUỐNG --- */
+.menu-container {
+    position: absolute;
+    left: 20px; /* Căn theo vị trí nút 3 gạch */
+    top: 100%; /* Nằm ngay dưới Header */
+    z-index: 10002;
+    padding-top: 10px; /* Khoảng cách đệm để di chuột không bị mất */
+    display: none; /* Mặc định ẩn */
+}
 
-    .menu-trigger span {
-        display: block;
-        width: 35px;
-        height: 3px;
-        background: #ffffff; /* Màu trắng nguyên bản */
-        transition: all 0.3s ease;
-    }
-
-    .menu-trigger:hover span {
-        background: #f78f90; /* Hover sang hồng */
-        box-shadow: 0 0 8px rgba(215,155,187,0.8);
-        transform: scale(1.1);
-    }
+/* HIỆN MENU KHI RÊ CHUỘT VÀO NÚT HOẶC MENU */
+.menu-trigger:hover + .menu-container,
+.menu-container:hover {
+    display: block;
+}
     /* 3. LOGO VÀ CHỮ - GIỮ NGUYÊN THÔNG SỐ 1. */
     .brand-link {
         display: flex;
@@ -133,71 +125,62 @@
     }
 
    /* 2. RE-DESIGN SIDEBAR MENU GIỐNG ẢNH ÔNG GỬI */
-.sidebar-menu {
-    position: fixed;
-    top: 0;
-    left: -320px; /* Ẩn đi */
-    width: 300px;
-    height: 100vh;
-    background: #131313 !important;
-    z-index: 10000;
-    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    padding: 0;
-    box-shadow: 10px 0 30px rgba(0,0,0,0.8);
-    overflow-y: auto;
+.dropdown-content {
+    background: #111111 !important;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    overflow: hidden;
+    border: 1px solid #222;
 }
 
-.sidebar-menu.active {
-    left: 0; /* Hiện ra mượt mà */
-}
-
-/* Tiêu đề DANH MỤC giống trong ảnh */
-.sidebar-header {
+/* Tiêu đề DANH MỤC có gạch hồng chuẩn bài */
+.dropdown-header {
     color: #f78f90;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 30px 25px 20px;
+    padding: 20px 25px 12px;
+    border-bottom: 3px solid #f78f90;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 3px solid #f78f90; /* Đường gạch hồng dày */
-    margin-bottom: 10px;
 }
 
-.sidebar-menu ul { list-style: none; padding: 0; margin: 0; }
+.dropdown-content ul { list-style: none; padding: 0; margin: 0; }
+.dropdown-content li { border-bottom: 1px solid #1a1a1a; }
 
-.sidebar-menu li {
-    border-bottom: 1px solid #222; /* Đường kẻ mờ giữa các mục */
-}
-
-.sidebar-menu li a {
+.dropdown-content li a {
     color: #ffffff !important;
-    padding: 16px 25px;
-    text-decoration: none;
-    font-weight: 600;
+    padding: 14px 25px;
     display: block;
-    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
     transition: 0.3s ease;
 }
 
-/* Hiệu ứng Hover mục Menu */
-.sidebar-menu li a:hover {
+/* Hover vào mục con */
+.dropdown-content li a:hover {
     background: rgba(247, 143, 144, 0.1);
     color: #f78f90 !important;
-    padding-left: 35px; /* Nhích sang phải khi hover */
+    padding-left: 35px;
 }
 
-/* Style cho các mục con » 2DCG, » 3DCG... */
+/* Các mục con (2DCG, 3DCG...) */
 .sub-item {
     background: #0a0a0a !important;
     padding-left: 45px !important;
-    font-size: 15px !important;
-    color: #cccccc !important;
-    border-bottom: 1px solid #1a1a1a !important;
+    font-size: 13px !important;
+    color: #aaa !important;
 }
 
-/* ĐƯỜNG KẺ HỒNG DƯỚI CÙNG MENU (Nếu muốn giống ảnh cuối) */
-.sidebar-menu ul:last-child {
+/* Gạch hồng dưới cùng menu */
+.dropdown-content ul:last-child {
     border-bottom: 5px solid #f78f90;
+}
+
+/* Đảm bảo nút 3 gạch dễ trỏ chuột */
+.menu-trigger {
+    padding: 10px;
+    margin-left: -10px;
 }
 
 /* 3. ĐIỀU CHỈNH NÚT 3 GẠCH KHI CUỘN ĐỂ KHÔNG BỊ LỆCH */
@@ -246,22 +229,35 @@
     </div>
 </header>
 
-<div id="side-menu" class="sidebar-menu">
-    <div class="sidebar-header">DANH MỤC</div>
-    <ul>
+<header class="header-section">
+    <div class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu-container">
+        <div class="dropdown-content">
+            <div class="dropdown-header">DANH MỤC</div>
+            <ul>
         <li><a href="https://mdvh18.blogspot.com">HOME</a></li>
         <li><a href="#">GENRE</a></li>
-        <li><a href="/search/label/2DCG" class="sub-item">» 2DCG</a></li>
-        <li><a href="/search/label/3DCG" class="sub-item">» 3DCG</a></li>
-        <li><a href="/search/label/Android" class="sub-item">» Android</a></li>
-        <li><a href="/search/label/PC" class="sub-item">» Game PC</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/2DCG" class="sub-item">» 2DCG</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/3DCG" class="sub-item">» 3DCG</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/Android" class="sub-item">» Android</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/Animated" class="sub-item">» Animated</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/PC" class="sub-item">» Game PC</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/Point%20%26%20Click" class="sub-item">» Point and Click</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/Puzzle" class="sub-item">» Puzzle</a></li>
         <li><a href="#">GAME</a></li>
-        <li><a href="/search/label/MDVH18" class="sub-item">» Việt Hóa MDVH18</a></li>
-        <li><a href="/search/label/OtherVH" class="sub-item">» Việt Hóa Khác</a></li>
-        <li><a href="/search/label/REQUEST">REQUEST</a></li>
-        <li><a href="/search/label/MDVH18">MDVH18</a></li>
-    </ul>
-</div>
+        <li><a href="https://mdvh18.blogspot.com/search/label/MDVH18" class="sub-item">» Việt Hóa MDVH18</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/OtherVH" class="sub-item">» Việt Hóa Khác</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/English" class="sub-item">» English</a></li>
+        <li><a href="#">REQUEST</a></li>
+        <li><a href="https://mdvh18.blogspot.com/search/label/MDVH18">MDVH18</a></li>
+            </ul>
+        </div>
+    </div>
 
 <script>
     function toggleMenu() {
