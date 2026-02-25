@@ -36,6 +36,11 @@
         padding: 20px 0 0 0;
         text-align: center;
         font-family: 'Segoe UI', Arial, sans-serif;
+        
+    position: sticky !important;
+        top: 0 !important;
+        z-index: 9999 !important; /* Đảm bảo luôn nằm trên các ảnh nội soi */
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ cho sang */
     }
 
     .brand-container {
@@ -383,6 +388,31 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
 }
+    /* Trạng thái khi Header dính lên đầu và thu nhỏ */
+.header-section.scrolled {
+    padding: 5px 0 0 0 !important; /* Thu hẹp khoảng cách trên dưới */
+    background-color: rgba(26, 17, 49, 0.85) !important; /* Làm mờ nhẹ (0.85) */
+    backdrop-filter: blur(8px); /* Hiệu ứng mờ đục xuyên thấu cực đĩ */
+    transition: all 0.4s ease; /* Chuyển cảnh mượt mà */
+}
+
+/* Thu nhỏ logo và chữ khi kéo xuống */
+.header-section.scrolled .brand-logo {
+    width: 40px !important; /* Logo bé lại một nửa */
+}
+
+.header-section.scrolled .brand-name {
+    font-size: 18px !important; /* Chữ bé lại */
+}
+
+.header-section.scrolled .brand-container {
+    margin-bottom: 5px !important; /* Bớt khoảng cách thừa */
+}
+
+.header-section.scrolled .sub-nav-wrapper {
+    padding: 10px 0 !important; /* Thanh menu cũng gọn lại */
+    margin-bottom: 0 !important;
+}
 </style>
 
 <style>
@@ -398,6 +428,7 @@ a, button, .image-grid img, .hentry {
     cursor: url('https://blogger.googleusercontent.com/img/a/AVvXsEh4YJIj5s0o26hGviEV5RENQVRW4BX9TIpm-vOzx2hJ4qYorV44U4pxixl6fpPvMXvGO78n72VHXPHzs5-egyIY8OpkaWTs_Uihwy5BZLjxciB-YjGwAkADh3QpLx6lyy0VIxQx2386pqjwIq2RCRSGqQYYkQgkNu6HlQ0HA6rYjZ7Dej682fHloqQfaos=s16000'), pointer !important;
 }
 </style>
+    
 <body>
 
 <div class="main-container">
@@ -470,7 +501,17 @@ function showLinks() {
 <style>
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 </style>
-
+<script>
+window.onscroll = function() {
+    var header = document.querySelector(".header-section");
+    // Nếu cuộn xuống quá 50px thì thêm class 'scrolled', không thì xóa đi
+    if (window.pageYOffset > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+};
+</script>
 </body>
 <style>
     /* Tổng thể Footer */
