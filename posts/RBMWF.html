@@ -483,15 +483,6 @@ function showLinks() {
     }
     .help-links a:hover { color: #f78f90; }
 
-    /* Nhân vật Megumin ở góc */
-    .footer-char {
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        width: 180px; /* Chỉnh to nhỏ tùy ý */
-        z-index: 5;
-    }
-
     /* Nút Top */
     .top-btn {
         position: absolute;
@@ -584,4 +575,40 @@ function showLinks() {
         });
     });
 </script>
+    <div class="megumin-left">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAWkPOxJVqkc0xIyKBoulfxbN9BXFI1j6jQMc9SnV2HjiESbR7VvDZM6FheAGZ86P57AnIEhX0Wy8HFw0xkd8lGV4svCOHtD9oecMQr22ItBvEVrLcJMixvPtvN31uIZZY-z0clWZD4iPkQ8A7Gpo_JkJkI9tW0dOvw9nmT1Lr1znL3xKJaLbq49s_Yw/s1600/IMG_20220521_032343.png" alt="Megumin Left">
+</div>
+
+<style>
+.megumin-left {
+    position: fixed;
+    bottom: 10px;    /* Cách đáy một chút cho thoáng */
+    left: 0;         /* Sát lề trái */
+    width: 200px;    /* Độ to vừa phải để không lấn vào nội dung 77vw */
+    z-index: 999;    /* Nằm dưới nút Back to Top một chút nếu cần */
+    pointer-events: none; /* Khách bấm xuyên qua được, không bị vướng chuột */
+    transition: 0.3s;
+    animation: sideFloat 3.5s ease-in-out infinite;
+}
+
+.megumin-left img {
+    width: 100%;
+    height: auto;
+    /* Hiệu ứng đổ bóng hồng cho hợp tông MDVH18 */
+    filter: drop-shadow(5px 5px 15px rgba(247, 143, 144, 0.4));
+}
+
+/* Hiệu ứng lơ lửng nhẹ nhàng */
+@keyframes sideFloat {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(10px) translateY(-10px); }
+}
+
+/* Tự động ẩn khi màn hình nhỏ (Mobile) để không che chữ */
+@media (max-width: 1100px) {
+    .megumin-left {
+        display: none;
+    }
+}
+</style>
 </html>
