@@ -68,16 +68,87 @@
     }
 </style>
 
-<header class="header-wrapper">
-    <a href="index.html" class="header-left">
-        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj2Gf7p18_8w5Wf6KjWzR7rD0O_S-D7vF..." class="header-logo" alt="MDVH18">
-        <span class="header-title">MDVH18</span>
-    </a>
-    
-    <nav class="header-nav">
-        <a href="index.html" class="nav-item">Trang Chủ</a>
-        <a href="donate.html" class="nav-item" style="color: #f78f90;">Donate</a>
-        <a href="request.html" class="nav-item">Yêu Cầu</a>
+<style>
+    /* Tổng thể Header */
+    .header-section {
+        background-color: #1a1131; /* Màu tím đen theo ảnh */
+        padding: 20px 0 10px 0;
+        text-align: center;
+        border-bottom: 2px solid #f78f90; /* Đường kẻ hồng bên dưới */
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* Phần Logo và Brand */
+    .brand-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .brand-logo {
+        width: 80px; /* Chỉnh kích thước logo theo ý ông */
+        height: auto;
+    }
+
+    .brand-name {
+        color: #f78f90; /* Màu chữ hồng nhạt */
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    /* Thanh Menu Nhãn */
+    .nav-labels {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover {
+        color: #f78f90;
+    }
+
+    /* Highlight cho trang chủ hoặc mục đang chọn */
+    .nav-link.active {
+        color: #f78f90;
+    }
+
+    @media (max-width: 768px) {
+        .brand-name { font-size: 18px; }
+        .nav-labels { gap: 10px; }
+        .nav-link { font-size: 13px; }
+        .brand-logo { width: 50px; }
+    }
+</style>
+
+<header class="header-section">
+    <div class="brand-container">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgwvx69wmc1Toc5J6nbK75cqCVKVH20kh7Smzd-9htx9UulnhAIaailkHZ0pcP5fL8-o4CmBr6AUWBC8GvRuRaJBeKQOk291W2WaZ1I1h1yH1icqGjuQaoCMlhgSuENa5q3MLhie9OtGWnjY4dijUy5XXqzL8_gdzf38zdKsZCqyxEy2fA9K4_PIHL6njU=w800" class="brand-logo" alt="MDVH18">
+        <span class="brand-name">MDVH18 - Việt Hóa Game Visual Novel ++</span>
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgwvx69wmc1Toc5J6nbK75cqCVKVH20kh7Smzd-9htx9UulnhAIaailkHZ0pcP5fL8-o4CmBr6AUWBC8GvRuRaJBeKQOk291W2WaZ1I1h1yH1icqGjuQaoCMlhgSuENa5q3MLhie9OtGWnjY4dijUy5XXqzL8_gdzf38zdKsZCqyxEy2fA9K4_PIHL6njU=w800" class="brand-logo" alt="MDVH18">
+    </div>
+
+    <nav class="nav-labels">
+        <a href="#" class="https://mdvh18.blogspot.com/">Trang chủ</a>
+        <a href="#" class="https://mdvh18.blogspot.com/search/label/MDVH18">MDVH18</a>
+        <a href="#" class="https://mdvh18.blogspot.com/search/label/AllVH">Tiếng Việt</a>
+        <a href="#" class="https://mdvh18.blogspot.com/search/label/PC">PC</a>
+        <a href="#" class="https://mdvh18.blogspot.com/search/label/Android">Android</a>
+        <a href="#" class="https://mdvh18.blogspot.com/search/label/English">English</a>
+        <a href="#" class="https://mdvh18.blogspot.com/search/label/All">All Game</a>
+        <a href="#" class="nav-link">Fanpage</a>
     </nav>
 </header>
 <!DOCTYPE html>
