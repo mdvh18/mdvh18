@@ -256,14 +256,19 @@
 
 /* 1. GIỮ NGUYÊN STYLE GỐC CỦA ÔNG */
 .section-title {
-    width: 77vw !important;
-    margin: 20px auto 15px auto !important;
-    font-size: 24px;
-    font-weight: bold;
-    display: block;
-    background: linear-gradient(135deg, rgb(247, 143, 144), rgb(215, 155, 187));
+    width: 100% !important; /* Phủ rộng để dễ căn giữa */
+    margin: 25px 0 15px 0 !important;
+    font-size: 22px !important; /* To rõ ràng */
+    font-weight: 800 !important;
+    text-align: center !important;
+    text-transform: uppercase !important; /* Chữ in hoa cho ngầu */
+    letter-spacing: 2px !important;
+    display: block !important;
+    /* Hiệu ứng màu Gradient cho chữ */
+    background: linear-gradient(135deg, #f78f90, #D79BBB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-grid {
@@ -409,8 +414,7 @@ a, button, .image-grid img, .hentry {
   <div><b>Developer:</b> DKL</div>
   <div><b>Genre:</b> 3DCG, Animated, Sound</div>
     </div>
-
-    <div style="padding: 10px; background: rgba(255, 255, 255, 0.05); text-align: center;">
+    
         <span class="section-title">Hình ảnh trong game</span> </div>
 
 <div class="mdvh18-spoiler-container">
