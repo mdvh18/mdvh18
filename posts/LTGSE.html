@@ -254,20 +254,38 @@
     font-weight: bold;
 }
 
-/* Khung chứa ảnh screenshot */
-.img-container {
-    width: 77vw;
-    margin: 0 auto;
+/* KHUNG CHỨA ẢNH LINH HOẠT */
+.image-grid {
+    width: 77vw !important;
+    margin: 0 auto !important;
     display: flex;
+    flex-wrap: wrap; /* Cho phép tự xuống hàng khi nhiều ảnh */
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px; /* Khoảng cách giữa các ảnh */
 }
 
-.img-container img {
+/* TỰ ĐỘNG CHỈNH KÍCH THƯỚC */
+.image-grid img {
     border-radius: 10px;
-    width: 49%; /* Chia đôi màn hình */
+    width: calc(50% - 8px) !important; /* Chia đôi trừ đi gap */
     height: auto;
+    object-fit: cover;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.02); /* Di chuột vào ảnh hơi to ra cho sang */
+}
+
+/* Mobile: Xếp 1 cột cho dễ nhìn */
+@media (max-width: 768px) {
+    .image-grid {
+        width: 95vw !important;
+    }
+    .image-grid img {
+        width: 100% !important;
+    }
 }
 
 /* Mobile: Bung 100% cho dễ nhìn */
@@ -376,7 +394,7 @@
 
 <div class="main-container">
     <div class="game-banner">
-        <img alt="Rebirth Mr Wang" src="https://images.igdb.com/igdb/image/upload/t_720p/ar12uh.webp" />
+        <img alt="Let It Go" src="https://blogger.googleusercontent.com/img/a/AVvXsEgaBhtA8pXAS_1Tr8lv3V-3UeuUrvk0gCG6kte8KjfRJrmiUP7R860qrNDI4qfw3UPtsW7vh7PT6RHXADq0GdjF3FJLQYf8mzD5_c-VAP_Aum-10C0tl1zFuk1kl1uNjm7uMCkECfxFecFH-Zf38DhCs3hLFW7pmTGQYNHjhQx-bK3sbRMgrG2A0OKJxAI=s16000" />
         <div class="overlay">
             <h1>[Việt Hóa] Let It Go SE - [470MB]</h1>
             <p>Lucy vừa mới thi đấu xong một giải trượt tuyết khác, và cô nàng đang muốn thừa thắng xông lên để đánh bóng tên tuổi hot girl của mình. Nhưng Zoe thì đã phát ngấy với cái thói tự luyến của bà chị mình rồi. Hay là cô ấy chỉ đang ghen tị thôi? Liệu hai chị em kế đang hục hặc với nhau có thể làm hòa không? Hay là sự giúp đỡ của Zoe sẽ dẫn dắt cả hai vào một hành trình khám phá những khao khát thầm kín mà cả hai chưa từng ngờ tới?</p>
