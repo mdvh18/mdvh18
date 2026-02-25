@@ -254,28 +254,46 @@
     font-weight: bold;
 }
 
-/* KHUNG CHỨA ẢNH LINH HOẠT */
 .image-grid {
     width: 77vw !important;
-    margin: 0 auto !important;
+    margin: 20px auto !important;
     display: flex;
-    flex-wrap: wrap; /* Cho phép tự xuống hàng khi nhiều ảnh */
-    justify-content: space-between;
-    gap: 15px; /* Khoảng cách giữa các ảnh */
+    flex-wrap: wrap;
+    justify-content: center; /* Căn giữa nếu số ảnh lẻ */
+    gap: 15px;
 }
 
-/* TỰ ĐỘNG CHỈNH KÍCH THƯỚC */
+/* THÊM VIỀN CHO ẢNH SCREENSHOT */
 .image-grid img {
     border-radius: 10px;
-    width: calc(50% - 8px) !important; /* Chia đôi trừ đi gap */
+    width: calc(50% - 10px) !important; /* Chia đôi hàng 2 ảnh */
     height: auto;
     object-fit: cover;
-    margin-bottom: 5px;
     transition: 0.3s;
+    
+    /* Viền mặc định: mảnh và mờ */
+    border: 2px solid rgba(247, 143, 144, 0.4); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Hiệu ứng khi di chuột vào ảnh */
 .image-grid img:hover {
-    transform: scale(1.02); /* Di chuột vào ảnh hơi to ra cho sang */
+    transform: scale(1.03);
+    /* Viền sáng rực lên và đổ bóng hào quang */
+    border: 2px solid rgba(247, 143, 144, 1);
+    box-shadow: 0 0 20px rgba(247, 143, 144, 0.6);
+    cursor: pointer;
+}
+
+/* Mobile: Xếp 1 cột để ảnh to rõ */
+@media (max-width: 768px) {
+    .image-grid {
+        width: 95vw !important;
+    }
+    .image-grid img {
+        width: 100% !important;
+        border: 1.5px solid rgba(247, 143, 144, 0.6);
+    }
 }
 
 /* Mobile: Xếp 1 cột cho dễ nhìn */
