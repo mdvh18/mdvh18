@@ -51,31 +51,6 @@
         position: relative;
     }
 
-    /* 2. MENU 3 GẠCH (HAMBURGER) - HOVER TRẮNG SANG HỒNG */
-    .menu-trigger {
-        position: absolute;
-        left: 30px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        z-index: 10001;
-    }
-
-    .menu-trigger span {
-        display: block;
-        width: 35px;
-        height: 3px;
-        background: #ffffff; /* Màu trắng nguyên bản */
-        transition: all 0.3s ease;
-    }
-
-    .menu-trigger:hover span {
-        background: #f78f90; /* Hover sang hồng */
-        box-shadow: 0 0 8px rgba(215,155,187,0.8);
-        transform: scale(1.1);
-    }
-
     /* 3. LOGO VÀ CHỮ - GIỮ NGUYÊN THÔNG SỐ 1. */
     .brand-link {
         display: flex;
@@ -135,44 +110,79 @@
         text-shadow: 0 0 1px rgba(230,100,101,.5), 0 0 2px rgba(215,155,187,.8);
     }
 
-    /* 5. SIDEBAR MENU (MENU 3 GẠCH) */
-    .sidebar-menu {
-        position: fixed;
-        top: 0;
-        left: -300px;
-        width: 280px;
-        height: 100%;
-        background: #131313 !important;
-        z-index: 10000;
-        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        padding-top: 80px;
-        box-shadow: 0 0 25px rgba(0,0,0,0.7);
-    }
+   /* 2. RE-DESIGN SIDEBAR MENU GIỐNG ẢNH ÔNG GỬI */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -320px; /* Ẩn đi */
+    width: 300px;
+    height: 100vh;
+    background: #131313 !important;
+    z-index: 10000;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    padding: 0;
+    box-shadow: 10px 0 30px rgba(0,0,0,0.8);
+    overflow-y: auto;
+}
 
-    .sidebar-menu.active { left: 0; }
+.sidebar-menu.active {
+    left: 0; /* Hiện ra mượt mà */
+}
 
-    .sidebar-menu ul { list-style: none; padding: 0; }
-    .sidebar-menu li { padding: 0; border-bottom: 1px solid #222; }
-    .sidebar-menu li a {
-        color: #ffffff !important;
-        padding: 15px 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: block;
-        transition: 0.3s;
-    }
+/* Tiêu đề DANH MỤC giống trong ảnh */
+.sidebar-header {
+    color: #f78f90;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 30px 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #f78f90; /* Đường gạch hồng dày */
+    margin-bottom: 10px;
+}
 
-    .sidebar-menu li a:hover {
-        color: #f78f90 !important;
-        background: rgba(247, 143, 144, 0.05);
-        padding-left: 35px;
-        text-shadow: 0 0 8px rgba(215,155,187,0.8);
-    }
+.sidebar-menu ul { list-style: none; padding: 0; margin: 0; }
 
-    .sub-item { padding-left: 45px !important; font-size: 14px; color: #aaa !important; }
+.sidebar-menu li {
+    border-bottom: 1px solid #222; /* Đường kẻ mờ giữa các mục */
+}
 
-    /* Overlay làm mờ nền khi mở menu */
-    #overlay.active { display: block !important; }
+.sidebar-menu li a {
+    color: #ffffff !important;
+    padding: 16px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* Hiệu ứng Hover mục Menu */
+.sidebar-menu li a:hover {
+    background: rgba(247, 143, 144, 0.1);
+    color: #f78f90 !important;
+    padding-left: 35px; /* Nhích sang phải khi hover */
+}
+
+/* Style cho các mục con » 2DCG, » 3DCG... */
+.sub-item {
+    background: #0a0a0a !important;
+    padding-left: 45px !important;
+    font-size: 15px !important;
+    color: #cccccc !important;
+    border-bottom: 1px solid #1a1a1a !important;
+}
+
+/* ĐƯỜNG KẺ HỒNG DƯỚI CÙNG MENU (Nếu muốn giống ảnh cuối) */
+.sidebar-menu ul:last-child {
+    border-bottom: 5px solid #f78f90;
+}
+
+/* 3. ĐIỀU CHỈNH NÚT 3 GẠCH KHI CUỘN ĐỂ KHÔNG BỊ LỆCH */
+.header-section.scrolled .menu-trigger {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
 
     /* Responsive cho Mobile */
     @media (max-width: 768px) {
@@ -215,27 +225,21 @@
 </header>
 
 <div id="side-menu" class="sidebar-menu">
-    <div style="color: #f78f90; font-weight: bold; padding: 0 25px 20px; font-size: 20px; border-bottom: 2px solid #f78f90; margin-bottom: 10px;">DANH MỤC</div>
+    <div class="sidebar-header">DANH MỤC</div>
     <ul>
         <li><a href="https://mdvh18.blogspot.com">HOME</a></li>
         <li><a href="#">GENRE</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/2DCG" class="sub-item">» 2DCG</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/3DCG" class="sub-item">» 3DCG</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/Android" class="sub-item">» Android</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/Animated" class="sub-item">» Animated</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/PC" class="sub-item">» Game PC</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/Point%20%26%20Click" class="sub-item">» Point and Click</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/Puzzle" class="sub-item">» Puzzle</a></li>
+        <li><a href="/search/label/2DCG" class="sub-item">» 2DCG</a></li>
+        <li><a href="/search/label/3DCG" class="sub-item">» 3DCG</a></li>
+        <li><a href="/search/label/Android" class="sub-item">» Android</a></li>
+        <li><a href="/search/label/PC" class="sub-item">» Game PC</a></li>
         <li><a href="#">GAME</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/MDVH18" class="sub-item">» Việt Hóa MDVH18</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/OtherVH" class="sub-item">» Việt Hóa Khác</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/English" class="sub-item">» English</a></li>
-        <li><a href="#">REQUEST</a></li>
-        <li><a href="https://mdvh18.blogspot.com/search/label/MDVH18">MDVH18</a></li>
+        <li><a href="/search/label/MDVH18" class="sub-item">» Việt Hóa MDVH18</a></li>
+        <li><a href="/search/label/OtherVH" class="sub-item">» Việt Hóa Khác</a></li>
+        <li><a href="/search/label/REQUEST">REQUEST</a></li>
+        <li><a href="/search/label/MDVH18">MDVH18</a></li>
     </ul>
 </div>
-
-<div id="overlay" onclick="toggleMenu()" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; z-index:9998;"></div>
 
 <script>
     function toggleMenu() {
