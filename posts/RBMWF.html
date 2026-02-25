@@ -255,6 +255,50 @@
     .img-container img { width: 100%; }
 }
 </style>
+<style>
+/* Tiêu đề hình ảnh nới rộng theo tỷ lệ chung */
+.section-title {
+    width: 77vw !important;
+    margin: 35px auto 15px auto !important;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    background: linear-gradient(135deg, rgb(247, 143, 144), rgb(215, 155, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Khung chứa ảnh để đảm bảo ảnh không bị lệch */
+.image-grid {
+    width: 77vw !important;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Ảnh trong game nới rộng ra */
+.image-grid img {
+    border-radius: 10px;
+    width: 49.5% !important; /* Tận dụng tối đa không gian 77vw */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mobile: Tự động tràn màn hình cho dễ nhìn */
+@media (max-width: 768px) {
+    .section-title, .image-grid {
+        width: 95vw !important;
+    }
+    .image-grid {
+        flex-direction: column;
+    }
+    .image-grid img {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}
+</style>
 <body>
 
 <div class="main-container">
@@ -275,11 +319,12 @@
         <div><b>Genre:</b> 2DCG, Animated, Point and Click, Puzzle</div>
     </div>
 
-    <h2>Hình ảnh trong game</h2>
-    <div class="img-grid">
-        <img src="https://images.g2a.com/1024x576/1x1x1/rebirthmr-wang-pc-steam-key-global-i10000218876001/5f7aed4246177c25f7550a42" />
-        <img src="https://images.g2a.com/1024x576/1x1x1/rebirthmr-wang-pc-steam-key-global-i10000218876001/5f7aed4346177c34a6044642" />
-    </div>
+    <h2 class="section-title">Hình ảnh trong game</h2>
+
+<div class="image-grid">
+    <img src="https://images.g2a.com/1024x576/1x1x1/rebirthmr-wang-pc-steam-key-global-i10000218876001/5f7aed4246177c25f7550a42" />
+    <img src="https://images.g2a.com/1024x576/1x1x1/rebirthmr-wang-pc-steam-key-global-i10000218876001/5f7aed4346177c34a6044642" />
+</div>
 
     <div class="download-box">
         <h3 style="margin-top: 0; letter-spacing: 1px;">LINK TẢI GAME</h3>
