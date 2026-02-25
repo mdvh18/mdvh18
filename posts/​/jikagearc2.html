@@ -37,11 +37,13 @@
         text-align: center;
         font-family: 'Segoe UI', Arial, sans-serif;
         
-    position: sticky !important;
-    top: 0 !important;
+    position: fixed !important; 
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 9999 !important;
-    transition: all 0.3s ease-in-out !important; /* Thêm dòng này để mượt hơn */
-    will-change: padding, background-color; /* Báo trước cho trình duyệt để tránh lag */
+    transition: all 0.3s ease-in-out !important;
+    will-change: padding, background-color;
 }
 
     .brand-container {
@@ -51,7 +53,9 @@
         gap: 15px;
         margin-bottom: 20px;
     }
-
+    body {
+        padding-top: 160px !important; 
+    }
     .brand-logo { width: 80px; height: auto; }
     .brand-name { color: #f78f90; font-size: 28px; font-weight: bold; letter-spacing: 1px; }
 
