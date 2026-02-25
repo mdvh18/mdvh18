@@ -254,22 +254,42 @@
     font-weight: bold;
 }
 
-/* KHUNG CHỨA ẢNH - CHIA 2 CỘT CHUẨN */
+/* KHUNG CHỨA ẢNH LINH HOẠT */
 .image-grid {
     width: 77vw !important;
-    margin: 0px auto !important;
-    display: flex !important;
+    margin: 0 auto !important;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép tự xuống hàng khi nhiều ảnh */
     justify-content: space-between;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 10px !important;
+    gap: 15px; /* Khoảng cách giữa các ảnh */
 }
 
+/* TỰ ĐỘNG CHỈNH KÍCH THƯỚC */
+.image-grid img {
+    border-radius: 10px;
+    width: calc(50% - 8px) !important; /* Chia đôi trừ đi gap */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.02); /* Di chuột vào ảnh hơi to ra cho sang */
+}
+/* Hiệu ứng khi di chuột vào ảnh */
+.image-grid img:hover {
+    transform: scale(1.03);
+    /* Viền sáng rực lên và đổ bóng hào quang */
+    border: 2px solid rgba(247, 143, 144, 1);
+    box-shadow: 0 0 20px rgba(247, 143, 144, 0.6);
+    cursor: pointer;
+}
 /* TẠO VIỀN MÀU GRADIENT CHO ẢNH */
 .image-grid img {
     width: 100% !important;
     height: auto;
-    border-radius: 10px;
+    border-radius: 7px;
     object-fit: cover;
     display: block;
     transition: 0.3s ease;
@@ -277,21 +297,14 @@
     /* Dùng padding và background để giả lập viền gradient đúng màu ông yêu cầu */
     padding: 3px; 
     background: radial-gradient(circle, rgba(247, 143, 144, 0.8) 52%, rgba(215, 155, 187, 1) 100%);
-}
-
-/* Hiệu ứng khi rê chuột vào */
-.image-grid img:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(247, 143, 144, 0.4);
-    /* Làm viền sáng hơn khi hover */
-    background: radial-gradient(circle, rgba(247, 143, 144, 1) 40%, rgba(215, 155, 187, 1) 100%);
-}
-
-/* Mobile: Về 1 cột */
+}    
+/* Mobile: Xếp 1 cột cho dễ nhìn */
 @media (max-width: 768px) {
     .image-grid {
         width: 95vw !important;
-        grid-template-columns: 1fr !important;
+    }
+    .image-grid img {
+        width: 100% !important;
     }
 }
 
