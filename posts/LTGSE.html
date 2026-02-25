@@ -257,17 +257,19 @@
 /* KHUNG CHỨA ẢNH - CHIA 2 CỘT CHUẨN */
 .image-grid {
     width: 77vw !important;
-    margin: 20px auto !important;
-    display: grid !important;
+    margin: 0px auto !important;
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr !important;
-    gap: 15px !important;
+    gap: 10px !important;
 }
 
 /* TẠO VIỀN MÀU GRADIENT CHO ẢNH */
 .image-grid img {
     width: 100% !important;
     height: auto;
-    border-radius: 7px;
+    border-radius: 10px;
     object-fit: cover;
     display: block;
     transition: 0.3s ease;
