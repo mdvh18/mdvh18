@@ -3,48 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDVH18 - Kho Game Việt Hóa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MDVH18 - Cổng Vào Hang Ổ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f0c29;
+            background: linear-gradient(to bottom, #0f0c29, #302b63);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px 30px;
+            border-radius: 30px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #f78f90;
+            padding: 5px;
+            box-shadow: 0 0 20px rgba(247, 143, 144, 0.5);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            background: linear-gradient(135deg,#f78f90,#D79BBB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p { color: #aaa; font-size: 14px; margin-bottom: 30px; }
+
+        .btn {
+            display: block;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 50px;
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg,#f78f90,#D79BBB);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(215, 155, 187, 0.4);
+        }
+
+        .btn-main {
+            background: linear-gradient(135deg,#f78f90,#D79BBB);
+        }
+    </style>
 </head>
 <body>
-    <div id="age-gate-overlay">
-        <div class="age-gate-content">
-            <h2>CẢNH BÁO NỘI DUNG</h2>
-            <p>Trang web chứa nội dung nhạy cảm dành cho người lớn.<br>Bạn đã đủ 18 tuổi?</p>
-            <button class="age-gate-btn" onclick="acceptAge()">TÔI ĐÃ TRÊN 18 TUỔI</button>
-        </div>
+
+    <div class="container">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgwvx69wmc1Toc5J6nbK75cqCVKVH20kh7Smzd-9htx9UulnhAIaailkHZ0pcP5fL8-o4CmBr6AUWBC8GvRuRaJBeKQOk291W2WaZ1I1h1yH1icqGjuQaoCMlhgSuENa5q3MLhie9OtGWnjY4dijUy5XXqzL8_gdzf38zdKsZCqyxEy2fA9K4_PIHL6njU=w800" alt="MDVH18 Logo" class="logo">
+        
+        <h1>MDVH18</h1>
+        <p>Việt Hóa Game Visual Novel ++</p>
+
+        <a href="https://mdvh18.blogspot.com" class="btn btn-main">TRANG CHỦ BLOGSPOT</a>
+        <a href="https://t.me/+Uk30bIo4HepiODA1" target="_blank" class="btn">KÊNH TELEGRAM</a>
+        <a href="LINK_FANPAGE_CUA_ONG" target="_blank" class="btn">FANPAGE CỦA TÔI</a>
+        
     </div>
 
-    <header class="main-header">
-        <h1 class="site-name">MDVH18</h1>
-        <nav class="sub-nav-list">
-            <a href="https://mdvh18.blogspot.com" class="btn">VÀO TRANG CHỦ BLOG</a>
-            <a href="https://t.me/+Uk30bIo4HepiODA1" target="_blank">Telegram</a>
-        </nav>
-    </header>
-
-    <main class="game-grid">
-        <div class="game-card">
-            <img src="https://images.igdb.com/igdb/image/upload/t_720p/ar12uh.webp" alt="Game 1">
-            <div class="game-info">
-                <h3>[Việt Hóa] Rebirth Mr Wang Full Version - [909MB]</h3>
-                <a href="https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9wY1d0Skg=" class="download-btn">LINK GOFILE</a>
-                <a href="https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RtRnBlRXRy" class="download-btn">LINK PIXEL</a>
-            </div>
-        </div>
-
-        <div class="game-card">
-            <img src="https://via.placeholder.com/300x180" alt="Game 2">
-            <div class="game-info">
-                <h3>Tên Game Việt Hóa 2</h3>
-                <p>Cốt truyện cực hay, đã dịch 100%.</p>
-                <a href="download.html?url=aHR0cHM6Ly9tZWRpYWZpcmUuY29tL2ZpbGUvYWJjNDU2" class="download-btn">Tải Ngay</a>
-            </div>
-        </div>
-    </main>
-<script>
-  window.location.href = "https://mdvh18.blogspot.com";
-</script>
-    <script src="script.js"></script>
 </body>
 </html>
