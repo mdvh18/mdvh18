@@ -173,11 +173,37 @@ body {
     list-style: none !important; margin: 0 !important; padding: 0 !important; gap: 50px !important;
 }
 
-.sub-nav-list li a {
-    color: #E6E6EB !important; font-size: 18px !important;
-    font-weight: 600 !important; text-decoration: none !important;
+.sub-nav-list li a { 
+        color: #E6E6EB !important; 
+        font-size: 18px !important; 
+        font-weight: 600 !important; 
+        text-decoration: none !important; 
+        transition: 0.3s !important; 
 }
+ .sub-nav-list li a:hover, .sub-nav-list li a.active {
+        background: linear-gradient(135deg,#e66465,#D79BBB); 
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        -webkit-text-fill-color: transparent !important; 
+        color: transparent !important; 
+        text-shadow: 0 0 1px rgba(230,100,101,.5), 0 0 2px rgba(215,155,187,.8);
+    }
 
+    .sub-nav-list li a:hover { 
+        background-size: 200% 200%; 
+        animation: glowMove 3s ease infinite; 
+    }       
+@keyframes glowMove {
+        0% { background-position: left center; }
+        50% { background-position: right center; }
+        100% { background-position: left center; }
+    }
+
+    @media (max-width: 768px) {
+        .sub-nav-list { gap: 20px !important; }
+        .sub-nav-list li a { font-size: 14px !important; }
+        .brand-name { font-size: 18px; }
+    }
 /* Hiệu ứng khi cuộn chuột (Scrolled) */
 .header-section.scrolled .brand-logo { width: 45px !important; height: 45px !important; }
 .header-section.scrolled .brand-name { font-size: 18px !important; }
