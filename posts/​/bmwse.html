@@ -50,8 +50,7 @@
         padding: 15px 0;
         position: relative;
     }
-/* --- CONTAINER CHO MENU THẢ XUỐNG --- */
-.menu-container {
+    .menu-container {
     position: absolute;
     left: 20px; /* Căn theo vị trí nút 3 gạch */
     top: 100%; /* Nằm ngay dưới Header */
@@ -59,11 +58,75 @@
     padding-top: 10px; /* Khoảng cách đệm để di chuột không bị mất */
     display: none; /* Mặc định ẩn */
 }
+    /* 2. MENU 3 GẠCH (HAMBURGER) - HOVER TRẮNG SANG HỒNG */
+    .menu-trigger {
+        position: absolute;
+        left: 30px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        z-index: 10001;
+    }
 
-/* HIỆN MENU KHI RÊ CHUỘT VÀO NÚT HOẶC MENU */
-.menu-trigger:hover + .menu-container,
+    .menu-trigger span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #ffffff; /* Màu trắng nguyên bản */
+        transition: all 0.3s ease;
+    }
+
+    .menu-trigger:hover span {
+        background: #f78f90; /* Hover sang hồng */
+        box-shadow: 0 0 8px rgba(215,155,187,0.8);
+        transform: scale(1.1);
+    }
+    .menu-trigger:hover + .menu-container,
 .menu-container:hover {
     display: block;
+}
+  .dropdown-content {
+    background: #111111 !important;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    overflow: hidden;
+    border: 1px solid #222;
+}
+
+/* Tiêu đề DANH MỤC có gạch hồng chuẩn bài */
+.dropdown-header {
+    color: #f78f90;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 25px 12px;
+    border-bottom: 3px solid #f78f90;
+    text-transform: uppercase;
+}
+
+.dropdown-content ul { list-style: none; padding: 0; margin: 0; }
+.dropdown-content li { border-bottom: 1px solid #1a1a1a; }
+
+.dropdown-content li a {
+    color: #ffffff !important;
+    padding: 14px 25px;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+/* Hover vào mục con */
+.dropdown-content li a:hover {
+    background: rgba(247, 143, 144, 0.1);
+    color: #f78f90 !important;
+    padding-left: 35px;
+} 
+        /* Gạch hồng dưới cùng menu */
+.dropdown-content ul:last-child {
+    border-bottom: 5px solid #f78f90;
 }
     /* 3. LOGO VÀ CHỮ - GIỮ NGUYÊN THÔNG SỐ 1. */
     .brand-link {
@@ -124,70 +187,44 @@
         text-shadow: 0 0 1px rgba(230,100,101,.5), 0 0 2px rgba(215,155,187,.8);
     }
 
-   /* 2. RE-DESIGN SIDEBAR MENU GIỐNG ẢNH ÔNG GỬI */
-.dropdown-content {
-    background: #111111 !important;
-    width: 280px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-    overflow: hidden;
-    border: 1px solid #222;
-}
+    /* 5. SIDEBAR MENU (MENU 3 GẠCH) */
+    .sidebar-menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 280px;
+        height: 100%;
+        background: #131313 !important;
+        z-index: 10000;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 80px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    }
 
-/* Tiêu đề DANH MỤC có gạch hồng chuẩn bài */
-.dropdown-header {
-    color: #f78f90;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 20px 25px 12px;
-    border-bottom: 3px solid #f78f90;
-    text-transform: uppercase;
-}
+    .sidebar-menu.active { left: 0; }
 
-.dropdown-content ul { list-style: none; padding: 0; margin: 0; }
-.dropdown-content li { border-bottom: 1px solid #1a1a1a; }
+    .sidebar-menu ul { list-style: none; padding: 0; }
+    .sidebar-menu li { padding: 0; border-bottom: 1px solid #222; }
+    .sidebar-menu li a {
+        color: #ffffff !important;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        transition: 0.3s;
+    }
 
-.dropdown-content li a {
-    color: #ffffff !important;
-    padding: 14px 25px;
-    display: block;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s ease;
-}
+    .sidebar-menu li a:hover {
+        color: #f78f90 !important;
+        background: rgba(247, 143, 144, 0.05);
+        padding-left: 35px;
+        text-shadow: 0 0 8px rgba(215,155,187,0.8);
+    }
 
-/* Hover vào mục con */
-.dropdown-content li a:hover {
-    background: rgba(247, 143, 144, 0.1);
-    color: #f78f90 !important;
-    padding-left: 35px;
-}
+    .sub-item { padding-left: 45px !important; font-size: 14px; color: #aaa !important; }
 
-/* Các mục con (2DCG, 3DCG...) */
-.sub-item {
-    background: #0a0a0a !important;
-    padding-left: 45px !important;
-    font-size: 13px !important;
-    color: #aaa !important;
-}
-
-/* Gạch hồng dưới cùng menu */
-.dropdown-content ul:last-child {
-    border-bottom: 5px solid #f78f90;
-}
-
-/* Đảm bảo nút 3 gạch dễ trỏ chuột */
-.menu-trigger {
-    padding: 10px;
-    margin-left: -10px;
-}
-
-/* 3. ĐIỀU CHỈNH NÚT 3 GẠCH KHI CUỘN ĐỂ KHÔNG BỊ LỆCH */
-.header-section.scrolled .menu-trigger {
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-}
+    /* Overlay làm mờ nền khi mở menu */
+    #overlay.active { display: block !important; }
 
     /* Responsive cho Mobile */
     @media (max-width: 768px) {
@@ -255,9 +292,22 @@
         <li><a href="https://mdvh18.blogspot.com/search/label/English" class="sub-item">» English</a></li>
         <li><a href="#">REQUEST</a></li>
         <li><a href="https://mdvh18.blogspot.com/search/label/MDVH18">MDVH18</a></li>
-            </ul>
-        </div>
-    </div>
+    </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('side-menu').classList.toggle('active');
+        const overlay = document.getElementById('overlay');
+        if (overlay.style.display === 'block') {
+            overlay.style.display = 'none';
+        } else {
+            overlay.style.display = 'block';
+        }
+    }
+</script>
+
+<div style="margin-top: 180px;"></div>
 
 <script>
     function toggleMenu() {
