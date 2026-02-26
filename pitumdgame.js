@@ -239,7 +239,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEi6DOSABqvrRN8cPYf_u5bsMsccclhnIlxsmb9FdOOnwzM4Ok_GvEoQVSjZSjpv-eFPfV93mv3Uw4ZnKfjVjwt9l5dmSl51HyIrB2PJyFAdje7fP-y7VlCRU3wT6oA--ruGfS_TVwXBWCrEA_3WcGsI7F0LFgNfYfT52n4uYmA-Y3RJurgLyDhtVc5kPfc=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEhYXYVpp-u3iIiQDWQ57PAiPHCElYqrRvvqTAnQU1mTXRDpqjnkD0Uri6kFOdyHwFp6UctDgwRPZdphA9WDuS9wVdf34Sr2_FddFAMkrOhtHui9EAq_aQBzJWUowuh6hxNP0GfgLJURWbminm8YgT_QVd1_EgSV1Kfj3S_-ORFO76PzRMD2m6IVtRoLbzo=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEjoBca1f44p471F2pXHffV6G_u7aMcg5kG3ou1f4KvphephcWrukRM_EkGes-NOfY056Rrv8fHnzg0GKdDOkMeQxNunbfRsw3yuudM_WJzIbApuHePKKcJEPwc1rlpbPHVf5j0RIy2XDUIGB4vsQJzXh5qDieu3eQQygyfqiGXwyyVHg-scNjFjW8wOUDI=s16000"]},
-    {id: "vloverbc",
+    {id: "35vloverbc",
     name: "Việt Hóa Become a vtuber! - VLover",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEh_Ou2xbqJd7MG7jnEGX3R63Olbng1LTF77zxgGP2FKvH7_xvKHds488BB-xZxF2Y1d4QkqCtOJbZaig-X3E4KTX6S-pc87QcuzYmXx5EMH4CoGP1Hb7qlr5NPMqMi_fXrGdpnM3rUxeVlw-dLPGqSKKVfCy8VYTcItR4x6k3QxbzraS-5dwPo0tL5OX4k=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEg7843ut80_6BwPaoN6ZZs68AV92JE1tS2ZjURIkrEel6iueTJrFMoUqDdykR23WMAYBq-P6Yp5FNUSyBb63LP_JbDPYq-OAo0jN-DS7LaCuCXLTI9ZzroaeDgZuYsDvzx69nhL4PLlPowFkNbCfaJ1O4WOSbzgrXuSoO5mRrfnv_ikjT-Sp_5soYPStow=s16000",
