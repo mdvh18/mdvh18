@@ -50,7 +50,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEirMnjAuivfm3yCboM2ZSkRChuNMzHBbVMihjzosMGXy3BIzWdmQ8CaRsFY6CqqmawWSI4_4um0VEoTc6AnUY3nFPHDgRBs4H-bjcMf36LqGu_c7HI6-6UGnkev_q6R-rylK2Znmp0xdmvbGpIYOEdOdH65UHicy0zEXTLO_MSITXV_5YaIZe82HHbFE0w=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEhp7Rr6bjZfvh-BRrimU5V0PJLPWx0GZIUvInTgpicN0N4pVpUHQbfzGVz_JJx2FILE8YxQ4RjOuyBIA2yd4LiUZFqpuKMRoi43YwtxiZH3qibJIrTpbr3R86MQk3AkCmXZ0h5H_i-l0I6sAgy0aAaP3FTLwEvfWrMd_26DGW8gOXp2RjHNYXn69p4RxFQ=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEjjl1iMGabR6F6eKEfsVYVwQXEFjbMDkXCStrZ9Ba3Z95FwKyhX4U-5x8QRjEE2C3keaaR55DBRvhBDm6L3t8SxBCbUZSRm_csUOQFphC_KaDMDTYyWMHL1yrdr1UsbYnGMeGq68f3Qk5cexGMN5PUfZviRKDQb8ST86N2LvC0pmu95oMiUIhzYow7-Nak=s16000"]},
-    {id: "fantasyd",
+    {id: "17fantasyd",
     name: "Việt Hóa Fantasy Date",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEiZgkC8CVccbM3jEXxOWlviNecHaENOuITvAUn5oUhOYlGVmVQqtB5GvqhY0NYyiOpBYsDUn5tgI0MHmlF9sN5TxBHOS2RlgAZHyWjesMaWGIo2OK4CLIIK7nyfd1N9IW1SnqhOU7irGBtxpbe3WS5NbYTpcZr9j6m6PbOnDGo00hsXuNeLyJMAenzq0zo=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEhBzfd6VjbfjnoYYp_sWKm7xZOR-k6Ixfw3e3bberx7K8fFoVzhWoHvEV7qmeKuS5xA8IOEqGoUntB3AMfUMlYs82Y89KfjCGu56oaNh0HNShdhdlGDn1FvnJ0vGh1uSMW2wXcwPU1VGMTuLPohFxbZoeL3gp84zkpXnszBiTfh4uLJto7E7yd2rUYXhl8=s16000",
