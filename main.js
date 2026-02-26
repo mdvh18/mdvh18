@@ -1,37 +1,48 @@
-function renderPituGame() {
-    const container = document.getElementById('pitu-game-display');
-    if (!container) return;
+function pituOptimizer() {
+    // 1. Lấy ID game từ tên file trên thanh địa chỉ
+    const path = window.location.pathname;
+    const currentPageId = path.split("/").pop().replace(".html", "");
+    
+    // 2. Tìm game trong kho dữ liệu
+    const game = PITU_DATABASE.find(item => item.id === currentPageId);
+    if (!game) {
+        console.error("Không tìm thấy ID game này trong database!");
+        return;
+    }
 
-    let html = '';
+    // 3. Tìm tất cả các thẻ img có đánh dấu 'pitu-auto'
+    const images = document.querySelectorAll('.pitu-auto');
 
-    PITU_DATABASE.forEach(game => {
-        // 1. Phần Banner (Ưu tiên cao, không lazy)
-        html += `
-            <div class="game-post" style="margin-bottom: 50px; border-bottom: 1px solid #333; padding-bottom: 20px;">
-                <h2 style="color: #ff69b4;">${game.name}</h2>
-                <div class="banner-box" style="margin: 15px 0;">
-                    <img alt="${game.name} Banner" 
-                         src="${game.banner}" 
-                         width="1093" height="468" 
-                         fetchpriority="high" 
-                         style="width: 100%; height: auto; border-radius: 8px; object-fit: cover; aspect-ratio: 1093/468;">
-                </div>
-        `;
+    images.forEach(img => {
+        const type = img.getAttribute('data-pitu'); // banner hoặc preview
 
-        // 2. Phần Ảnh Previews (Tải lười - Loading Lazy)
-        html += `<div class="previews-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">`;
-        game.previews.forEach((imgLink, index) => {
-            html += `
-                <img alt="${game.name} Preview ${index + 1}" 
-                     src="${imgLink}" 
-                     width="533" height="300" 
-                     loading="lazy" 
-                     style="width: 100%; height: auto; border-radius: 4px; object-fit: cover; aspect-ratio: 533/300;">
-            `;
-        });
-        html += `</div>`;
-    container.innerHTML = html;
+        if (type === 'banner') {
+            img.src = game.banner;
+            img.alt = game.name + " Banner";
+            img.setAttribute('fetchpriority', 'high'); // Ưu tiên banner tải trước
+            // Tối ưu PageSpeed: set kích thước banner
+            img.width = 1093;
+            img.height = 468;
+        } 
+        else if (type === 'preview') {
+            const index = parseInt(img.getAttribute('data-index'));
+            if (game.previews[index]) {
+                img.src = game.previews[index];
+                img.alt = game.name + " Preview " + (index + 1);
+                img.setAttribute('loading', 'lazy'); // Ảnh review thì tải sau (lazy)
+                // Tối ưu PageSpeed: set kích thước preview
+                img.width = 533;
+                img.height = 300;
+            }
+        }
+        
+        // Thêm CSS cơ bản để ảnh không bị méo
+        img.style.width = "100%";
+        img.style.height = "auto";
+        img.style.objectFit = "cover";
+        img.style.display = "block";
+    });
 }
 
-// Chạy lệnh khi web sẵn sàng
-document.addEventListener('DOMContentLoaded', renderPituGame);
+// Chạy script khi trang web load xong
+document.addEventListener('DOMContentLoaded', pituOptimizer);
