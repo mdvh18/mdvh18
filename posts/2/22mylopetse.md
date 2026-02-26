@@ -5,8 +5,6 @@ namebanner: "[Việt Hóa] My Loyal Pets SE - [882MB]"
 mota: |
  Hãy tận hưởng theo cách của bạn.
 
-infor: |
-
 gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
