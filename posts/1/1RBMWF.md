@@ -5,7 +5,7 @@ namebanner: "[Việt Hóa] Rebirth Mr Wang Full Version - [909MB]"
 mota: "Hãy vận dụng đầu óc của bạn để giúp đỡ những người hàng xóm! Nhìn bên ngoài, Wang chỉ là một gã thợ sửa chữa chung cư tận tụy, luôn có mặt để giúp các chị em hàng xóm giải quyết những rắc rối vặt vãnh. Đây là hành trình của anh ta..."
 
 infor:
-gametype: "Visual Nove"
+gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: 
 platform: "PC"
