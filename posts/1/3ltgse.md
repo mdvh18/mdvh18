@@ -1,0 +1,20 @@
+---
+layout: game
+title: "[Việt Hóa] Let It Go SE - MDVH18"
+namebanner: "[Việt Hóa] Let It Go SE - [470MB]"
+mota: "Lucy vừa mới thi đấu xong một giải trượt tuyết khác, và cô nàng đang muốn thừa thắng xông lên để đánh bóng tên tuổi hot girl của mình. Nhưng Zoe thì đã phát ngấy với cái thói tự luyến của bà chị mình rồi. Hay là cô ấy chỉ đang ghen tị thôi? Liệu hai chị em kế đang hục hặc với nhau có thể làm hòa không? Hay là sự giúp đỡ của Zoe sẽ dẫn dắt cả hai vào một hành trình khám phá những khao khát thầm kín mà cả hai chưa từng ngờ tới?
+
+infor: ""
+gametype: "Visual Nove"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "470MB"
+phienban: "SE"
+dev: "DKL"
+genre: "2DCG, Animated"
+
+linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9YdGhHZ2k="
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2tndFFpUW82"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xTTZJeEZIQzdLX1JtbzdaYVVvOHlPdw=="
+---
