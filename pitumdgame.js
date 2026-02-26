@@ -7,13 +7,36 @@ const PITU_DATABASE = [
             "https://blogger.googleusercontent.com/img/a/AVvXsEgSQm6vl7IEgp3OtcqWaCl_WSsUMYbuU9SevHotcn3zPMukO_XEyFu5pUitrwrY-I8VIyQzkEq9AMo-W5mcF29xW4JEmMN-H4um53YDRBiSP0YSN3Yaydu40UTJgFVMLJUITKCqO9W_3mYBgid9bDzXbR4JJMFYtAV08gmrcvLTtytJmFnGCnaDUxX5N0I=s16000",
             "https://blogger.googleusercontent.com/img/a/AVvXsEiLM_waqHmatpbBQXDiAMeIg795i_Rabpaxlgip4CetfB3DLOmkh98DVOOnJrn0R7Y-6_2xicj7NHwm6Ak96rVP2DvgxCb9ukRALHEJflYGRtHJYBcO4b4TnQyHfCUuESfjkb0Y5M7Q8RCYz3H5ZAJgShIsdN_YYNa_WkjUtYpzhAvw6r3WpCJ39tBoaJQ=s16000",
             "https://blogger.googleusercontent.com/img/a/AVvXsEjkNymu18iUgQh12c9ior8GvR4EIMxHQFRHc4zqglIy3B9XRI6WfghnL_r0E5P5Pt5aYH9AcAKJ2c425VVaxrb3L4P3Gbi57kHv2MDKwph9EhZDqnnd8GE0JiWPXqEpLjY_cJeozIg8xVOKqefZNtTeCi8heDWU9__O_WXbXZBdce0238ct-pGJuiOXHZk=s16000",
-            "https://blogger.googleusercontent.com/img/a/AVvXsEjZSI7CBjVZtLErdl0b4fSMtuKTeVhguN88oTS2yQTNzya3r2DbfXH27_4_uPRTjH-oO3sJTw7hmDOWI2woh00cVFv293EhyPGEfRcHogdWIlbZGtMBL5n05WxVVk3Fh8qpNACWinUS6RapufO-uMRlthdsgq60fPcjCnCO7kxq9nRiHjlRD1ZKhkVRHbc=s16000"
-        ]
-    },
+            "https://blogger.googleusercontent.com/img/a/AVvXsEjZSI7CBjVZtLErdl0b4fSMtuKTeVhguN88oTS2yQTNzya3r2DbfXH27_4_uPRTjH-oO3sJTw7hmDOWI2woh00cVFv293EhyPGEfRcHogdWIlbZGtMBL5n05WxVVk3Fh8qpNACWinUS6RapufO-uMRlthdsgq60fPcjCnCO7kxq9nRiHjlRD1ZKhkVRHbc=s16000"]},
     {
-        id: "game-test-2",
-        name: "GAME TEST 2",
-        banner: "https://link-banner-2.webp",
-        previews: ["https://p5.webp", "https://p6.webp"]
-    }
+        id: "NT026",
+        name: "[Việt Hóa] Naughty Tail 0.2.6 - [767MB]",
+        banner: "https://blogger.googleusercontent.com/img/a/AVvXsEiZvkfNSupeLMNtWUuD0JDOWmRaapvTgmU4b5Bx2MewBCa6qwoqFMZUjS70ubwY6baH4C78i_ypNGQeZK3E-RyVvrEkp8yd3mrbIHsi46rnvkiHqKs9wbTQWinCYvWTVJTuhmPXe09nlk9ZhfSVk0S4OOJecdG4lCwAhEVPtmTN7t12DekJw3Fmxfb4vhM=s16000",
+        previews: [
+            "https://blogger.googleusercontent.com/img/a/AVvXsEikaCmvK2RJtdCqCr9-t-k7DYYqCkqkjhVxXd8cVg6hnpncSLebwmfLL23bSCSjV2hcXIrGG6q4sQrOtFOrcHPuYYeUvH3M2azVmrS45QMxc8ORGmak2ezljJfLK4N53-KTKVrVeZvVq6yMsqJ4C0dPexLDNhxBV01f_uYHPmgHgFx6LcoPllLbH_8DdmE",
+            "https://blogger.googleusercontent.com/img/a/AVvXsEjmvTqbmPfWc3dmfEJ73lg59kBZqd_CJffnWS8gJy2mLxhKx2X2vtvqBjR_tt5So6dMIdSlQCITBMTZI_YTSD5IQe03LfUUKmliNy-YKoOyqEFEx7rgkoSbFiFJsb2WRwm5I2wMNr7n1EPOl8-hQQBcHzRlfsRKZmKRUQJPVkmT9EmvZg0ONsaZoNqAdHI",
+            "https://blogger.googleusercontent.com/img/a/AVvXsEgY6VhcH05OeX9MXclm3OG37iH7J6bJBqphvbraty0siod1QoG7uoWGyhMfCqdNBnEyKa2zIe9iPe1eIZnwp-ZaMSxBTG-3AD1FR_Ohm6VrGygV2zZ8d7iJ3-Sr0KVk6ZoGmlXtjv1QkahIemh_CuKINjmpHcyjZhDwaJPFHGk1LN6_0aLLxgIJNL8fbAA",
+            "https://blogger.googleusercontent.com/img/a/AVvXsEjbi1CYvsn-2Gvsc89_BWo-5zVRSWqQJNnrKAR4qqwXZI0T2JuT0hiutXs3-nkucQmf-P8EObkTVUkT9FJqjSkNfH7_I4Xm2gUzXrxedLrwYccnbg1Hcc2qhHRZc6kYfQLbleE1Mw_93GjnLx2DDefhJM80i4eWSl2Ym6VNcuy9CgUFTHyR_lEaEJeDIsE"]}},
+    {id: "NT026.",
+    name: "GAME TEST 2",
+    banner: "https://link-banner-2.webp",
+    previews: ["https://p5.webp",
+               "https://p5.webp",
+               "https://p5.webp",
+               "https://p6.webp"]}},
+    {id: "NT026.",
+    name: "GAME TEST 2",
+    banner: "https://link-banner-2.webp",
+    previews: ["https://p5.webp",
+               "https://p5.webp",
+               "https://p5.webp",
+               "https://p6.webp"]}},
+    {id: "NT026.",
+    name: "GAME TEST 2",
+    banner: "https://link-banner-2.webp",
+    previews: ["https://p5.webp",
+               "https://p5.webp",
+               "https://p5.webp",
+               "https://p6.webp"]}},
+    
 ];
