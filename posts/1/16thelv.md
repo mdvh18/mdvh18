@@ -1,0 +1,22 @@
+---
+layout: game
+title: "[Việt Hóa] The Lust Voyage 1.05 - MDVH18"
+namebanner: "[Việt Hóa] The Lust Voyage 1.05 - [443MB]"
+mota: |
+ Khi Ngài Richard và bà Julia tháo chạy khỏi những cư dân mất trí ở Ertonbury, họ đã thuê một tên thuyền trưởng của một con tàu đánh cá đáng nghi, với hy vọng rằng hắn sẽ giúp họ trốn thoát sang hòn đảo kế tiếp.
+
+infor: |
+
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "443MB"
+phienban: "1.0.5"
+dev: "NTRMAN"
+genre: "2DCG, Animated"
+
+linkgofile: ""
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91LzZ5aDVwM3Vk"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xUE5GTzNSRzNPdXJOWXQwaEpEdXBTZw=="
+---
