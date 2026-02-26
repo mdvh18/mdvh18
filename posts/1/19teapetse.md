@@ -1,0 +1,22 @@
+---
+layout: game
+title: "[Việt Hóa] Teachers Pet SE - MDVH18"
+namebanner: "[Việt Hóa] Teachers Pet SE - [247MB]"
+mota: |
+ Cô nàng du học sinh Kat cần phải vượt qua bài kiểm tra Sinh học sắp tới, nếu không cô sẽ bị cuốn gói về nước ngay lập tức! Nhưng thầy Jake đã có một kế hoạch học tập một kèm một cực kỳ xuất sắc dành riêng cho cô nàng Kat nhỏ bé! Đây chắc chắn là một bài học mà cô sẽ phải dồn toàn bộ sự chú ý của mình vào đó!
+
+infor: |
+
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "247MB"
+phienban: "SE"
+dev: "DKL"
+genre: "2DCG, Classroom, POV, School, School Uniform,Stockings"
+
+linkgofile: ""
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3BrZzlCbmNi"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xRTBiTTR0M2QxNW5xYXctUDNkaXdaQQ=="
+---
