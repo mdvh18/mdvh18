@@ -3,7 +3,7 @@ layout: game
 title: "[ENG] xxxFiles v0.1.5 - APK/PC - MDVH18"
 namebanner: "[ENG] xxxFiles v0.1.5 - APK/PC - [3.9GB]"
 mota: |
- Về trò chơi thì nó giống như game Prototype (hoặc Venom) nhưng có thêm yếu tố tình dục. Cũng chẳng có gì nhiều để nói ở đây cả. Bạn không có một quá khứ đau thương hay bất cứ thứ gì đại loại thế, bạn chỉ đơn giản là một sinh vật ngoài hành tinh thích làm ... mà thôi.
+ Về trò chơi thì nó giống như game Prototype hoặc Venom nhưng có thêm yếu tố tình dục. Cũng chẳng có gì nhiều để nói ở đây cả. Bạn không có một quá khứ đau thương hay bất cứ thứ gì đại loại thế, bạn chỉ đơn giản là một sinh vật ngoài hành tinh thích làm ... mà thôi.
 
 infor: |
  About this game. Basically Prototype (or Venom) but with sex. Not much to say here. You don't have a traumatic past or anything, just an alien who enjoys copulating.​.
