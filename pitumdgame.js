@@ -35,6 +35,6 @@ const PITU_DATABASE = [
     previews: ["https://p5.webp",
                "https://p5.webp",
                "https://p5.webp",
-               "https://p6.webp"]},
+               "https://p6.webp"]}
     
 ];
