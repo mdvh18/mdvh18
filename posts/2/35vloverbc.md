@@ -5,7 +5,6 @@ namebanner: "[Việt Hóa] Become a vtuber! - VLover V1.0.9 - [2.2GB]"
 mota: |
  Bên cạnh việc làm việc chăm chỉ để kiếm tiền và quản lý các kênh phát sóng, bạn còn có thể tận dụng sức hút đáng tin cậy của mình trong vai trò quản lý để từng bước bước vào trái tim của ba cô gái. Thậm chí, bạn có thể phát triển những mối quan hệ với họ vượt xa mức độ "VTuber và quản lý" thông thường!
 
-infor: |
 
 gametype: "Visual Novel"
 language: "Tiếng Việt (Chưa Test Kỹ), Japanese, Chinese, Korean"
