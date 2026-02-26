@@ -15,7 +15,7 @@ const PITU_DATABASE = [
             "https://blogger.googleusercontent.com/img/a/AVvXsEjmvTqbmPfWc3dmfEJ73lg59kBZqd_CJffnWS8gJy2mLxhKx2X2vtvqBjR_tt5So6dMIdSlQCITBMTZI_YTSD5IQe03LfUUKmliNy-YKoOyqEFEx7rgkoSbFiFJsb2WRwm5I2wMNr7n1EPOl8-hQQBcHzRlfsRKZmKRUQJPVkmT9EmvZg0ONsaZoNqAdHI",
             "https://blogger.googleusercontent.com/img/a/AVvXsEgY6VhcH05OeX9MXclm3OG37iH7J6bJBqphvbraty0siod1QoG7uoWGyhMfCqdNBnEyKa2zIe9iPe1eIZnwp-ZaMSxBTG-3AD1FR_Ohm6VrGygV2zZ8d7iJ3-Sr0KVk6ZoGmlXtjv1QkahIemh_CuKINjmpHcyjZhDwaJPFHGk1LN6_0aLLxgIJNL8fbAA",
             "https://blogger.googleusercontent.com/img/a/AVvXsEjbi1CYvsn-2Gvsc89_BWo-5zVRSWqQJNnrKAR4qqwXZI0T2JuT0hiutXs3-nkucQmf-P8EObkTVUkT9FJqjSkNfH7_I4Xm2gUzXrxedLrwYccnbg1Hcc2qhHRZc6kYfQLbleE1Mw_93GjnLx2DDefhJM80i4eWSl2Ym6VNcuy9CgUFTHyR_lEaEJeDIsE"]},
-    {id: "adobtd",
+    {id: "30adobtd",
     name: "Việt Hóa Adored by the Devil",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEh8D8EDmwhfdJ1ESOd9Yxqnft2s3I4_a5pGQpbZn_efse4bKTNh_w4s-bzGpw4uBJZKr_opZKGIs-kBFv9bQppbwnVbS0Bm95v6iFARXTaaqDHb1qMKErnzlYyT4EB5kJgV6rA0KhArSrIcR3gd66v7KUvP1-HU4SN914O4YBT7v0Ubxa1H1arbjl7Mja4=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEhjZv1WCrgLNlnWvHf9IT2nSoyA8BQgSpvII8jBaojrRNZsu98U0ac37rgJHgvuyVLrmshBrPGizZfmQCTw1-UCmsf9Bg0u_LZGIc-mKTdPetNYITreOvwtL6ZaqIgQwPanuJh2572cOO_0Fm4QS09NNlKilEIJ5cVL5Tyd-njGtQlLLiSp-3NhtdErUoo=s16000",
