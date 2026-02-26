@@ -4,7 +4,6 @@ title: "[Việt Hóa] Seed My Wife 1.0 - MDVH18"
 namebanner: "[Việt Hóa] Seed My Wife 1.0 - [338MB]"
 mota: "Ở một nơi nào đó thuộc miền Nam Châu Âu, một cặp vợ chồng bình thường đang phải đối mặt với một sự thật đau lòng—họ không thể có con vì người chồng bị vô sinh. Sợ bị khinh bỉ và nhạo báng, họ chọn cách giữ kín nỗi khổ của mình. Thay vì tìm đến sự can thiệp của y tế, họ lại tìm đến người bố chồng để có một giải pháp... trực tiếp hơn."
 
-infor:
 gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
