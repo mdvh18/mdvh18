@@ -1,0 +1,19 @@
+---
+layout: game
+title: "[Việt Hóa] Rebirth Mr Wang - MDVH18"
+namebanner: "[Việt Hóa] Rebirth Mr Wang Full Version - [909MB]"
+mota: "Hãy vận dụng đầu óc của bạn để giúp đỡ những người hàng xóm! Nhìn bên ngoài, Wang chỉ là một gã thợ sửa chữa chung cư tận tụy, luôn có mặt để giúp các chị em hàng xóm giải quyết những rắc rối vặt vãnh. Đây là hành trình của anh ta..."
+
+infor:
+gametype: "Visual Nove"
+language: "Tiếng Việt"
+mdvh18: 
+platform: "PC"
+dungluong: "909MB"
+phienban: "Final"
+dev: "DSGAME"
+genre: "2DCG, Animated, Point and Click, Puzzle"
+
+linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9wY1d0Skg="
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RtRnBlRXRy"
+---
