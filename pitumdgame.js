@@ -113,7 +113,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEgZmPuq9cssHNQEy6MNEAHBTFe141Xi_OX3zoY1AWVR6sB1igfdsf6Wrc0SP1mShguIarPq3d0p96HPf7Wd5brHTOyPlEN_kPDxXIwWRutLCOoAyEVRv3Y2CYy7XaDxkFMimVaXn7nv439TmlHYyYtEb76_991RLWvjZTUKink4j8oBTMeEgkEKDnHGGT0=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEgZmPuq9cssHNQEy6MNEAHBTFe141Xi_OX3zoY1AWVR6sB1igfdsf6Wrc0SP1mShguIarPq3d0p96HPf7Wd5brHTOyPlEN_kPDxXIwWRutLCOoAyEVRv3Y2CYy7XaDxkFMimVaXn7nv439TmlHYyYtEb76_991RLWvjZTUKink4j8oBTMeEgkEKDnHGGT0=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEjOwqvPrhBr5TBDaY_rf1JDQU_2hkiA7EpAnaWJAG5Fsyx4J9sddWYZAdGbUk_F9iSKtlQgtnnVy54qQmHzyo36h5qTk7fHufivucMmtAbbqHLH5ufuP1JlBIbL-cTDGVWktvP20lxPQB-g4R2riOeiidicAnabuyUvTtu3dOfADLk-R_nNjUfwuP0k7jQ=s16000"]},
-    {id: "selectyl",
+    {id: "27selectyl",
     name: "Việt Hóa SELECT YOUR LOVER",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEgq5c7mYybgHCFJg4dpK3II_oXZmy9G2aeI-PTDo6T1JC0KDqqvjStGmVEvtnTpDjxOFAp4Yhwmm5r0g52aybMLs89cVwBnfinWs1gX9tNXpWAFUUXK_f6hurDtgokndlP6-JhFSIfgqr9Dd9t5zmdAZulSsR5Q9w2qZoewlkHCP-M5RHNVKtyYFen1C7E=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEhHpsiP0HxL1_KpPoe0cl9U-8zB5f8t5iIuv8krqOboPQ_gHmQXvvb6ucpcyGK5IJoxSRDLJKksARKlt1f6tRzvyEgPXqrl6bom43OMHoZutZdKRD_mvReDFgNhn7gegPZGteUHpvg79sjN827jSAxdA8GAeZhmsJW8c_vS7Av2TYN6A0yHWHpUquf6mlY=s16000",
