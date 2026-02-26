@@ -134,7 +134,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEg835sVp8XxOhMi14fOobvOFx2LFX2yxIkQBm8vNtS8E7jpAJSehCP7FkcpwSaA6HwRb6N_-xISgpVm7YZ_8oB35EWOALjnONt7br1eOF8SWW7-gCzmBX4PPkr1WCb7Y89p1r2AmFXye530M0yu38Ck8GHW1eIwGexk4mUzp8ThbE8XejtZTRU5i1EAwVM",
                "https://blogger.googleusercontent.com/img/a/AVvXsEgKoglKyGb8-If4cfuKB-PQJ2BN7JRivPMvFXO3wwNRbRe8oAgRWTfz8d3IDra0uOfVZmvG0_fw0CnVwNBrR4HHL5i-YH-JnJw7oUjQ6th4MTBxbILvRszhnkQusotHYaHVbjTB-Mz7Ju5zKPKyVLWztiTq1xjxhcFqnnfrDMW6skuz11UNrcREHqwiWqw",
                "https://blogger.googleusercontent.com/img/a/AVvXsEgPXjrvIaxuLHOT5pNcM4f1j4IAXKfaAq8m02cGhjgOa5wBzv8BFXGfq9Bq0_WMTSlj98rfu8VuN9fum43B4Q0KEhM5VdL70oQW9GPl83fP6zJzT03ygilgTBJzwPEso4X8j6Cy1DEeiAWamXzxhUVemYSvEYIBN5P2iA6j3_L5ej47oLO3RNzrDRrKLq8"]},
-    {id: "ssoloss",
+    {id: "31ssoloss",
     name: "Việt Hóa Seasons of Loss",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEintDbyGolS7RSGH6YInbPHglWnWSKQ-MzKT2IJLnDas9Q8sHErWHnKpMLYTwUPBmU10PfOPdslQAp3JJGvClwyp1CqxXic54-ZTPdHEehlIxzpfJ6Sz0jv98N2YvUf9LsdZHldEKtH80i-O2bfzCdF3TrfR1lyveOHuSy5Ztovs51CTz2fyEmSDhE351k=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEgNjnu1jQIl0KgJOGfyP9x2LLcsuoHQq6vIW-WtLDvf2dtN11RuHpbmrLmtC5KHHmL71IiuOCNYAIXRRttZX8jRtN7RXBMtscSP-ZEuzulfqXnmkppc2nC4kDT_-8zVnFmQ7mcsJ7_C7mWPDNWSH_7DWKlBy45h31jvNKl7lO8lms7XSASd0Y6cK07w4-0=s16000",
