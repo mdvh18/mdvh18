@@ -155,7 +155,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEi-Pm9QVpQMVzDAMmLe5olY7VmP16qTsorfpJg1dg9HwuR_p2_xcyQUnorClGdKuOdeAv4ETtuVNQ0gyakKTcW6-7QXjQMmvMvtTQMrOoI-UbSBT_MPIUFSiJv1gUHjYdRyY7YgWa8Kya0WnPI4uy-VU0JVIeUQ2aCmTRX_CGvmWZh3ODJsij8Z99vr5vY=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEi-Pm9QVpQMVzDAMmLe5olY7VmP16qTsorfpJg1dg9HwuR_p2_xcyQUnorClGdKuOdeAv4ETtuVNQ0gyakKTcW6-7QXjQMmvMvtTQMrOoI-UbSBT_MPIUFSiJv1gUHjYdRyY7YgWa8Kya0WnPI4uy-VU0JVIeUQ2aCmTRX_CGvmWZh3ODJsij8Z99vr5vY=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEhv-ccSTlQAw2B3u0sT-SuodoZmQg2zjrsuhQflYNfejW4lx2f8L13NHL2XJ8k77P5_6tzf6tNBZcmYEqE_2Z0Bo80XH3bPsYtOs7XkbYOLo1c-3-OjHY3ZSxirDbTKalnyVk5vHZHBwoqx7idRsAgSUkjlfLnZjAjNMyFtfN6bnqtf-gikzXROoSe2OCc=s16000"]},
-    {id: "thelv",
+    {id: "16thelv",
     name: "Việt Hóa The Lust Voyage",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEjFrioOPads6ig2PLLNNXvIUa5u-sEEp4xN88NGDatIfpNSinEBOxuqobJt4Q-eeGhfnDuCc7CiX84WigdYeyiTu2wBO-NLloub2saIcuiYn759d8Gv1fb8JJKJOXb4-Y62occf49o72tkKjq6H6z3F_XS0BkeqlC2GK9jiILPr-Jqx_rm7KXZRUoKASZ8=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEgtN5no5RQUdT_53OetAj-PtHaACOpuFdfKFxVTi4szDcpkQ_th8sBuXc_cXdajND8VONjK3CUqTD1jTmL8Pm-zsLBFrT0Je_ISrh6g1M18EMIo8BPKLIkAQ89u3Rlsadiohm-3-Pt1HuQ03EFHb-dvViRMV60wTwgGpVPsAC9ofxFLALr0lgKxQ2Ypfn0=s16000",
