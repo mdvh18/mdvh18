@@ -29,7 +29,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEi2Ser7zsv5Yksg8hs7AXl6-fDUzurU1AKNM06zz0tyRx-n4KhRQX4SVUnBCPgIk0XLFkMedKypJSSay1mBeLwzNH6nowCPBQnI1eo6rq38z_EHWLA_zOWUxnlEBNrckjII9VHdL5qnpEb0pr36xTCqVUslfoRxaQ1Umrq31FbQBjhllyXpuiPpWO1oIdA=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEgpyWbhKNji58R7hvaTi4LlYmhbIp5IfbOuybQhocqO6tw6smo6MEn7_ahPULYffYSbYdbxnQ7iMTvmrJ43Wjsev2tlrD44TIasefrpRuJ6WLodAf5fUPl7K7yfoC8ubRb3LZRQfB_3YqZWX3_PkzfVNOEoysArHxcXoQTj3fsxaFsKvPyoSB2nIWJPb9Y=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEi2Ser7zsv5Yksg8hs7AXl6-fDUzurU1AKNM06zz0tyRx-n4KhRQX4SVUnBCPgIk0XLFkMedKypJSSay1mBeLwzNH6nowCPBQnI1eo6rq38z_EHWLA_zOWUxnlEBNrckjII9VHdL5qnpEb0pr36xTCqVUslfoRxaQ1Umrq31FbQBjhllyXpuiPpWO1oIdA=s16000"]},
-    {id: "arotg",
+    {id: "21arotg",
     name: "Việt Hóa Arrival of the Goddess v1.051",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEidNrT3BY9cpxf5vEHcnhD87mPHz6kdGAwxfjB2sY5DsfVZZGA4WbzeZ2iIL2mWDs6zUQ2zUuOxsc6FUPY7lR6sxUxBOylTkQ4hT3Blk8aT5A6PxoKBg4ojnxeEIaSU6QFNTCILbHAhUPoydPeXL4B-WzKLmDJ2iSC1lHOHEM29LKOork3LpGrbhNR3JUs=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEidNrT3BY9cpxf5vEHcnhD87mPHz6kdGAwxfjB2sY5DsfVZZGA4WbzeZ2iIL2mWDs6zUQ2zUuOxsc6FUPY7lR6sxUxBOylTkQ4hT3Blk8aT5A6PxoKBg4ojnxeEIaSU6QFNTCILbHAhUPoydPeXL4B-WzKLmDJ2iSC1lHOHEM29LKOork3LpGrbhNR3JUs=s16000",
