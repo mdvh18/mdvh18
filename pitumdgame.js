@@ -218,7 +218,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEhAbo4Qhom49CtpToPjGzQoEuOECXiWee-c3RdelPq0yY_6FKSB20O6LPI7VH2nQAnNxLv_4oPd_0dXSMbqPGua__-cm2HHkj6IJXLq4TYrg6pl4two8PTooBQ36ztiuAqxnNC7W4NKwFgV5nIS6bEUkkRvhEr-u0lG-g5hQgosIen3AoGy9U3vqDglr5A=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEg7D8HbXu_T8GWbmnW_vfjpwAGxsZJyNii6VCWGSXHQ6f0ibrLsQ2eHjrq0NjzgOGHEL3ZRwLSgAX1TxkAuY1LPhANIUW1aRCwD-c_pWkB5L5GkY1PmDiVWfm-jwfAvPZVOo5kHaERKW4UzO1Es0xedP7Epb5CKrXiXEanjlvlUGmxnBkywby-YyGgCZss=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEg7PYr-JU__Hw9LbfgYWdyH3GMaDjbx62nQKUIR-_RGOdq3CTEqmAT24rPLuUfuwNZD5ZaKD5ifuoNWp1A190avRNNhe9ZG6MlRVHPHRISNaRa9Krnr4pDNQuYf6leazTHoQ_8q1ZUmcSe2ppVpoPO6z3hCp-veCNsArWTwrn50fZiEjRu05mz2EGB0RjI=s16000"]},
-    {id: "yakyuken",
+    {id: "5yakyuken",
     name: "Việt Hóa Yakyuken",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEgSxtI2RuRoJD7R-X1tC-hzdwykVUJqKXG-P4K_t_BVCWhxN6YrBC6uoGPMoB91JZNZDSGV7hFZy6UMlBAUYLmfmgwLX2o4onhA8GslLKsKouMKDGdoVlcrZkfpY3-Cj_rI7WK-1ylDDossA2xrG_yMpKu3Zg1aqqs6Py5-igekomlzI4m-5nPDUYe7TD0=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEh4q9ByoYZTKcakSZcqpQonR_yf8XMlqzgin67PYuwg2ArjXUG50svOgcHGYLsZlSyT4SFY5BUOST_qoi8Ln-4f2yspAlWx5XZAaCd0itwWMiUeKeTWYiDNx9quIwQXy1Fg6hZ59OMfHI1qP_4LdbvyEzop_C7Ou1o-ZPvOHnGJf4jxty-AnHAUB8tv7Dw=s16000",
