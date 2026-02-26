@@ -2,7 +2,8 @@
 layout: game
 title: "[Việt Hóa] Let It Go SE - MDVH18"
 namebanner: "[Việt Hóa] Let It Go SE - [470MB]"
-mota: "Lucy vừa mới thi đấu xong một giải trượt tuyết khác, và cô nàng đang muốn thừa thắng xông lên để đánh bóng tên tuổi hot girl của mình. Nhưng Zoe thì đã phát ngấy với cái thói tự luyến của bà chị mình rồi. Hay là cô ấy chỉ đang ghen tị thôi? Liệu hai chị em kế đang hục hặc với nhau có thể làm hòa không? Hay là sự giúp đỡ của Zoe sẽ dẫn dắt cả hai vào một hành trình khám phá những khao khát thầm kín mà cả hai chưa từng ngờ tới?
+mota: |
+ Lucy vừa mới thi đấu xong một giải trượt tuyết khác, và cô nàng đang muốn thừa thắng xông lên để đánh bóng tên tuổi hot girl của mình. Nhưng Zoe thì đã phát ngấy với cái thói tự luyến của bà chị mình rồi. Hay là cô ấy chỉ đang ghen tị thôi? Liệu hai chị em kế đang hục hặc với nhau có thể làm hòa không? Hay là sự giúp đỡ của Zoe sẽ dẫn dắt cả hai vào một hành trình khám phá những khao khát thầm kín mà cả hai chưa từng ngờ tới?
 
 infor: ""
 gametype: "Visual Nove"
