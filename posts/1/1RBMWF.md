@@ -6,7 +6,6 @@ mota: "Hãy vận dụng đầu óc của bạn để giúp đỡ những ngư�
 
 gametype: "Visual Novel"
 language: "Tiếng Việt"
-mdvh18: 
 platform: "PC"
 dungluong: "909MB"
 phienban: "Final"
