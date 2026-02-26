@@ -1,4 +1,13 @@
 function pituRender() {
+    // 1. Tự động biến DIV thành MAIN để fix lỗi SEO "Điểm mốc chính"
+    const wrapper = document.querySelector('.main-container'); 
+    if (wrapper && wrapper.tagName !== 'MAIN') {
+        const mainElement = document.createElement('main');
+        mainElement.innerHTML = wrapper.innerHTML;
+        mainElement.className = wrapper.className;
+        wrapper.parentNode.replaceChild(mainElement, wrapper);
+        console.log("Đã nâng cấp lên thẻ <main> cho SEO!");
+    }
     // Cách này sẽ lấy chính xác cái tên file cuối cùng, bất chấp thư mục sâu bao nhiêu
     const path = window.location.pathname;
     const filename = path.split("/").filter(Boolean).pop(); // Lấy phần cuối cùng của path
