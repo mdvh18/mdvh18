@@ -1,0 +1,22 @@
+---
+layout: game
+title: "[ENG] Sugar Lust: Hentai Harem - MDVH18"
+namebanner: "[ENG] Sugar Lust: Hentai Harem - [303MB]"
+mota: |
+ Cốt truyện xoay quanh cuộc sống của một thanh niên số hưởng, bỗng chốc thấy mình rơi vào giữa một dàn mỹ nữ với đủ mọi phong cách, từ những cô nàng kẹo ngọt ngây thơ đến những chị đại nóng bỏng, quyến rũ. Nhiệm vụ của bạn không gì khác ngoài việc xây dựng một đế chế Harem cho riêng mình trong một thế giới đầy rẫy sự cám dỗ và những ham muốn ngọt ngào.
+
+infor: |
+
+gametype: "Simulation"
+language: "English"
+mdvh18: ""
+platform: "PC"
+dungluong: "303MB"
+phienban: "Full"
+dev: "RumiGame"
+genre: "3DCG, Animated, English, Simulation, Casual"
+
+linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9xVlMxaTk="
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2NLRE1lTWdj"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xbFQwZDhLNEI4azVqNWVpcGJrQUp5UQ=="
+---
