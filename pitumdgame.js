@@ -1,6 +1,6 @@
 const PITU_DATABASE = [
     {
-        id: "exaltation.html", 
+        id: "exaltation", 
         name: "[ENG]  Exaltation! v1.1 - [764MB]",
         banner: "https://blogger.googleusercontent.com/img/a/AVvXsEjmFbm0ixnbrP9s49H9y2ZKTvAW_MUmGy_5f48ZA0OEaY6OUE8xPXTbSYVXRDO7Y4eC8PqaY4bNB332Rl4aoyDf7n_7LCCbs0r6zzh8UvD_--ipf_oPw1w3AW9BChX_2o1JNWiqXUCXTbMrrS9lJOaL_xPLk-OVPOfIZ-WGJyYg4QXKhJzwMug1atHyJvg=s16000",
         previews: [
