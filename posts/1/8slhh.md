@@ -5,11 +5,9 @@ namebanner: "[ENG] Sugar Lust: Hentai Harem - [303MB]"
 mota: |
  Cốt truyện xoay quanh cuộc sống của một thanh niên số hưởng, bỗng chốc thấy mình rơi vào giữa một dàn mỹ nữ với đủ mọi phong cách, từ những cô nàng kẹo ngọt ngây thơ đến những chị đại nóng bỏng, quyến rũ. Nhiệm vụ của bạn không gì khác ngoài việc xây dựng một đế chế Harem cho riêng mình trong một thế giới đầy rẫy sự cám dỗ và những ham muốn ngọt ngào.
 
-infor: |
 
 gametype: "Simulation"
 language: "English"
-mdvh18: ""
 platform: "PC"
 dungluong: "303MB"
 phienban: "Full"
