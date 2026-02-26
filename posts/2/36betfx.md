@@ -1,0 +1,22 @@
+---
+layout: game
+title: "[Việt Hóa] Betflix SE - MDVH18"
+namebanner: "[Việt Hóa] Betflix SE - [176MB]"
+mota: |
+ Holly nhận được lời mời tham gia một ứng dụng mới đầy bí ẩn có tên là Betflix. Nhưng chính Louise cũng đang che giấu một bí mật nhỏ của riêng mình...
+
+infor: |
+
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "176MB"
+phienban: "SE"
+dev: "DKL"
+genre: "Dress, Fingering, Kissing, Licking, Living-room, SoloTeasing,Tongue, Toys"
+
+linkgofile: ""
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2NzZXh6cktG"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xVWktZFRzcWdWaG9mLVRNVkl3TFdIZw=="
+---
