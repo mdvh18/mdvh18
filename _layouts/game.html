@@ -678,20 +678,31 @@ a, button, .image-grid img, .hentry {
         <p style="font-size: 11px; color: #888; margin-top: 15px;">© MDVH18 - Nội soi Visual Novel</p>
     </div>
 </div>
-  
     <div class="download-box">
         <h3 style="margin-top: 0; letter-spacing: 1px;">LINK TẢI GAME</h3>
         <button class="download-btn" id="btn-show" onclick="showLinks()">NHẤN ĐỂ HIỆN LINK TẢI</button>
         
         <div id="real-links" style="display: none; margin-top: 20px; animation: fadeIn 0.5s;">
             {% if page.linkgofile %}
-            <a class="download-btn" href="{{ page.linkgofile }}" target="_blank">LINK GOFILE</a>
+            <a class="download-btn" href="{{ link.linkgofile }}" target="_blank">LINK GOFILE</a>
             {% endif %}
             {% if page.linkpixel %}
-            <a class="download-btn" href="{{ page.linkpixel }}" target="_blank">LINK PIXELDRAIN</a>
+            <a class="download-btn" href="{{ link.linkpixel }}" target="_blank">LINK PIXELDRAIN</a>
             {% endif %}
             {% if page.linktera %}
-            <a class="download-btn" href="{{ page.linktera }}" target="_blank">LINK PIXELDRAIN</a>
+            <a class="download-btn" href="{{ link.linktera }}" target="_blank">LINK TERA</a>
+            {% endif %}
+            {% if page.linksave %}
+            <a class="download-btn" href="{{ link.linksave }}" target="_blank">LINK SAVE</a>
+            {% endif %}
+            {% if page.linkgofileapkpc %}
+            <a class="download-btn" href="{{ link.linkgofileapkpc }}" target="_blank">LINK GOFILE APK/PC</a>
+            {% endif %}
+            {% if page.linkterapkapkpc %}
+            <a class="download-btn" href="{{ link.linkterapkapkpc }}" target="_blank">LINK TERA APK/PC</a>
+            {% endif %}
+            {% if page.linkpixelapk %}
+            <a class="download-btn" href="{{ link.linkpixelapk }}" target="_blank">LINK PIXEL APK</a>
             {% endif %}
             <p style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 10px;">
                 Mật khẩu giải nén: <b style="color: white; font-size: 18px;">MDVH18</b>
