@@ -8,6 +8,5 @@ const PITU_DATABASE = [
             "https://preview-3.webp",
             "https://preview-4.webp"
         ],
-        downloadLink: "https://mdvh18.com/link-tai-game"
     },
 ];
