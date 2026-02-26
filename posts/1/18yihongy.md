@@ -5,8 +5,6 @@ namebanner: "[Việt Hóa] Yihongyuan Full - [327MB]"
 mota: |
  Đây là một cuốn tiểu thuyết tương tác, nơi lưu giữ những câu chuyện bất tận về những bậc tài tử và các giai nhân tuyệt sắc! Bạn sẽ được trải nghiệm một câu chuyện đầy cảm động và thú vị về một chàng thư sinh trên đường lên kinh ứng thí và vô tình gặp gỡ những cô gái trẻ đẹp.
 
-infor: |
-
 gametype: "Visual Novel"
 language: "Tiếng Việt FIX"
 mdvh18: "MDVH18 FIX"
@@ -16,7 +14,6 @@ phienban: "Full"
 dev: "OHIYOsoft"
 genre: "2DCG, Animated, Oral, Creampie, Prostitution, Puzzle, Teasing, Internal View, Voiced"
 
-linkgofile: ""
 linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L0NpUjl4U1o3"
 linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xZFNFcEJVOXFIZFBGYndNalpILUQ5QQ=="
 ---
