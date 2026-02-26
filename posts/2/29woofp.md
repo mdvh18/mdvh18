@@ -1,0 +1,22 @@
+---
+layout: game
+title: "[ENG] World of Pleasure v0.3  - APK/PC - MDVH18"
+namebanner: "[ENG] World of Pleasure v0.3  - APK/PC - [662MB]"
+mota: |
+ Halima là một cô gái 24 tuổi, hiện đang sống cùng mẹ và cha dượng trong một ngôi nhà khiêm tốn. Cô đang nỗ lực hết mình để cải thiện chất lượng cuộc sống và mong muốn sở hữu một nơi ở riêng cho mình, thế nhưng cô lại phải đối mặt với vô số khó khăn do tình hình tài chính eo hẹp.
+
+infor: |
+ Halima is a 24-year-old woman who resides with her mother and stepfather in a modest dwelling. She is endeavoring to enhance her quality of life and secure her own residence, yet she confronts numerous challenges due to her challenging financial circumstances.
+gametype: "Visual Novel"
+language: "English"
+mdvh18: ""
+platform: PC/APK"
+dungluong: "662MB"
+phienban: "0.3"
+dev: "SHARMOTA"
+genre: "3DCG, Adventure, Animated, Corruption, Dating sim, Futa/Trans, Milf, Mobile game, Oral sex, Point Click, Simulator"
+
+linkteraapkpc: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xbndNN0I3WVFxc2YtcUdZanpLcmhLUQ=="
+linkpixelpc: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3VZejRmVHJF"
+linkpixelapk: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2pqR012bmJQ"
+---
