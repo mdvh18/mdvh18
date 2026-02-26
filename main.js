@@ -13,14 +13,27 @@ function pituRender() {
         return;
     }
     // 3. Đổ Banner
-    const banner = document.querySelector('.game-banner');
-    if (banner) {
-        banner.src = game.banner;
-        banner.alt = game.name + " Banner";
-        banner.setAttribute('fetchpriority', 'high');
-        // Tối ưu Pagespeed
-        banner.width = 1093; banner.height = 468;
-        banner.style.width = "100%"; banner.style.height = "auto"; banner.style.objectFit = "cover";
+    // --- CÁCH 2: TÌM THẺ IMG BÊN TRONG CLASS GAME-BANNER ---
+    const bannerWrapper = document.querySelector('.game-banner');
+    if (bannerWrapper) {
+        // Tìm thẻ img thực sự nằm trong cái div .game-banner
+        const actualImg = bannerWrapper.querySelector('img');
+        
+        if (actualImg) {
+            actualImg.src = game.banner;
+            actualImg.alt = game.name + " Banner";
+            actualImg.setAttribute('fetchpriority', 'high');
+            
+            // Tối ưu Pagespeed nhưng không làm vỡ layout của div cha
+            actualImg.width = 1093; 
+            actualImg.height = 468;
+            actualImg.style.width = "100%"; 
+            actualImg.style.height = "auto"; 
+            actualImg.style.objectFit = "cover";
+            actualImg.style.display = "block"; // Đảm bảo không bị khoảng trống lạ
+            
+            console.log("Đã nạp ảnh vào thẻ img bên trong .game-banner");
+        }
     }
 
     // 4. Đổ Previews vào image-grid
