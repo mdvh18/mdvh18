@@ -1,0 +1,22 @@
+---
+layout: game
+title: "[Việt Hóa]  Seasons of Loss v1.031 - MDVH18"
+namebanner: "[Việt Hóa]  Seasons of Loss v1.031 Full - [2.76GB]"
+mota: |
+ Câu truyện này kể về một nam sinh bình thường và những biến cố sắp xảy đến với cuộc đời cậu ấy trong suốt một năm, cũng như cách mà chúng sẽ thay đổi con người cậu ấy mãi mãi.
+
+infor: |
+
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "2.76GB"
+phienban: "v1.031 Full"
+dev: "NTRMAN"
+genre: "2DCG, Animated, Voiced, Milf, Groping"
+
+linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9XWFBybGg="
+linkpixel: ""
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xazZOMEpiUVRYMUVoYkdKeXdwMFJ1Zw=="
+---
