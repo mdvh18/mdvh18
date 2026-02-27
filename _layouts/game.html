@@ -243,6 +243,21 @@ body {padding-top: 100px !important; }
 .search-results::-webkit-scrollbar-thumb {
     background: #d4487f;
     border-radius: 10px;
+}
+.search-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.search-item img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
 }        
 </style>   
 <header class="header-section">
@@ -712,7 +727,12 @@ input.addEventListener('input', function() {
   filtered.slice(0, 10).forEach(post => {
     const a = document.createElement('a');
     a.href = post.url;
-    a.textContent = post.title;
+    a.classList.add("search-item");
+
+a.innerHTML = `
+  <img src="${post.banner}" alt="">
+  <span>${post.title}</span>
+`;
     results.appendChild(a);
   });
 
