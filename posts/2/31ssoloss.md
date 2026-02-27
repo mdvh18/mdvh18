@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "31ssoloss"
 title: "[Việt Hóa]  Seasons of Loss v1.031 - MDVH18"
 namebanner: "[Việt Hóa]  Seasons of Loss v1.031 Full - [2.76GB]"
 mota: |
