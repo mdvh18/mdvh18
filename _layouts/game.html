@@ -693,42 +693,30 @@ toggle.addEventListener('click', () => {
   input.focus();
 });
 
-input.addEventListener("input", function () {
+input.addEventListener('input', function() {
+  const query = this.value.toLowerCase().trim();
+  results.innerHTML = '';
 
-    const keyword = this.value.trim().toLowerCase();
-    results.innerHTML = "";
+  if (!query) {
+    results.style.display = 'none';
+    return;
+  }
 
-    if (!keyword) {
-      results.style.display = "none";
-      return;
-    }
-
-    const filtered = PITU_DATABASE.filter(item =>
-      item.name.toLowerCase().includes(keyword)
-    );
-
-    if (filtered.length === 0) {
-      results.innerHTML = "<div>Không tìm thấy</div>";
-      results.style.display = "block";
-      return;
-    }
-
-    filtered.forEach(item => {
-      const a = document.createElement("a");
-      a.href = "/mdvh18/" + item.id + "/";
-      a.className = "search-item";
-
-      a.innerHTML = `
-        <img src="${item.banner}">
-        <span>${item.name}</span>
-      `;
-
-      results.appendChild(a);
-    });
-
-    results.style.display = "block";
+  const filtered = posts.filter(post => {
+    if (!post.title) return false;
+    return post.title.toLowerCase().includes(query);
   });
 
+  console.log("Found:", filtered.length);
+
+  filtered.slice(0, 10).forEach(post => {
+    const a = document.createElement('a');
+    a.href = post.url;
+    a.textContent = post.title;
+    results.appendChild(a);
+  });
+
+  results.style.display = filtered.length ? 'block' : 'none';
 });
 </script>    
 </body>
