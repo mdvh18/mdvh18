@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "13jikagenarc3"
 title: "[Việt Hóa] Jikage Rising Arc3 - MDVH18"
 namebanner: "[Việt Hóa] Jikage Rising Arc3 v2.27 - [1.4GB]"
 mota: |
