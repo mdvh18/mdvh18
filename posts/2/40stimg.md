@@ -4,7 +4,7 @@ pitu_id: "40stimg"
 title: "[Việt Hóa] Stuck In My Game - MDVH18"
 namebanner: "[Việt Hóa] Stuck In My Game 0.8.0 Gold - [385MB]"
 mota: |
-Trở thành một nhà phát triển trò chơi chưa bao giờ là một nhiệm vụ dễ dàng, nhưng cuối cùng thì trò chơi của bạn cũng đã sẵn sàng để ra mắt, và bạn sẽ sớm có thể... Ôi không, một tai nạn đáng tiếc đã xảy ra. Bạn bị mắc kẹt bên trong một trò chơi – chính là trò chơi của BẠN. Và sau khi nhìn kỹ hơn... Đúng vậy, nó đã khác xưa, nhưng tại sao chứ? Hãy bắt đầu hành trình để khám phá xem tại sao, bằng cách nào, và ai đã thay đổi trò chơi của bạn, và quan trọng nhất là làm sao để thoát khỏi nơi này...
+ Trở thành một nhà phát triển trò chơi chưa bao giờ là một nhiệm vụ dễ dàng, nhưng cuối cùng thì trò chơi của bạn cũng đã sẵn sàng để ra mắt, và bạn sẽ sớm có thể... Ôi không, một tai nạn đáng tiếc đã xảy ra. Bạn bị mắc kẹt bên trong một trò chơi – chính là trò chơi của BẠN. Và sau khi nhìn kỹ hơn... Đúng vậy, nó đã khác xưa, nhưng tại sao chứ? Hãy bắt đầu hành trình để khám phá xem tại sao, bằng cách nào, và ai đã thay đổi trò chơi của bạn, và quan trọng nhất là làm sao để thoát khỏi nơi này...
 
 gametype: "Visual Novel"
 language: "Tiếng Việt"
