@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "16thelv"
 title: "[Việt Hóa] The Lust Voyage 1.05 - MDVH18"
 namebanner: "[Việt Hóa] The Lust Voyage 1.05 - [443MB]"
 mota: |
