@@ -1,11 +1,10 @@
 ---
 layout: game
+pitu_id: ""
 title: ""
 namebanner: ""
 mota: |
 
-
-infor: |
 
 gametype: "Visual Novel"
 language: "Tiếng Việt"
@@ -23,6 +22,7 @@ linktera: ""
 
 ---
 layout: game
+pitu_id:
 title: ""
 namebanner: ""
 mota: |
@@ -32,7 +32,6 @@ infor: |
 
 gametype: "Visual Novel"
 language: "English"
-mdvh18: ""
 platform: PC/APK"
 dungluong: ""
 phienban: ""
