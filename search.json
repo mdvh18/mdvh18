@@ -3,10 +3,10 @@ layout: null
 ---
 
 [
-{% for post in site.posts %}
-{
-  "title": "{{ post.title | escape }}",
-  "url": "{{ post.url | relative_url }}"
-}{% unless forloop.last %},{% endunless %}
+{% for page in site.pages %}
+  {
+    "title": "{{ page.title }}",
+    "url": "{{ page.url }}"
+  }
 {% endfor %}
 ]
