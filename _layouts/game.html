@@ -161,11 +161,25 @@ body {padding-top: 100px !important; }
     top: 50%;
     transform: translateY(-50%);    
 }
-.search-icon {
-    cursor: pointer;
-    font-size: 20px;
-    color: #fff;
-}        
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.search-item img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.search-item:hover {
+  background: rgba(212,72,127,0.15);
+}       
 .search-box {
     position: absolute;
     right: 0;
