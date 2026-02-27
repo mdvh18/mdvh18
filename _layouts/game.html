@@ -162,35 +162,45 @@ body {padding-top: 100px !important; }
     transform: translateY(-50%);
 }
 
-.nav-search input {
+.search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.search-box {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: none;
+}
+
+.search-box.active {
+    display: block;
+}
+
+.search-box input {
     padding: 6px 12px;
     border-radius: 20px;
     border: none;
     outline: none;
-    font-size: 14px;
-    width: 180px;
+    width: 200px;
 }
 
 .search-results {
-    position: absolute;
-    top: 40px;
-    right: 0;
     background: #1a1131;
-    width: 250px;
-    max-height: 300px;
-    overflow-y: auto;
+    margin-top: 8px;
     border-radius: 10px;
-    display: none;
-    padding: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 8px;
 }
 
 .search-results a {
     display: block;
+    padding: 6px 0;
     color: #fff;
     text-decoration: none;
-    padding: 6px 0;
-    font-size: 14px;
 }
 
 .search-results a:hover {
@@ -244,9 +254,13 @@ body {padding-top: 100px !important; }
             <li><a href="https://www.facebook.com/profile.php?id=61575869116469">Fanpage</a></li>
         </ul>
     <div class="nav-search">
-    <input type="text" id="search-input" placeholder="Tìm game...">
-    <div id="search-results" class="search-results"></div>
-</div>    
+    <div class="search-icon" id="search-toggle">🔍</div>
+
+    <div class="search-box" id="search-box">
+        <input type="text" id="search-input" placeholder="Tìm game...">
+        <div id="search-results" class="search-results"></div>
+    </div>
+</div>   
     </div>
 </header>
 <script>
@@ -629,34 +643,40 @@ let posts = [];
 
 fetch('{{ "/search.json" | relative_url }}')
   .then(res => res.json())
-  .then(data => posts = data);
+  .then(data => {
+    posts = data;
+    console.log("Loaded posts:", posts.length);
+  })
+  .catch(err => console.error("Search JSON lỗi:", err));
 
+const toggle = document.getElementById('search-toggle');
+const box = document.getElementById('search-box');
 const input = document.getElementById('search-input');
 const results = document.getElementById('search-results');
+
+toggle.addEventListener('click', () => {
+  box.classList.toggle('active');
+  input.focus();
+});
 
 input.addEventListener('input', function() {
   const query = this.value.toLowerCase();
   results.innerHTML = '';
 
-  if (query.length < 1) {
-    results.style.display = 'none';
-    return;
-  }
+  if (!query) return;
 
   const filtered = posts.filter(post =>
     post.title.toLowerCase().includes(query)
   );
 
-  filtered.slice(0,10).forEach(post => {
+  filtered.slice(0, 10).forEach(post => {
     const a = document.createElement('a');
     a.href = post.url;
     a.textContent = post.title;
     results.appendChild(a);
   });
-
-  results.style.display = 'block';
 });
-</script>    
+</script>   
 </body>
 <style>
     .footer-section {
