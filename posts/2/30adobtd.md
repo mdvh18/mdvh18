@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "30adobtd"
 title: "[Việt Hóa]  Adored by the Devil - MDVH18"
 namebanner: "[Việt Hóa]  Adored by the Devil - [6GB]"
 mota: |
