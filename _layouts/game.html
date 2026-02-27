@@ -205,18 +205,30 @@ body {padding-top: 100px !important; }
 }
 
 .search-results {
-    background: rgba(26,17,49,0.95);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.08);
-    margin-top: 10px;
-    border-radius: 16px;
-    max-height: 320px;
-    overflow-y: auto;
-    padding: 10px 14px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    animation: fadeIn 0.2s ease;
+  position: absolute;
+  width: 100%;
+  background: #1a1131;
+  border-radius: 12px;
+  margin-top: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 8px;
 }
-
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+}
+.search-item img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+}        
 .search-results a {
     display: block;
     padding: 8px 6px;
@@ -224,7 +236,9 @@ body {padding-top: 100px !important; }
     font-size: 14px;
     transition: all 0.2s ease;
 }
-
+.search-item:hover {
+  background: rgba(212,72,127,0.2);
+}
 .search-results a:hover {
     background: rgba(212,72,127,0.15);
     color: #ff7eb3;
@@ -672,43 +686,7 @@ function showLinks() {
 <script>
 window.onscroll = function() {
     var header = document.querySelector(".header-section"); if (window.pageYOffset > 50){header.classList.add("scrolled");}else {header.classList.remove("scrolled");}};
-</script>
-<script>
-let posts = [];
-
-fetch('{{ "/search.json" | relative_url }}')
-  .then(res => res.json())
-  .then(data => posts = data);
-
-const input = document.getElementById('search-input');
-const results = document.getElementById('search-results');
-
-input.addEventListener('input', function() {
-  const query = this.value.toLowerCase().trim();
-  results.innerHTML = '';
-
-  if (!query) {
-    results.style.display = 'none';
-    return;
-  }
-
-  const filtered = posts.filter(post => {
-    if (!post.title) return false;
-    return post.title.toLowerCase().includes(query);
-  });
-
-  console.log("Found:", filtered.length);
-
-  filtered.slice(0, 10).forEach(post => {
-    const a = document.createElement('a');
-    a.href = post.url;
-    a.textContent = post.title;
-    results.appendChild(a);
-  });
-
-  results.style.display = filtered.length ? 'block' : 'none';
-});
-</script>    
+</script>   
 </body>
 <style>
     .footer-section {
