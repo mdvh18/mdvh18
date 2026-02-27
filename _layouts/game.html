@@ -722,22 +722,32 @@ input.addEventListener('input', function() {
     a.href = post.url;
     a.classList.add("search-item");
 
-    // Lấy ảnh từ PITU_DATABASE dựa trên post.clean
+    // --- BƯỚC CHUẨN HÓA TIÊU ĐỀ ---
+    const cleanTitle = post.title
+        .replace(/\[.*?\]/g, "")      // Xóa [Việt Hóa], [ENG]...
+        .replace(/- MDVH18/gi, "")    // Xóa hậu tố MDVH18
+        .replace(/(SE|Full|Arc\s?\d+)/gi, "") // Xóa SE, Full, Arc 1, Arc 2...
+        .trim()
+        .toLowerCase();
+
+    // --- TÌM GAME TRONG DATABASE ---
     const game = PITU_DATABASE.find(item => {
         const dbName = item.name.toLowerCase();
-        return dbName.includes(post.clean) || post.clean.includes(dbName);
+        // So khớp 2 chiều: Tên DB chứa tiêu đề sạch HOẶC tiêu đề sạch chứa tên DB
+        return dbName.includes(cleanTitle) || cleanTitle.includes(dbName);
     });
 
-    const banner = game ? game.banner : "https://via.placeholder.com/50x50?text=No+Img"; // Ảnh mặc định nếu ko tìm thấy
+    const banner = game ? game.banner : "https://via.placeholder.com/100x60?text=No+Img";
 
     a.innerHTML = `
-      <div class="search-item-content" style="display:flex; align-items:center; gap:10px; padding:5px;">
-        <img src="${banner}" style="width:60px; height:35px; object-fit:cover; border-radius:4px;">
-        <span style="font-size:14px; color:#fff;">${post.title}</span>
-      </div>
+        <div class="search-item-inner" style="display:flex; align-items:center; gap:12px; padding:8px;">
+            <img src="${banner}" alt="" style="width:70px; height:40px; object-fit:cover; border-radius:4px; border:1px solid rgba(255,255,255,0.1);">
+            <span style="font-size:13px; color:#eee; line-height:1.4;">${post.title}</span>
+        </div>
     `;
+
     results.appendChild(a);
-  });
+});
 
   results.style.display = filtered.length ? 'block' : 'none';
 });
