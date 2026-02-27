@@ -37,8 +37,7 @@ function pituRender() {
             actualImg.width = 1093; 
             actualImg.height = 468;
             actualImg.style.width = "100%"; 
-            actualImg.style.height = "auto"; 
-            actualImg.style.objectFit = "cover";
+            actualImg.style.height = "100%"; 
             actualImg.style.display = "block"; // Đảm bảo không bị khoảng trống lạ
             
             console.log("Đã nạp ảnh vào thẻ img bên trong .game-banner");
