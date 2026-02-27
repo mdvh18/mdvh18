@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "32exaltation"
 title: "[ENG]  Exaltation! v1.1 - MDVH18"
 namebanner: "[ENG]  Exaltation! v1.1 - [764MB]"
 mota: |
