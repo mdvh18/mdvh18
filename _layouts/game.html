@@ -660,14 +660,20 @@ toggle.addEventListener('click', () => {
 });
 
 input.addEventListener('input', function() {
-  const query = this.value.toLowerCase();
+  const query = this.value.toLowerCase().trim();
   results.innerHTML = '';
 
-  if (!query) return;
+  if (!query) {
+    results.style.display = 'none';
+    return;
+  }
 
-  const filtered = posts.filter(post =>
-    post.title.toLowerCase().includes(query)
-  );
+  const filtered = posts.filter(post => {
+    if (!post.title) return false;
+    return post.title.toLowerCase().includes(query);
+  });
+
+  console.log("Found:", filtered.length);
 
   filtered.slice(0, 10).forEach(post => {
     const a = document.createElement('a');
@@ -675,6 +681,8 @@ input.addEventListener('input', function() {
     a.textContent = post.title;
     results.appendChild(a);
   });
+
+  results.style.display = filtered.length ? 'block' : 'none';
 });
 </script>   
 </body>
