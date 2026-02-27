@@ -1,0 +1,21 @@
+---
+layout: game
+pitu_id: "45yankany"
+title: "[ENG] Yandere Karyuki Nympho - MDVH18"
+namebanner: "[ENG] Yandere Karyuki Nympho v1.0 Demo - [1.45GB]"
+mota: |
+ Dưới bóng tối của một ngôi trường bổ túc, Karyuki – một cô gái mồ côi vốn ngây thơ và thuần khiết – đã biết đến hương vị tình yêu lần đầu tiên trong đời. Vì khao khát chiếm trọn trái tim của chàng trai đã đánh cắp tâm hồn mình, cô nhận ra bản thân sẵn sàng làm bất cứ điều gì: từ việc đánh đổi bản thân, bước qua những giới hạn cấm kỵ, dấn thân vào con đường tha hóa, cho đến việc đánh mất hoàn toàn lý trí. Đó là một sự trượt dài không thể cứu vãn, nơi sự ngây thơ biến thành điên loạn và tình yêu trở thành một nỗi ám ảnh mang tính hủy diệt. Bạn sẽ sẵn sàng đi xa đến mức nào để được yêu?
+
+infor: |
+ In the shadows of a night school, Karyuki an innocent and pure young orphan, experiences love for the first time. Obsessed with winning over the boy who stole her heart, she discovers she is willing to do *anything*: sell her body, cross forbidden boundaries, descend into utter depravity, and completely lose her sanity. An unstoppable descent where innocence transforms into madness and love becomes a destructive obsession. How far would you go to be loved?​
+gametype: "Visual Novel"
+language: "English, Spanish, Russian, Chinese, Portuguese, Japanese, Korean"
+platform: PC"
+dungluong: "1.45GB"
+phienban: "1.0 Demo"
+dev: "Raigen"
+genre: "2D, 3D, Adult, Animation, Anime, Eroge, Erotic, Romance, Visual Novel, Yandere"
+
+linkgofileapkpc: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9hTXlydWw="
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xenVUNTVfSUZZejRXS2lKWkpGci1Sdw=="
+---
