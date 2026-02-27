@@ -733,9 +733,15 @@ input.addEventListener('input', function() {
   a.classList.add("search-item");
 
   // tìm game trong PITU_DATABASE theo title
-  const game = PITU_DATABASE.find(item =>
-    post.title.toLowerCase().includes(item.name.toLowerCase())
-  );
+  const game = PITU_DATABASE.find(item => {
+  const cleanTitle = post.title
+    .replace(/\[.*?\]/g, "")   // bỏ [Việt Hóa]
+    .replace(/- MDVH18/gi, "") // bỏ - MDVH18
+    .trim()
+    .toLowerCase();
+
+  return cleanTitle.includes(item.name.toLowerCase());
+});
 
   const banner = game ? game.banner : "";
 
