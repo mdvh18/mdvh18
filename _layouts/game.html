@@ -172,23 +172,21 @@ body {padding-top: 100px !important; }
     transition: all 0.2s ease-in-out;
     display: inline-block;
 }
-.search-icon::before, 
-.search-icon::after {
-    content: none !important;
-    display: none !important;
-}
-
-/* Nếu cái icon cũ nằm trong thẻ <i> hoặc <span> bên trong .search-icon */
-.search-icon i, 
-.search-icon span {
-    display: none !important;
-}
 .search-icon:hover {
     color: #ff4757;
     text-shadow: 2px 2px 0px #fff, 4px 4px 15px rgba(255, 71, 87, 0.6);
     transform: translateY(-2px);
 }
+.search-icon::before, .search-icon::after,
+.search-toggle::before, .search-toggle::after {
+    content: none !important;
+    display: none !important;
+}
 
+/* Ẩn các thẻ icon Font Awesome cũ nếu có */
+.search-icon i, .search-toggle i {
+    display: none !important;
+}
 .search-box {
     position: absolute;
     right: 0;
