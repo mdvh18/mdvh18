@@ -163,18 +163,20 @@ body {padding-top: 100px !important; }
 }
 
 .search-icon {
-    content: "";
+    font-family: 'Bungee', sans-serif; /* Ép nó dùng font chính của bro */
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    /* Tạo hiệu ứng đổ bóng khối đặc trưng của Bungee */
+    text-shadow: 2px 2px 0px #ff4757, 4px 4px 0px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    background: url('https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png') no-repeat center;
-    background-size: contain;
 }
 
 .search-icon:hover {
-    color: #ff4fa3; /* Đổi sang màu hồng/tím khi hover */
-    transform: scale(1.2) rotate(10deg); /* Phóng to và xoay nhẹ */
-    text-shadow: 0 0 20px rgba(255, 79, 163, 0.8);
+    color: #ff4757;
+    text-shadow: 2px 2px 0px #fff, 4px 4px 15px rgba(255, 71, 87, 0.6);
+    transform: translateY(-2px);
 }
 
 .search-box {
