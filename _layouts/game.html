@@ -177,17 +177,6 @@ body {padding-top: 100px !important; }
     text-shadow: 2px 2px 0px #fff, 4px 4px 15px rgba(255, 71, 87, 0.6);
     transform: translateY(-2px);
 }
-#search-toggle::before, 
-#search-toggle::after,
-.search-icon::before, 
-.search-icon::after {
-    content: none !important;
-    display: none !important;
-}
-#search-toggle i, 
-.search-icon i {
-    display: none !important;
-}
 .search-box {
     position: absolute;
     right: 0;
@@ -327,8 +316,7 @@ body {padding-top: 100px !important; }
             <li><a href="https://www.facebook.com/profile.php?id=61575869116469">Fanpage</a></li>
         </ul>
     <div class="nav-search">
-    <div class="search-icon" id="search-toggle">🔍</div>
-
+    <div class="search-icon" id="search-toggle"></div>
     <div class="search-box" id="search-box">
         <input type="text" id="search-input" placeholder="Tìm game...">
         <div id="search-results" class="search-results"></div>
