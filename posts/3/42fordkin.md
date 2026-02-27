@@ -1,0 +1,20 @@
+---
+layout: game
+pitu_id: "42fordkin"
+title: "[Việt Hóa] Forbidden Kin SE - MDVH18"
+namebanner: "[Việt Hóa] Forbidden Kin SE  - [1.04GB]"
+mota: |
+ Bị bỏ lại một mình trước máy tính của Cody, Riley đã tình cờ phát hiện ra những bí mật thầm kín và nóng bỏng giữa hai anh em kế. Thật không may cho Riley, cô đã lún sâu vào việc lén lút tìm tòi quá mức so với những gì mình nên biết. Chuyện gì sẽ xảy ra khi cả ba người họ buộc phải đối diện với sự thật? Và mọi chuyện đã bắt đầu như thế nào? Hãy cùng tìm hiểu trong Forbidden Kin!
+
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "1.04GB"
+phienban: "SE"
+dev: "DKL"
+genre: "2DCG, Sound, Creampie, Group, Mastur, Toys"
+
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L0VON3VtRVFW"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xUTMzdDJyZmdpTGpUTElFQVg2Z19zZw=="
+---
