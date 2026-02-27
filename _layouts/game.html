@@ -713,45 +713,31 @@ toggle.addEventListener('click', () => {
 input.addEventListener('input', function() {
   const query = this.value.toLowerCase().trim();
   results.innerHTML = '';
+  if (!query) { results.style.display = 'none'; return; }
 
-  if (!query) {
-    results.style.display = 'none';
-    return;
-  }
-
-  const filtered = posts.filter(post => {
-    if (!post.title) return false;
-    return post.title.toLowerCase().includes(query);
-  });
-
-  console.log("Found:", filtered.length);
+  const filtered = posts.filter(post => post.title.toLowerCase().includes(query));
 
   filtered.slice(0, 10).forEach(post => {
+    const a = document.createElement('a');
+    a.href = post.url;
+    a.classList.add("search-item");
 
-  const a = document.createElement('a');
-  a.href = post.url;
-  a.classList.add("search-item");
+    // Lấy ảnh từ PITU_DATABASE dựa trên post.clean
+    const game = PITU_DATABASE.find(item => {
+        const dbName = item.name.toLowerCase();
+        return dbName.includes(post.clean) || post.clean.includes(dbName);
+    });
 
-  // tìm game trong PITU_DATABASE theo title
-  const game = PITU_DATABASE.find(item => {
-  const cleanTitle = post.title
-    .replace(/\[.*?\]/g, "")   // bỏ [Việt Hóa]
-    .replace(/- MDVH18/gi, "") // bỏ - MDVH18
-    .trim()
-    .toLowerCase();
+    const banner = game ? game.banner : "https://via.placeholder.com/50x50?text=No+Img"; // Ảnh mặc định nếu ko tìm thấy
 
-  return item.name.toLowerCase().includes(cleanTitle);
-});
-
-  const banner = game ? game.banner : "";
-
-  a.innerHTML = `
-    ${banner ? `<img src="${banner}" alt="">` : ""}
-    <span>${post.title}</span>
-  `;
-
-  results.appendChild(a);
-});
+    a.innerHTML = `
+      <div class="search-item-content" style="display:flex; align-items:center; gap:10px; padding:5px;">
+        <img src="${banner}" style="width:60px; height:35px; object-fit:cover; border-radius:4px;">
+        <span style="font-size:14px; color:#fff;">${post.title}</span>
+      </div>
+    `;
+    results.appendChild(a);
+  });
 
   results.style.display = filtered.length ? 'block' : 'none';
 });
