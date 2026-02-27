@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "36betfx"
 title: "[Việt Hóa] Betflix SE - MDVH18"
 namebanner: "[Việt Hóa] Betflix SE - [176MB]"
 mota: |
