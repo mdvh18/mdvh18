@@ -1,8 +1,8 @@
 ---
 layout: game
 pitu_id: ""
-title: ""
-namebanner: ""
+title: " - MDVH18"
+namebanner: "[Việt Hóa]  - [B]"
 mota: |
 
 
@@ -10,20 +10,20 @@ gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
 platform: "PC"
-dungluong: ""
+dungluong: "B"
 phienban: ""
 dev: ""
 genre: ""
 
-linkgofile: ""
-linkpixel: ""
-linktera: ""
+linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url="
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url="
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url="
 ---
 
 ---
 layout: game
-pitu_id:
-title: ""
+pitu_id: ""
+title: " - MDVH18"
 namebanner: ""
 mota: |
 
@@ -38,7 +38,7 @@ phienban: ""
 dev: ""
 genre: ""
 
-linkgofileapkpc: ""
-linkpixel: ""
-linkteraapkpc: ""
+linkgofileapkpc: "https://mdvh18.github.io/mdvh18/download.html?url="
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url="
+linkteraapkpc: "https://mdvh18.github.io/mdvh18/download.html?url="
 ---
