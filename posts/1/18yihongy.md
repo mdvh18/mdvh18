@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "18yihongy"
 title: "[Việt Hóa] Yihongyuan Full - MDVH18"
 namebanner: "[Việt Hóa] Yihongyuan Full - [327MB]"
 mota: |
