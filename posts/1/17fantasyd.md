@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "17fantasyd"
 title: "[Việt Hóa] Fantasy Date v0.43 - MDVH18"
 namebanner: "[Việt Hóa] Fantasy Date v0.43 - [860MB]"
 mota: |
