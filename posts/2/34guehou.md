@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "34guehou"
 title: "[ENG] Guest House v0.2.9 - MDVH18"
 namebanner: "[ENG] Guest House v0.2.9 - [1.7GB]"
 mota: |
