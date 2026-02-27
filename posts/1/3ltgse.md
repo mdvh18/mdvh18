@@ -1,5 +1,6 @@
 ---
 layout: game
+pitu_id: "3ltgse"
 title: "[Việt Hóa] Let It Go SE - MDVH18"
 namebanner: "[Việt Hóa] Let It Go SE - [470MB]"
 mota: |
