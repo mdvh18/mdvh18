@@ -1,0 +1,20 @@
+---
+layout: game
+pitu_id: "49gbetern"
+title: "[Việt Hóa] Goodbye Eternity 0.13.5 - MDVH18"
+namebanner: "[Việt Hóa] Goodbye Eternity 0.13.5 - [763MB]"
+mota: |
+ Sẽ ra sao nếu bạn có một cơ hội mới trong đời? Sẽ ra sao nếu bạn có thể biến nó trở nên tốt đẹp hơn tất cả những năm tháng khổ sở và bị chèn ép đã qua? Sẽ ra sao nếu bạn có thể đòi lại công bằng từ tất cả những kẻ từng đối xử tệ với mình và đạt được những gì bạn hằng khao khát... Bạn sẽ làm gì với cơ hội này khi tỉnh dậy trong một cơ thể trẻ trung, quay ngược về quá khứ của ba mươi năm trước? Lựa chọn hoàn toàn nằm ở bạn.
+
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "PC"
+dungluong: "763MB"
+phienban: "0.13.5"
+dev: "RNGuesX"
+genre: "2DCG, Adventure, Dating sim, Sandbox, MILF, School setting, Teasing, Romance, Animated, Tomboy"
+
+linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9WVHFlOWY="
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xVmc2bHhhdFYyTXJiNmg0aW1qUENlQQ=="
+---
