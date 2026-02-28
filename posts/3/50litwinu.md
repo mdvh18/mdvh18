@@ -1,0 +1,21 @@
+---
+layout: game
+pitu_id: "50litwinu"
+title: "[ENG] Little Witch Inuko - MDVH18"
+namebanner: "[ENG] Little Witch Inuko - [0.98GB]"
+mota: |
+ Hãy cùng Inuko tham gia vào trò chơi nhập vai thẻ bài Roguelite này khi cô ấy cố gắng chinh phục những tàn tích bí ẩn để đạt được danh hiệu phù thủy thực thụ! Hãy thu thập và kết hợp hàng loạt thẻ bài cũng như trang bị đa dạng để xây dựng và cá nhân hóa bộ bài chiến đấu của riêng bạn, rồi dùng sức mạnh đó để phá tan mọi trở ngại trong khu tàn tích!
+
+infor: |
+ Join Inuko in this card battle rogue-lite RPG as she tries to conquer the mysterious ruins to earn the rank of a full-fledged witch! Collect and combine a wide variety of cards and equipment to build and personalise your battle deck and blast your way through the ruins!​
+gametype: "RPG"
+language: "English, Japanese, Chinese"
+platform: PC"
+dungluong: "0.98GB"
+phienban: ""
+dev: "Flamme Soft"
+genre: "2DCG, Adventure, Group, Internal view, Japanese game, Le, Mastur, Monster, Rpg, Toys, Transformation, Turn based combat, Voiced"
+
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=https://pixeldrain.com/u/RaVneAgP"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xUXRiY1VNck1DOGRUSEl1NzRETzd2Zw=="
+---
