@@ -13,9 +13,13 @@
         .btn-manual { display: none; background: #f78f90; color: white; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
         .btn-manual:hover { background: #fff; color: #f78f90; box-shadow: 0 0 15px #f78f90; }
         
-        /* Toast thông báo Pixeldrain */
-        #pixeldrain-toast { position: fixed; bottom: 30px; right: 30px; background: #1a1131; color: #fff; padding: 20px; border: 2px solid #f78f90; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); z-index: 10000; font-family: "Segoe UI", sans-serif; max-width: 320px; animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        /* CSS dùng chung cho cả 2 loại Toast */
+        .toast-custom { position: fixed; bottom: 30px; right: 30px; background: #1a1131; color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); z-index: 10000; font-family: "Segoe UI", sans-serif; max-width: 320px; animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes slideIn { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        
+        /* Hiệu ứng Hover cho nút bấm trong Toast */
+        #pixeldrain-toast a:hover { background: #fff !important; color: #f78f90 !important; }
+        #terabox-toast a:hover { background: #fff !important; color: #54b5f5 !important; }
     </style>
 </head>
 <body>
@@ -42,19 +46,19 @@
                     // 1. Giải mã Base64
                     targetUrl = atob(encoded);
 
-                    // 2. XỬ LÝ FIX LINK CŨ: Nếu link chứa /mdvh18/ thì xóa nó đi
-                    // Ví dụ: https://mdvh18.github.io/mdvh18/game.html -> https://mdvh18.github.io/game.html
+                    // 2. Tự động sửa lỗi đường dẫn cũ (Nếu có)
                     if (targetUrl.includes('mdvh18.github.io/mdvh18/')) {
                         targetUrl = targetUrl.replace('mdvh18.github.io/mdvh18/', 'mdvh18.github.io/');
-                        console.log("Đã fix link cũ cho bro!");
                     }
 
-                    // 3. Kiểm tra Pixeldrain để hiện Toast
+                    // 3. Máy quét dịch vụ lưu trữ
                     if (targetUrl.includes('pixeldrain.com')) {
                         showPixeldrainFAQ();
+                    } else if (targetUrl.includes('terabox.com') || targetUrl.includes('teraboxapp.com') || targetUrl.includes('1024tera.com')) {
+                        showTeraboxFAQ();
                     }
 
-                    // 4. Chạy đếm ngược
+                    // 4. Đồng hồ đếm ngược
                     let timeLeft = 4;
                     const countdown = setInterval(() => {
                         timeLeft--;
@@ -74,9 +78,12 @@
                 boxEl.innerHTML = "<h3>LỖI ĐƯỜNG DẪN</h3><p>Không tìm thấy liên kết yêu cầu.</p>";
             }
 
+            // Hàm hiện thông báo Pixeldrain
             function showPixeldrainFAQ() {
                 const toast = document.createElement('div');
                 toast.id = 'pixeldrain-toast';
+                toast.className = 'toast-custom';
+                toast.style.border = '2px solid #f78f90';
                 toast.innerHTML = `
                     <div style="display:flex; align-items:center; margin-bottom:12px;">
                         <span style="font-size:24px; margin-right:10px;">🚀</span>
@@ -84,14 +91,38 @@
                     </div>
                     <p style="font-size:14px; line-height:1.5; margin-bottom:15px; color:#e0e0e0;">Link này có giới hạn 6GB/ngày. Bro nhớ xem FAQ để biết mẹo tải không giới hạn nhé!</p>
                     <div style="text-align:right;">
-                        <a href="https://mdvh18.blogspot.com/p/faq.html" target="_blank" style="background:#f78f90; color:#1a1131; padding:8px 15px; border-radius:20px; text-decoration:none; font-weight:bold; font-size:13px; display:inline-block;">XEM FAQ NGAY</a>
+                        <a href="https://mdvh18.blogspot.com/p/faq.html" target="_blank" style="background:#f78f90; color:#1a1131; padding:8px 15px; border-radius:20px; text-decoration:none; font-weight:bold; font-size:13px; display:inline-block; transition:0.3s;">XEM FAQ NGAY</a>
                     </div>`;
                 document.body.appendChild(toast);
-                
+                autoRemove(toast);
+            }
+
+            // Hàm hiện thông báo Terabox
+            function showTeraboxFAQ() {
+                if (document.getElementById('terabox-toast')) return;
+                const toast = document.createElement('div');
+                toast.id = 'terabox-toast';
+                toast.className = 'toast-custom';
+                toast.style.border = '2px solid #54b5f5';
+                toast.innerHTML = `
+                    <div style="display:flex; align-items:center; margin-bottom:12px;">
+                        <span style="font-size:24px; margin-right:10px;">☁️</span>
+                        <strong style="color:#54b5f5; font-size:16px;">Phát hiện Terabox!</strong>
+                    </div>
+                    <p style="font-size:14px; line-height:1.5; margin-bottom:15px; color:#e0e0e0;">Link Terabox đôi khi yêu cầu đăng nhập hoặc dùng App để tải nhanh hơn. Xem FAQ ngay!</p>
+                    <div style="text-align:right;">
+                        <a href="https://mdvh18.blogspot.com/p/faq.html" target="_blank" style="background:#54b5f5; color:#1a1131; padding:8px 15px; border-radius:20px; text-decoration:none; font-weight:bold; font-size:13px; display:inline-block; transition:0.3s;">XEM FAQ NGAY</a>
+                    </div>`;
+                document.body.appendChild(toast);
+                autoRemove(toast);
+            }
+
+            // Hàm tự xóa Toast
+            function autoRemove(el) {
                 setTimeout(() => {
-                    toast.style.transform = 'translateX(120%)';
-                    toast.style.transition = '0.8s ease-in';
-                    setTimeout(() => toast.remove(), 800);
+                    el.style.transform = 'translateX(120%)';
+                    el.style.transition = '0.8s ease-in';
+                    setTimeout(() => el.remove(), 800);
                 }, 10000);
             }
         })();
