@@ -9,8 +9,8 @@ mota: |
 infor: |
  You finally have a girlfriend… inside a video game! But she won’t let you leave. You’re trapped in SexSide, an adult game of alternate versions of your POSSESSIVE virtual girlfriend. Have sex with each one to uncover the hidden story and escape before she traps you—if you really want to leave.​
 gametype: "Visual Novel"
-language: "English"
-platform: PC/APK"
+language: "English +5"
+platform: PC"
 dungluong: "657MB"
 phienban: "1.0"
 dev: "Fantasy Games"
