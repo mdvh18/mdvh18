@@ -1,0 +1,21 @@
+---
+layout: game
+pitu_id: "46nemuiki"
+title: "[ENG] Sister Lv Nemuikizuna - MDVH18"
+namebanner: "[ENG] Sister Lv Nemuikizuna  v1.2.1 - [2.39GB]"
+mota: |
+ Tôi sẽ ở lại đây một tuần tính từ hôm nay. Thú thật là tôi cũng thấy hơi háo hức chờ xem điều gì sắp xảy ra. Vậy, bạn nghĩ điều gì sẽ diễn ra trong suốt bảy đêm tới? Ồ, tôi không thể ngăn mình cảm nhận được rằng một điều gì đó... thật khó quên... sắp sửa bắt đầu.
+
+infor: |
+ I'm staying here for a week starting today.  I'm kind of excited to see what's going to happen. So, what do you think is going to happen over the next seven nights? Well, I can't help but feel that something ...... is about to happen.​
+gametype: "Sandbox"
+language: "English, Japanese, Chinese (Traditional)"
+platform: PC"
+dungluong: "2.39GB"
+phienban: "1.2.1"
+dev: "Paper / ペーパー"
+genre: "3D game, Animated, Censored, Footjob, Groping, Japanese Game, Simulator, Sleep"
+
+linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L0ZFR2haOXY1"
+linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xTmptZkZfUUg4eE8tQ0dTclp4WWYwUQ=="
+---
