@@ -1,0 +1,22 @@
+---
+layout: game
+pitu_id: "54forbpass"
+title: "[ENG] Forbidden Passion - MDVH18"
+namebanner: "[ENG] Forbidden Passion 0.14.0 FP - [2GB]"
+mota: |
+ Forbidden Passion kể về câu chuyện của một chàng trai trẻ vừa bị đuổi ra khỏi nhà và giờ đây phải xoay xở với cuộc sống hỗn loạn này, đồng thời phải chăm sóc người phụ nữ cùng những người mà anh yêu thương nhất. Liệu anh sẽ đầu hàng trước hoàn cảnh ngặt nghèo và tình huống tồi tệ, hay sẽ đứng dậy để đương đầu với thử thách? Lựa chọn đó nằm ở bạn, và chỉ riêng bạn mà thôi.
+
+infor: |
+ Forbidden Passion is about the story of a young man who's been kicked out of his house and now has to manage this chaotic life, while having to take care of the woman and people he loves the most. Will he succumb to his condition and bad situation or will he rise up to the challenge? The choice is yours and yours alone.​
+gametype: "Visual Novel"
+language: "English"
+platform: PC/APK"
+dungluong: "2GB"
+phienban: "0.14.0 FP"
+dev: "PPanGames"
+genre: "3DCG, Corruption, Milf, Mobile Game, Romance, Dating sim, Groping, Pov"
+
+linkpixelapk: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91LzQ5anViSzJ3"
+linkpixelpc: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L1RGaFJVWDE2"
+linkteraapkpc: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xNkh1dzZad2JFZmZoMW1FUWI2SFRidw=="
+---
