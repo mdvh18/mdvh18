@@ -284,7 +284,7 @@ body {padding-top: 100px !important; }
   height: 80px;
   object-fit: cover;
   border-radius: 6px;
-} 
+}
 .header-section.scrolled {
     padding: 5px 0 0 0 !important;
     background-color: rgba(26, 17, 49, 0.85) !important;
@@ -309,7 +309,9 @@ body {padding-top: 100px !important; }
     margin-bottom: 0 !important;}
 .header-section.scrolled .sub-nav-list {
     gap: 30px !important;}
-.mini-search {
+</style>
+<style>
+ .mini-search {
   position: relative;
   max-width: 400px;
   margin: 20px auto;
@@ -349,6 +351,7 @@ body {padding-top: 100px !important; }
 html, body {cursor: url('https://blogger.googleusercontent.com/img/a/AVvXsEipr6p4gjZul4ynlzzBipglZi3CB1MZIQirIyvohAJFvTIAYcY6sk_bsw0TV6zKgLVBFngYad_nIR2OpgR_ljWRI-3Ek3RrnZf0ySZglXIVP_pe92N__nDGK3N5rkPnDIhKT0wVLeP887fycw8bhGmx-HMtN04ymA_oQD503dE3YOx5AzFTM6zyJ6nbcPE=s16000'), auto !important;}
 html.wait, html.wait * {cursor: url('https://blogger.googleusercontent.com/img/a/AVvXsEjHfdVlkVFvJcgzXFEyfUAzSUHT3SBas8zNXwo1jIAJLZdavi7nOETD_vRmSjooGXx79kNY5iXtiI9uid6ylmkdRW-TJKxheObPN8KBe5TE-t0-SVlgf4fKkaL-AUKuY3ku36E2PplhYo0ADmbW7a1nnGR9Y2TAymy8XETFnOqAPT1urt0y7vTj47acupc=s16000'), wait !important;}
 a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercontent.com/img/a/AVvXsEh4YJIj5s0o26hGviEV5RENQVRW4BX9TIpm-vOzx2hJ4qYorV44U4pxixl6fpPvMXvGO78n72VHXPHzs5-egyIY8OpkaWTs_Uihwy5BZLjxciB-YjGwAkADh3QpLx6lyy0VIxQx2386pqjwIq2RCRSGqQYYkQgkNu6HlQ0HA6rYjZ7Dej682fHloqQfaos=s16000'), pointer !important;}
+
 .hero-slider {
   position: relative;
   max-width: 1080px; /* Bóp chiều rộng đúng 1080px */
@@ -472,7 +475,7 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
 .nav:hover { background: rgba(255,255,255,0.3); }
 .prev { left: 15px; }
 .next { right: 15px; }
-<footer style="text-align: center; margin-top: 50px; padding: 20px; color: #666; font-size: 12px;">© 2026 MDVH18 - Dịch Thuật</footer></div>
+
 .footer-section {
         background-color: #1a1a1a;
         padding: 40px 20px 20px 20px;
@@ -551,43 +554,3 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
 @media (max-width: 1100px) {
     .megumin-left {
         display: none;}}
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fff;
-    text-transform: uppercase;
-    background: radial-gradient(circle, #241032, #4a1e4c, #752b62, #a43973, #d4487f);
-    box-shadow: 0 0 15px rgba(230,100,101,.6),
-                0 0 35px rgba(215,155,187,.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(30px) scale(1);
-    transition: all .4s cubic-bezier(.2,.8,.2,1);
-    z-index: 9999;}
-#back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0) scale(1);
-    /* Lưu ý: animeFloat sẽ được kết hợp ở đây */
-    animation: animeFloat 2.5s ease-in-out infinite;}
-#back-to-top:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 25px #f78f90,
-                0 0 50px #D79BBB;}
-@keyframes animeFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }}
-<button id='back-to-top'>.&#10022; &#1857;&#726; Top</button>
