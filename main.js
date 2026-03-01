@@ -1,29 +1,25 @@
 function pituRender() {
-    // 1. Tự động biến DIV thành MAIN (giữ nguyên code của bro)
-    const wrapper = document.querySelector('.main-container'); 
-    if (wrapper && wrapper.tagName !== 'MAIN') {
-        const mainElement = document.createElement('main');
-        mainElement.innerHTML = wrapper.innerHTML;
-        mainElement.className = wrapper.className;
-        wrapper.parentNode.replaceChild(mainElement, wrapper);
-    }
-
-    // 2. Lấy ID chuẩn: Cắt bỏ đuôi .html
-    const path = window.location.pathname;
-    const filename = path.split("/").filter(Boolean).pop(); 
+    // 1. Lấy toàn bộ đường dẫn, lọc bỏ các phần rỗng
+    const pathSegments = window.location.pathname.split("/").filter(Boolean);
     
-    // SỬA DÒNG NÀY: Nếu có filename thì chặt đôi tại dấu chấm, lấy phần đầu
-    const currentPageId = filename ? filename.split('.')[0] : "index";
+    // 2. Lấy phần tử cuối cùng (chính là 'agoat')
+    let filename = pathSegments.pop() || "index";
     
-    console.log("Dò ID game thực tế:", currentPageId);
+    // 3. Xử lý xóa đuôi .html nếu lỡ còn sót lại
+    const currentPageId = filename.replace(".html", "");
+    
+    console.log("ID Game chốt hạ:", currentPageId);
 
-    // 3. Tìm trong Database
+    // 4. Tìm trong Database (PITU_DATABASE)
     const game = PITU_DATABASE.find(item => item.id === currentPageId);
     
     if (!game) {
-        console.error("Lỗi: Không tìm thấy data cho ID '" + currentPageId + "'");
+        console.error("Lỗi: Không tìm thấy game có ID '" + currentPageId + "' trong pitumdgame.js");
         return;
     }
+
+    // ... (Phần đổ ảnh Banner và Previews giữ nguyên) ...
+}
     // 3. Đổ Banner
     // --- CÁCH 2: TÌM THẺ IMG BÊN TRONG CLASS GAME-BANNER ---
     const bannerWrapper = document.querySelector('.game-banner');
