@@ -402,10 +402,11 @@ h1, h2, h3, h4, span, p, div {
 .hero-slider {
     max-width: 1080px !important;
     height: 420px !important;
-    margin: 20px 30px !important; /* Tạo khoảng cách với Header */
+    margin: 20px auto !important; /* Tạo khoảng cách với Header */
     overflow: hidden;
     border-radius: 20px;
     position: relative;
+    margin-bottom: 100px !important;
     z-index: 1; /* Nằm dưới Menu */
     cursor: pointer !important;
 }
