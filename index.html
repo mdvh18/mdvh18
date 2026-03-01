@@ -71,14 +71,12 @@ layout: default
 
 {% assign posts = site.posts | limit: 5 %}
 
-{% assign posts = site.posts | limit: 5 %}
-
 <section class="hero-slider">
   <div class="slides">
 
     {% for post in site.posts limit:5 %}
 <div class="slide">
-  <img class="slide-img" data-pitu="{{ post.pitu_id }}" alt="{{ post.title }}">
+  <img class="slide-img" data-pitu="{{ post.pitu_id }}" alt="{{ post.namebanner }}">
 
   <div class="slide-content">
     <h2>{{ post.namebanner }}</h2>
