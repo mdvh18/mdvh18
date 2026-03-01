@@ -466,9 +466,11 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
 .game-card:hover { transform: scale(1.02); }
 
 .card-thumb {
+    position: relative; /* Thằng cha phải là relative */
     width: 100%;
     aspect-ratio: 16 / 9;
-    background: #12091d; /* Nền tối khi chưa có ảnh */
+    background: #12091d;
+    overflow: hidden;
 }
 .card-thumb img {
     width: 100%;
@@ -479,13 +481,17 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
 /* Badge ngôn ngữ */
 .card-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(0,0,0,0.7);
+    top: 10px;    /* Cách trên 10px */
+    left: 10px;   /* Cách trái 10px */
+    background: rgba(212, 72, 127, 0.85); /* Màu hồng đặc trưng của bro */
     color: #fff;
-    padding: 2px 8px;
-    font-size: 12px;
-    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 5;
+    text-transform: uppercase; /* Viết hoa cho chuyên nghiệp */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 /* Thông tin game */
