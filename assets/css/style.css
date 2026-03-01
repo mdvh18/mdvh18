@@ -375,7 +375,7 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     z-index: 1; /* Nằm dưới Menu */
     cursor: pointer !important;
 }
