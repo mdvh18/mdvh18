@@ -1,4 +1,4 @@
 title: MDVH18
 markdown: kramdown
 baseurl: ""
-permalink: /:pitu_id
+permalink: /:pitu_id/
