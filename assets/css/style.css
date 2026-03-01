@@ -16,6 +16,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.main-content-wrapper {
+    width: 100%;
+    overflow: hidden; /* Chặn đứng vạch đen tràn lề */
+    background: transparent;
+}
    .header-section {
     background: linear-gradient(to bottom, #12091d, #1b0e2a) !important;
     position: fixed !important;
@@ -442,36 +447,33 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
 /* Khung Grid chính */
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cột chuẩn đét */
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    gap: 20px;
     padding: 20px;
-    max-width: 1200px; /* Bóp lại cho vừa mắt */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Từng ô bài viết */
 .game-card {
-    background: #241032;
+    background: #1b0f2b;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
     border-bottom: 4px solid #d4487f;
-    display: flex;
-    flex-direction: column;
 }
 
 .game-card:hover { transform: scale(1.02); }
 
 .card-thumb {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Giữ tỉ lệ ảnh không bị méo */
-    background: #000;
+    aspect-ratio: 16 / 9;
+    background: #12091d; /* Nền tối khi chưa có ảnh */
 }
 .card-thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 /* Badge ngôn ngữ */
@@ -488,22 +490,20 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
 
 /* Thông tin game */
 .card-info {
-    padding: 8px 10px;
-    background: rgba(212, 72, 127, 0.1);
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
+    padding: 12px;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
+    background: #241032;
 }
 
 .card-info h3 {
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
-    margin: 5px 0;
-    height: 40px;
+    margin: 0;
+    font-weight: 500;
+    /* Giới hạn 1 dòng cho đẹp */
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-size {
