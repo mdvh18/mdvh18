@@ -11,7 +11,7 @@ function pituRender() {
     // Cách này sẽ lấy chính xác cái tên file cuối cùng, bất chấp thư mục sâu bao nhiêu
     const path = window.location.pathname;
     const filename = path.split("/").filter(Boolean).pop(); // Lấy phần cuối cùng của path
-    const currentPageId = filename ? filename.replace(".html", "") : "index";
+    const currentPageId = filename ?;
     
     console.log("Dò ID game:", currentPageId);
 
