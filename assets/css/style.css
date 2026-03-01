@@ -40,7 +40,6 @@ body {
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -177,7 +176,6 @@ body {
 /* 1. Khung chứa Icon - Căn giữa tuyệt đối */
 .search-icon {
     font-family: 'Bungee', sans-serif; /* Giữ font đồng bộ */
-    cursor: pointer;
     font-size: 26px; /* Chỉnh kích thước icon vừa tầm */
     color: #fff;
     width: 40px;
@@ -359,7 +357,6 @@ body {
 
 .search-results div {
   padding: 10px;
-  cursor: pointer;
   transition: 0.2s;
 }
 
@@ -377,6 +374,7 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
     overflow: hidden;
     border-radius: 20px;
     position: relative;
+    margin-bottom: 20px;
     z-index: 1; /* Nằm dưới Menu */
 }
 
@@ -625,7 +623,6 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  cursor: pointer;
   z-index: 10;
   transition: 0.3s;
 }
@@ -697,7 +694,6 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
         color: white;
         font-weight: bold;
         box-shadow: 0 0 15px rgba(247,143,144,0.5);
-        cursor: pointer;
         text-decoration: none;}
     @media (max-width: 768px) {
         .footer-char { display: none; }
@@ -729,7 +725,6 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
     height: 70px;
     border-radius: 50%;
     border: none;
-    cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 700;
