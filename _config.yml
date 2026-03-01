@@ -1,5 +1,5 @@
 title: MDVH18
 markdown: kramdown
 baseurl: ""
-permalink: /:title.html
+permalink: /:pitu_id.html
 exclude: [README.md, Gemfile, Gemfile.lock]
