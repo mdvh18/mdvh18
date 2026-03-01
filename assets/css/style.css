@@ -26,6 +26,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     padding: 10px 0 0 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    cursor: pointer !important;   
 }
 .brand-container {
     display: flex;
@@ -376,6 +377,7 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
     position: relative;
     margin-bottom: 20px;
     z-index: 1; /* Nằm dưới Menu */
+    cursor: pointer !important;
 }
 
 .slides {
@@ -604,6 +606,7 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
   background: #5a0078;
   color: #ffffff;
   border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer !important;  
 }
 
 .btn:hover {
