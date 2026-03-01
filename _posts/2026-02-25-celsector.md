@@ -1,6 +1,6 @@
 ---
 layout: game
-pitu_id: "28celsector"
+pitu_id: "celsector"
 title: "[ENG] CelSector v1.1.1 - MDVH18"
 namebanner: "[ENG] CelSector v1.1.1 - [489MB]"
 mota: |
