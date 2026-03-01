@@ -557,6 +557,7 @@ a, button, .image-grid img, .hentry {cursor: url('https://blogger.googleusercont
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
 .card-size {
