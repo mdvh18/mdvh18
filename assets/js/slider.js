@@ -26,3 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(nextSlide, 5000);
 });
+document.querySelectorAll('.slide-img').forEach(img => {
+  const id = img.dataset.pitu;
+  const game = PITU_DATABASE.find(item => item.id === id);
+  const banner = game ? game.banner : "https://via.placeholder.com/800x400?text=No+Image";
+  img.src = banner;
+});
