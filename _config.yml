@@ -2,3 +2,8 @@ title: MDVH18
 markdown: kramdown
 baseurl: ""
 permalink: /:title/
+plugins:
+  - jekyll-paginate
+
+paginate: 21
+paginate_path: "/page:num/"
