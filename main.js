@@ -57,37 +57,5 @@ function pituRender() {
         }
     });
 }
-function pituRender() {
-    // 1. Lấy đường dẫn hiện tại
-    const path = window.location.pathname;
-    
-    // 2. Bóc tách lấy cái tên file cuối cùng
-    const filename = path.split("/").filter(Boolean).pop(); 
-    
-    // 3. FIX CHÍ MẠNG Ở ĐÂY:
-    // Phải xóa sạch cái đuôi .html thì nó mới ra chữ "agoat" để đi search Database
-    const currentPageId = filename ? filename.replace(".html", "") : "index";
-    
-    console.log("ID dùng để search Database là:", currentPageId);
-
-    // 4. Đi tìm trong PITU_DATABASE
-    const game = PITU_DATABASE.find(item => item.id === currentPageId);
-    
-    if (!game) {
-        // Nếu vẫn báo lỗi này, bro check xem file pitumdgame.js đã nạp CHƯA
-        console.error("Lỗi: PITU_DATABASE không có bản ghi nào tên là '" + currentPageId + "'");
-        return;
-    }
-
-    // Đổ ảnh vào (giữ nguyên logic cũ của bro)
-    const bannerWrapper = document.querySelector('.game-banner');
-    if (bannerWrapper) {
-        const actualImg = bannerWrapper.querySelector('img');
-        if (actualImg) {
-            actualImg.src = game.banner;
-            actualImg.alt = game.name;
-        }
-    }
-}
 
 document.addEventListener('DOMContentLoaded', pituRender);
