@@ -67,6 +67,8 @@ layout: default
 </header>
 </head>
 <body> 
+<script src="{{ site.baseurl }}/pitumdgame.js"></script>
+<script src="{{ site.baseurl }}/main.js"></script>      
 {% assign posts = site.posts | limit: 5 %}
 
 <section class="hero-slider">
@@ -81,8 +83,8 @@ layout: default
            alt="{{ post.title }}">
 
       <div class="slide-content">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.description }}</p>
+        <h2>{{ post.nambanner }}</h2>
+        <p>{{ post.mota }}</p>
 
         <div class="buttons">
           <a href="{{ post.url | relative_url }}" class="btn view">Xem bài</a>
@@ -172,9 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </footer>
  <script src="{{ '/assets/js/slider.js' | relative_url }}"></script>   
-</body>
-<script src="{{ site.baseurl }}/pitumdgame.js"></script>
-<script src="{{ site.baseurl }}/main.js"></script>      
+</body>    
 <script>
 function showLinks() {
     document.getElementById("real-links").style.display = "block"; document.getElementById("btn-show").style.display = "none";}
