@@ -59,7 +59,6 @@ function pituRender() {
     });
 }
 
-window.onload = function() {
-    console.log("Mọi dữ liệu đã tải xong! Bắt đầu đổ ảnh...");
+window.onload = pituRender;
     pituRender();
 };
