@@ -1,3 +1,4 @@
 title: MDVH18
 markdown: kramdown
 baseurl: ""
+permalink: /:title/
