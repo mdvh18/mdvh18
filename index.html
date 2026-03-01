@@ -79,7 +79,7 @@ layout: default
     {% for post in posts %}
     <div class="slide">
 
-      {% assign first_image = post.content | split:'<img' | last | split:'src="' | last | split:'"' | first %}
+      {% assign first_image = post.pitu_id | split:'<img' | last | split:'src="' | last | split:'"' | first %}
       {% assign final_image = post.thumbnail | default: first_image | default: '/assets/images/default.jpg' %}
 
       <img src="{{ final_image | relative_url }}" alt="{{ post.title }}">
