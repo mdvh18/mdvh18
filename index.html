@@ -76,17 +76,13 @@ layout: default
 <section class="hero-slider">
   <div class="slides">
 
-    {% for post in posts %}
-    <div class="slide">
+    {% for post in site.posts limit:5 %}
+<div class="slide">
+  <img class="slide-img" data-pitu="{{ post.pitu_id }}" alt="{{ post.title }}">
 
-      {% assign first_image = post.pitu_id | split:'<img' | last | split:'src="' | last | split:'"' | first %}
-      {% assign final_image = post.thumbnail | default: first_image | default: '/assets/images/default.jpg' %}
-
-      <img src="{{ final_image | relative_url }}" alt="{{ post.title }}">
-
-      <div class="slide-content">
-        <h2>{{ post.namebanner }}</h2>
-        <p>{{ post.mota }}</p>
+  <div class="slide-content">
+    <h2>{{ post.namebanner }}</h2>
+    <p>{{ post.mota }}</p>
 
         <div class="buttons">
           <a href="{{ post.url | relative_url }}" class="btn view">Xem bài</a>
