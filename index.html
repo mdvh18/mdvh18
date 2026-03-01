@@ -63,29 +63,7 @@ layout: default
         <div id="search-results" class="search-results"></div>
     </div>
 </div>    
-    </div>
-<div id="slider">
-  <div id="slides" class="slides">
-    {% for post in site.posts %}
-      {% if post.featured == true %} <div class="item">
-        <div class="backdrop" style="background-image:url('{{ post.thumbnail }}')"></div>
-        <div class="info">
-          <a class="watch" href="{{ post.url }}">Download</a>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p>{{ post.description | truncate: 150 }}</p>
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-
-  <div id="left-button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-  </div>
-  <div id="right-button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-  </div>
-</div>    
+    </div>   
 </header>
 </head>
 <body>
