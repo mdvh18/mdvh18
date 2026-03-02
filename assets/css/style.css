@@ -734,6 +734,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     margin-right: 15px;
     margin-bottom: 4px;
     white-space: nowrap;
+    align-item: center;
     box-shadow: 0 0 10px #d4487f;}
 
 .notice-text {flex-grow: 1;
@@ -742,7 +743,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     overflow: hidden;
     white-space: nowrap;}
 
-.notice-text b {color: #d4487f; text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);}
+.notice-text b {color: #d4487f; align-item: center; text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);}
 
 .notice-link {color: #a43973;
     text-decoration: none;
