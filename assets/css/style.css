@@ -377,7 +377,6 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     color: white;
     display: flex;
     align-items: flex-end;            
-    justify-content: space-between;
     box-sizing: border-box !important;
     z-index: 10;}
 
@@ -390,6 +389,15 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     text-align: center !important;
     font-weight: bold;
     padding-bottom: 3px !important;}
+
+.slide-content p {font-size: 18px !important;
+    margin: 0 !important;
+    letter-spacing: 1px;
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative !important; 
+    text-align: center !important;
+    font-weight: bold;}
 
 .btn.view {background: #5a0078;
     color: #fff;
