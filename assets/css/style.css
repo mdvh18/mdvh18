@@ -353,57 +353,57 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     margin-bottom: 40px !important;
     z-index: 1;
     cursor: pointer !important;
-    /* THÊM VIỀN TÍM NEON BÊN NGOÀI */
-    border: 3px solid #d4487f; 
+    border: 3px solid #d4487f; /* Viền tím của bro */
     box-shadow: 0 0 20px rgba(212, 72, 127, 0.5);
 }
-.slide img {width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;}
-/* --- NỘI DUNG TRONG SLIDE (CONTAINER CHUNG) --- */
+
+.slides {
+    display: flex; 
+    height: 100%; 
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+    min-width: 100%; 
+    position: relative; 
+    height: 100%;
+}
+
+/* --- GIỮ NGUYÊN ẢNH KHÔNG CHO HỎNG --- */
+.slide img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Quan trọng nhất để không méo ảnh */
+    display: block;
+}
+
+/* --- NỘI DUNG (CHO NỔI LÊN) --- */
 .slide-content {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    /* Tăng padding để đẩy nội dung vào trong, không sát mép */
-    padding: 20px 40px; 
-    /* Gradient bao phủ toàn bộ đáy slide */
-    background: linear-gradient(to top, rgba(36, 16, 50, 0.95) 0%, rgba(36, 16, 50, 0.4) 70%, transparent 100%);
+    padding: 30px 40px;
+    /* Gradient tối hơn ở đáy để h2 và p không bị chìm */
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
     color: white;
-    display: flex;
-    align-items: flex-end; /* Căn các thành phần xuống đáy */
+    display: flex;    
+    align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     z-index: 10;
 }
 
-/* --- TIÊU ĐỀ GAME (H2) --- */
+/* --- TIÊU ĐỀ H2 (FIX MẤT CHỮ) --- */
 .slide-content h2 {
-    font-size: 26px;
-    margin: 0 0 10px 0; /* Cách dòng p một chút */
+    font-size: 26px !important;
+    margin: 0 0 5px 0 !important;
     letter-spacing: 1px;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    /* Bỏ position absolute ở đây để nó đi theo dòng chảy tự nhiên */
-    position: relative; 
-    text-align: left;
-    width: auto;
-    z-index: 11;
-}
-
-/* --- ĐOẠN MÔ TẢ (P) --- */
-.slide-content p {
-    font-size: 14px;
-    margin: 5px 0 0 0;
-    opacity: 0.9;
-    max-width: 70%; /* Giới hạn để không đè vào nút bấm */
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Cho hiện 2 dòng cho rõ */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Không dùng absolute ở h2 nữa để nó nằm chung với p */
+    position: static !important; 
+    text-align: left !important;
 }
 
 /* --- NÚT XEM BÀI (SIUUU TO) --- */
@@ -417,7 +417,6 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     font-size: 16px;
     transition: 0.3s;
     border: 2px solid #d4487f;
-    cursor: pointer;
     white-space: nowrap; /* Không cho chữ nhảy dòng */
     z-index: 9999;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
