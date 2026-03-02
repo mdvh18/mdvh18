@@ -105,10 +105,9 @@ function toggleMenu() {
 // 6. Máy lọc link Redirect (MDVH18)
 (function() {
     const currentUrl = window.location.href;
-    if (currentUrl.includes('/mdvh18/')) {
-        const newUrl = currentUrl.replace('/mdvh18/', '/');
-        window.location.replace(newUrl);
-    }
+    if (window.location.pathname === '/mdvh18/') {
+  window.location.replace('/');
+}
 })();
 
 // 7. Chống copy/Redirect tên miền (Đoạn mã hóa hex của bro)
