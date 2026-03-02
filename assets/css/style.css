@@ -45,8 +45,7 @@ body {margin: 0;
     white-space: nowrap; 
     line-height: 1;}
 
-/* ================= MENU TRIGGER ================= */
-
+/* --- NÚT TRIGGER (BA GẠCH) --- */
 .menu-trigger {
     position: absolute;
     left: 30px;
@@ -61,6 +60,7 @@ body {margin: 0;
 }
 
 .menu-trigger span {
+    display: block;
     width: 35px;
     height: 3px;
     background: #ffffff;
@@ -72,33 +72,28 @@ body {margin: 0;
     box-shadow: 0 0 8px rgba(212, 72, 127, 0.8);
 }
 
-
-/* ================= MENU CONTAINER ================= */
-
+/* --- KHUNG CHỨA MENU (MENU-CONTAINER) --- */
 .menu-container {
     position: absolute;
     left: 20px;
-    top: 60px;
+    top: 50px; /* Chỉnh lại cho sát nút trigger */
     z-index: 10002;
-    padding-top: 15px;
-
+    padding-top: 15px; /* Cầu nối để di chuột không bị mất menu */
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; /* Chỉ dùng opacity để hiện hình, không dùng transform trượt xuống */
 }
 
-/* Hover mở menu */
+/* HIỆN MENU KHI HOVER */
 .menu-trigger:hover ~ .menu-container,
 .menu-container:hover {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-
-/* ================= DROPDOWN BOX ================= */
-
+/* --- NỘI DUNG DROPDOWN --- */
 .dropdown-content {
-    background: #111;
+    background: #111111 !important;
     width: 280px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -116,19 +111,11 @@ body {margin: 0;
     background: #151515;
 }
 
-.dropdown-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+.dropdown-content ul { list-style: none; padding: 0; margin: 0; }
+.dropdown-content li { border-bottom: 1px solid #1a1a1a; position: relative; }
 
-.dropdown-content li {
-    border-bottom: 1px solid #1a1a1a;
-    position: relative;
-}
-
-.dropdown-content li > a {
-    color: #fff;
+.dropdown-content li a {
+    color: #ffffff !important;
     padding: 14px 25px;
     display: block;
     font-weight: 600;
@@ -137,58 +124,52 @@ body {margin: 0;
     transition: 0.3s ease;
 }
 
-.dropdown-content li > a:hover {
+.dropdown-content li a:hover {
     background: rgba(212, 72, 127, 0.1);
-    color: #d4487f;
+    color: #d4487f !important;
     padding-left: 35px;
 }
+
+/* --- XỬ LÝ SUB-MENU (TRƯỢT TRÁI QUA PHẢI) --- */
+.has-sub { overflow: visible !important; }
+
 .sub-wrapper {
-    position: absolute;
-    left: 0;
-    top: 100%;
-
-    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
     background: #0a0a0a;
-    border-left: 3px solid #d4487f;
-
-    opacity: 0;
-    pointer-events: none;
+    border-left: 3px solid #d4487f; /* Vạch hồng bên trái menu con */
+    transition: max-height 0.4s ease-out; /* Chỉ bung chiều cao, không trượt dọc */
 }
 
-.has-sub {
-    position: relative;
-}
-/* hover cha thì hiện wrapper */
 .has-sub:hover .sub-wrapper {
+    max-height: 600px; /* Cho phép bung hết cỡ */
     opacity: 1;
-    pointer-events: auto;
 }
-/* item con trượt ngang */
+
 .sub-item {
-    display: block;
-    padding: 10px 25px 10px 35px;
-    color: #aaa;
-    font-size: 13px;
+    display: block !important;
+    padding: 10px 25px 10px 35px !important;
+    color: #aaa !important;
+    font-size: 13px !important;
     text-decoration: none;
-
-    transform: translateX(-25px);
+    /* GỐC: Nằm lệch sang trái 25px */
+    transform: translateX(-25px); 
     opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* hover vào cha thì item trượt vào */
+/* HIỆU ỨNG TRƯỢT SANG PHẢI KHI HOVER VÀO CHA */
 .has-sub:hover .sub-item {
-    transform: translateX(0);
+    transform: translateX(0); /* Bò về vị trí cũ */
     opacity: 1;
 }
 
-
-/* hover từng item */
+/* Khi hover trực tiếp vào chính cái sub-item */
 .sub-item:hover {
-    color: #d4487f;
-    background: #151515;
-    padding-left: 45px;
-    transform: translateX(5px);
+    color: #d4487f !important;
+    background: #151515 !important;
+    padding-left: 45px !important;
 }
 
 .sub-nav-wrapper {background: linear-gradient(135deg,#241032,#d4487f) bottom / 100% 3px no-repeat;
