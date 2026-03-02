@@ -193,6 +193,7 @@ body {margin: 0;
     justify-content: center !important;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
+    margin-left: 50px;
     user-select: none;}
 
 .search-icon::before, 
@@ -246,7 +247,7 @@ body {margin: 0;
     border-radius: 30px;
     border: 1px solid rgba(255,255,255,0.15);
     outline: none;
-    width: 220px;
+    width: 400px;
     background: rgba(255,255,255,0.08);
     color: #fff;
     backdrop-filter: blur(10px);
