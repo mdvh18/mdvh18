@@ -48,15 +48,23 @@
         }
 
         // TỰ ĐỘNG: Load khi cuộn chuột
-        window.addEventListener('scroll', () => {
-            if (CONFIG.currentShown < items.length) {
-                const triggerPoint = window.innerHeight + window.scrollY;
-                if (triggerPoint >= document.body.offsetHeight - 500) { // Cách đáy 500px là load
-                    CONFIG.currentShown += CONFIG.itemsPerLoad;
-                    updateDisplay();
-                }
-            }
-        });
+        let isLoading = false; // Biến chặn để không load chồng chéo
+
+window.addEventListener('scroll', () => {
+    if (!isLoading && CONFIG.currentShown < items.length) {
+        const triggerPoint = window.innerHeight + window.scrollY;
+        if (triggerPoint >= document.body.offsetHeight - 400) {
+            isLoading = true; // Khóa lại
+            
+            // Tạo độ trễ nhẹ cho chuyên nghiệp
+            setTimeout(() => {
+                CONFIG.currentShown += CONFIG.itemsPerLoad;
+                updateDisplay();
+                isLoading = false; // Mở khóa
+            }, 300); 
+        }
+    }
+});
 
         // BẤM NÚT: Vẫn giữ để sơ cua
         if (btn) {
