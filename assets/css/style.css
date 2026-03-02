@@ -45,12 +45,13 @@ body {margin: 0;
     white-space: nowrap; 
     line-height: 1;}
 
-/* --- NÚT TRIGGER (BA GẠCH) --- */
+/* ================= MENU TRIGGER ================= */
+
 .menu-trigger {
     position: absolute;
     left: 30px;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -60,7 +61,6 @@ body {margin: 0;
 }
 
 .menu-trigger span {
-    display: block;
     width: 35px;
     height: 3px;
     background: #ffffff;
@@ -72,28 +72,33 @@ body {margin: 0;
     box-shadow: 0 0 8px rgba(212, 72, 127, 0.8);
 }
 
-/* --- KHUNG CHỨA MENU (MENU-CONTAINER) --- */
+
+/* ================= MENU CONTAINER ================= */
+
 .menu-container {
     position: absolute;
     left: 20px;
-    top: 50px; /* Chỉnh lại cho sát nút trigger */
+    top: 60px;
     z-index: 10002;
-    padding-top: 15px; /* Cầu nối để di chuột không bị mất menu */
+    padding-top: 15px;
+
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Chỉ dùng opacity để hiện hình, không dùng transform trượt xuống */
+    transition: opacity 0.3s ease;
 }
 
-/* HIỆN MENU KHI HOVER */
+/* Hover mở menu */
 .menu-trigger:hover ~ .menu-container,
 .menu-container:hover {
-    visibility: visible !important;
-    opacity: 1 !important;
+    visibility: visible;
+    opacity: 1;
 }
 
-/* --- NỘI DUNG DROPDOWN --- */
+
+/* ================= DROPDOWN BOX ================= */
+
 .dropdown-content {
-    background: #111111 !important;
+    background: #111;
     width: 280px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -111,11 +116,19 @@ body {margin: 0;
     background: #151515;
 }
 
-.dropdown-content ul { list-style: none; padding: 0; margin: 0; }
-.dropdown-content li { border-bottom: 1px solid #1a1a1a; position: relative; }
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-.dropdown-content li a {
-    color: #ffffff !important;
+.dropdown-content li {
+    border-bottom: 1px solid #1a1a1a;
+    position: relative;
+}
+
+.dropdown-content li > a {
+    color: #fff;
     padding: 14px 25px;
     display: block;
     font-weight: 600;
@@ -124,52 +137,53 @@ body {margin: 0;
     transition: 0.3s ease;
 }
 
-.dropdown-content li a:hover {
+.dropdown-content li > a:hover {
     background: rgba(212, 72, 127, 0.1);
-    color: #d4487f !important;
+    color: #d4487f;
     padding-left: 35px;
 }
 
-/* --- XỬ LÝ SUB-MENU (TRƯỢT TRÁI QUA PHẢI) --- */
-.has-sub { overflow: visible !important; }
 
+/* ================= SUB MENU ================= */
+
+/* wrapper KHÔNG dùng max-height nữa */
 .sub-wrapper {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
     background: #0a0a0a;
-    border-left: 3px solid #d4487f; /* Vạch hồng bên trái menu con */
-    transition: max-height 0.4s ease-out; /* Chỉ bung chiều cao, không trượt dọc */
+    border-left: 3px solid #d4487f;
+    display: none;
 }
 
+/* hover cha thì hiện wrapper */
 .has-sub:hover .sub-wrapper {
-    max-height: 600px; /* Cho phép bung hết cỡ */
-    opacity: 1;
+    display: block;
 }
 
+/* item con trượt ngang */
 .sub-item {
-    display: block !important;
-    padding: 10px 25px 10px 35px !important;
-    color: #aaa !important;
-    font-size: 13px !important;
+    display: block;
+    padding: 10px 25px 10px 35px;
+    color: #aaa;
+    font-size: 13px;
     text-decoration: none;
-    /* GỐC: Nằm lệch sang trái 25px */
-    transform: translateX(-25px); 
+
+    transform: translateX(-25px);
     opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+
+    transition: transform 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
-/* HIỆU ỨNG TRƯỢT SANG PHẢI KHI HOVER VÀO CHA */
+/* hover vào cha thì item trượt vào */
 .has-sub:hover .sub-item {
-    transform: translateX(0); /* Bò về vị trí cũ */
+    transform: translateX(0);
     opacity: 1;
 }
 
-/* Khi hover trực tiếp vào chính cái sub-item */
+/* hover từng item */
 .sub-item:hover {
-    color: #d4487f !important;
-    background: #151515 !important;
-    padding-left: 45px !important;
+    color: #d4487f;
+    background: #151515;
+    padding-left: 45px;
+    transform: translateX(5px);
 }
 
 .sub-nav-wrapper {background: linear-gradient(135deg,#241032,#d4487f) bottom / 100% 3px no-repeat;
@@ -323,7 +337,7 @@ body {margin: 0;
     
 .header-section.scrolled .brand-container {padding: 5px 0 !important; margin-bottom: 0 !important; gap: 10px !important;}
     
-.header-section.scrolled .menu-trigger {top: 50%; transform: translate(-50%);}
+.header-section.scrolled .menu-trigger {top: 50%; transform: translateY(-50%);}
     
 .header-section.scrolled .sub-nav-wrapper {padding: 8px 0 !important; margin-bottom: 0 !important;}
     
