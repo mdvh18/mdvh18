@@ -344,8 +344,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 .hero-slider {
     max-width: 1080px !important;
     height: 420px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -730,8 +729,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 }
 .pitu-global-notice {
     max-width: 980px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin: 20px auto;
     background: rgba(36, 16, 50, 0.8); /* Màu #241032 mờ */
     border-left: 5px solid #d4487f;
     border-right: 5px solid #d4487f;
@@ -783,4 +781,13 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 .notice-link:hover {
     color: #d4487f;
     border-bottom: 1px solid #d4487f;
+}
+.hero-slider, .pitu-global-notice {
+    width: 1080px !important;
+    max-width: 1080px !important;
+    margin: 20px auto !important; 
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    display: block !important;
 }
