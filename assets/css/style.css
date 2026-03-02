@@ -394,15 +394,16 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 .slide-content p {position: absolute;
     top: 50%;
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin: 0 !important;
     letter-spacing: 1px;
     color: #fff !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: bold;
-    left: 5%;  
+    left: 2%;
+    text-align: center;
     margin-bottom: 3px;              
-    max-width: 80%;}
+    max-width: 70%;}
 
 .btn.view {position: absolute;
     right: 50px;
