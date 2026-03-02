@@ -374,7 +374,32 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 .slide-text {flex: 1; text-align: center; margin-right: 20px;}
 
-.slide-content h2 {font-size: 26px; margin: 0 0 5px 0; letter-spacing: 1px;}
+.slide-content h2 {
+    font-size: 26px;
+    margin: 0;
+    padding: 15px 20px; /* Tạo không gian cho background */
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    /* Hiệu ứng Background mờ dần từ dưới lên */
+    /* Màu đậm nhất ở dưới (d4487f) và trong suốt hoàn toàn ở trên */
+    background: linear-gradient(to top, 
+        rgba(36, 16, 50, 0.9) 0%,    /* #241032 đậm ở đáy */
+        rgba(117, 43, 98, 0.6) 50%,  /* #752b62 mờ ở giữa */
+        rgba(212, 72, 127, 0) 100%   /* #d4487f biến mất ở đỉnh */
+    );
+    
+    /* Bo góc nhẹ phía dưới để khớp với khung slide nếu cần */
+    border-radius: 0 0 10px 10px;
+    
+    /* Đảm bảo nó luôn nằm đè lên ảnh */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .slide-content p {font-size: 14px;
   margin: 0;
