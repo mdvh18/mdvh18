@@ -661,7 +661,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 #btn-load-more {
     padding: 10px 25px;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
