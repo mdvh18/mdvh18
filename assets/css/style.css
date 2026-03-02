@@ -459,8 +459,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     border: none !important;
     margin-top: -2px;
     position: relative;
-    z-index: 5;
-    top: 50%;}
+    z-index: 5;}
 
 .card-info h3 {font-size: 13px;
     text-decoration: none !important;
