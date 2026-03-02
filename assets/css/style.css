@@ -46,7 +46,6 @@ body {margin: 0;
     line-height: 1;}
 
 .menu-trigger {position: absolute;
-    left: 100px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -189,12 +188,8 @@ body {margin: 0;
     width: 40px;
     height: 40px;
     display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    right: 100px;
-    margin-top: 50px;
     user-select: none;}
 
 .search-icon::before, 
@@ -227,7 +222,7 @@ body {margin: 0;
 .search-results {background: rgba(26,17,49,0.95);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255,255,255,0.08);
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 16px;
     max-height: 500px;
     overflow-y: auto;
@@ -385,17 +380,14 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     left: 0;
     width: 100%;
     padding: 30px 40px;
-    /* Gradient tối hơn ở đáy để h2 và p không bị chìm */
     background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
     color: white;
     display: flex;    
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    z-index: 10;
-}
+    z-index: 10;}
 
-/* --- TIÊU ĐỀ H2 (FIX MẤT CHỮ) --- */
 .slide-content h2 {
     font-size: 26px !important;
     margin: 0 !important;
