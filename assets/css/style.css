@@ -438,7 +438,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     text-transform: uppercase;}
 
 .card-info {padding: 20px 10px !important;
-    background: #d4487f !important;
+    background: radial-gradient(circle, #241032, #4a1e4c, #752b62, #a43973, #d4487f) !important;
     border: none !important;
     margin-top: -2px;
     position: relative;
@@ -465,7 +465,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     color: #fff;
     text-decoration: none;}
 
-.current-page { background: #d4487f; }
+.current-page { background: radial-gradient(circle, #241032, #4a1e4c, #752b62, #a43973, #d4487f); }
 
 .buttons {display: flex; gap: 12px; flex-shrink: 0;}
 
