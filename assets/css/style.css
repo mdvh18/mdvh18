@@ -342,15 +342,17 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 /* --- KHUNG SLIDER CHÍNH --- */
 .hero-slider {
-    width: 1080px !important;
     max-width: 1080px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    /* Xóa sạch mọi thứ có thể gây phình lề */
-    position: relative !important;
-    left: 0 !important;
-    right: 0 !important;
-    transform: none !important;
+    height: 420px !important;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 40px !important;
+    z-index: 1;
+    cursor: pointer !important;
+    border: 3px solid #d4487f; /* Viền tím của bro */
+    box-shadow: 0 0 20px rgba(212, 72, 127, 0.5);
 }
 
 .slides {
