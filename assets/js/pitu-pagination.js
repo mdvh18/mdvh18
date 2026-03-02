@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
                 CONFIG.currentShown += CONFIG.itemsPerLoad;
                 updateDisplay();
                 isLoading = false; // Mở khóa
-            }, 300); 
+            }, 500); 
         }
     }
 });
