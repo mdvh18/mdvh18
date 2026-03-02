@@ -142,22 +142,27 @@ body {margin: 0;
     color: #d4487f;
     padding-left: 35px;
 }
-
-
-/* ================= SUB MENU ================= */
-
-/* wrapper KHÔNG dùng max-height nữa */
 .sub-wrapper {
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    width: 100%;
     background: #0a0a0a;
     border-left: 3px solid #d4487f;
-    display: none;
+
+    opacity: 0;
+    pointer-events: none;
 }
 
+.has-sub {
+    position: relative;
+}
 /* hover cha thì hiện wrapper */
 .has-sub:hover .sub-wrapper {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
-
 /* item con trượt ngang */
 .sub-item {
     display: block;
@@ -168,8 +173,7 @@ body {margin: 0;
 
     transform: translateX(-25px);
     opacity: 0;
-
-    transition: transform 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* hover vào cha thì item trượt vào */
@@ -177,6 +181,7 @@ body {margin: 0;
     transform: translateX(0);
     opacity: 1;
 }
+
 
 /* hover từng item */
 .sub-item:hover {
