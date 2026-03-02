@@ -723,27 +723,36 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     margin: 20px auto;
     position: relative !important;
     left: 0 !important;
-    border: 3px solid #d4487f;                 
+    background: rgba(255,255,255,0.3);                 
     box-sizing: border-box !important;}
 
-.notice-tag {background: #d4487f;
+.notice-tag {
+    background: #d4487f;
     color: #fff;
     padding: 2px 10px;
     font-size: 12px;
     font-weight: bold;
     border-radius: 4px;
-    margin: 20px auto;
-    margin-bottom: 4px;
+    /* Căn giữa */
+    display: table; /* Hoặc block */
+    margin: 20px auto 4px auto; 
     white-space: nowrap;
-    box-shadow: 0 0 10px #d4487f;}
-
+    box-shadow: 0 0 10px #d4487f;
+}
 .notice-text {flex-grow: 1;
     color: #eee;
     font-size: 15px;
     overflow: hidden;
     white-space: nowrap;}
 
-.notice-text b {color: #d4487f; margin: 20px auto; text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);}
+.notice-text b {
+    color: #d4487f;
+    text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);
+    /* Căn giữa cho thẻ b */
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
 
 .notice-link {color: #a43973;
     text-decoration: none;
