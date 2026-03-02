@@ -517,7 +517,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
   transition: all 0.3s ease;
   white-space: nowrap;}
 
-.btn.view {background: transparent; color: #5a0078;}
+.btn.view {background: #5a0078; color: #fff; z-index: 9999}
 
 .btn.download {
   background: #5a0078;
