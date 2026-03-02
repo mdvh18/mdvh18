@@ -369,9 +369,9 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 .game-grid {display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 15px; 
+    gap: 20px; 
     padding: 15px;
-    max-width: 1560px;
+    max-width: 1380px;
     margin: 0 auto;
     box-sizing: border-box;}
 
