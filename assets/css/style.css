@@ -65,7 +65,7 @@ body {margin: 0;
 .menu-trigger:hover span {background: #d4487f; box-shadow: 0 0 8px rgba(212, 72, 127, 0.8);}
 
 .menu-container {position: absolute;
-    left: 20px;
+    left: 300px;
     top: 50px;
     z-index: 10002;
     padding-top: 15px;
