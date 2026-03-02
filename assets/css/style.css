@@ -386,8 +386,9 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
         rgba(212, 72, 127, 0) 100% );
     position: absolute;
     bottom: 0;
-    left: 0;
+    text-align: center;
     width: 100%;
+    z-index: 999;
     box-sizing: border-box;}
 
 .slide-content p {font-size: 14px;
