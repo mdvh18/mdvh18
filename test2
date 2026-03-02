@@ -2,29 +2,29 @@
 layout: game
 pitu_id: ""
 title: " - MDVH18"
+tags: [all, mdvh18, allvh, pc]
 namebanner: "[Việt Hóa]  - [B]"
 mota: |
-
 
 gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
 platform: "PC"
 dungluong: "B"
-phienban: ""
 dev: ""
 genre: ""
 
-linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url="
-linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url="
-linktera: "https://mdvh18.github.io/mdvh18/download.html?url="
+linkgofile: "https://mdvh18.github.io/download.html?url="
+linkpixel: "https://mdvh18.github.io/download.html?url="
+linktera: "https://mdvh18.github.io/download.html?url="
 ---
 
 ---
 layout: game
 pitu_id: ""
 title: " - MDVH18"
-namebanner: ""
+tags: [all, english, apk, pc]
+namebanner: "[ENG] - [B]"
 mota: |
 
 
@@ -33,12 +33,12 @@ infor: |
 gametype: "Visual Novel"
 language: "English"
 platform: PC/APK"
-dungluong: ""
+dungluong: "B"
 phienban: ""
 dev: ""
 genre: ""
 
-linkgofileapkpc: "https://mdvh18.github.io/mdvh18/download.html?url="
-linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url="
-linkteraapkpc: "https://mdvh18.github.io/mdvh18/download.html?url="
+linkgofileapkpc: "https://mdvh18.github.io/download.html?url="
+linkpixel: "https://mdvh18.github.io/download.html?url="
+linkteraapkpc: "https://mdvh18.github.io/download.html?url="
 ---
