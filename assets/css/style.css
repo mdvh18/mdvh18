@@ -660,7 +660,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 @keyframes animeFloat {0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); }}
 
 #btn-load-more {
-    padding: 15px 40px;
+    padding: 10px 25px;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
