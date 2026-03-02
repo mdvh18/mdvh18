@@ -395,8 +395,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);}
+  overflow: hidden;}
 
 .game-grid {display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -518,7 +517,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
   transition: all 0.3s ease;
   white-space: nowrap;}
 
-.btn.view {background: #ffffff; color: #5a0078;}
+.btn.view {background: transparent; color: #5a0078;}
 
 .btn.download {
   background: #5a0078;
