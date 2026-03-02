@@ -3,7 +3,7 @@ layout: game
 pitu_id: "backttpast"
 title: "[ENG] Back to the Past APK/PC - MDVH18"
 tags: [all, english, apk, pc]
-namebanner: "[ENG] Back to the Past v0.10 APK/PC - [1.1GBB]"
+namebanner: "[ENG] Back to the Past v0.10 APK/PC - [1.1GB]"
 mota: |
  Stewie đã thất bại trong việc ngăn chặn trải nghiệm trước ngưỡng cửa cái chết, và giờ đây Ste phải quay ngược thời gian để tìm hiểu xem điều gì đã đi chệch hướng! Trên hành trình đó, Ste nhận ra rằng chính mình đang gây ảnh hưởng đến quá khứ, và việc ngăn chặn sự kiện kia hóa ra lại khó khăn hơn nhiều so với những gì anh từng nghĩ.
 
