@@ -376,7 +376,6 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
     color: white;
     display: flex;    
-    align-items: flex-end;
     justify-content: space-between;
     box-sizing: border-box !important;
     z-index: 10;}
