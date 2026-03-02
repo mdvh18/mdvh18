@@ -75,5 +75,7 @@ function renderGridImages() {
     });
 }
 
-// Chạy khi trang load xong
 document.addEventListener("DOMContentLoaded", renderGridImages);
+
+// 2. Chạy bồi thêm một lần sau 500ms để chắc chắn (Dành cho trang Tag/Label load chậm)
+window.addEventListener("load", renderGridImages);
