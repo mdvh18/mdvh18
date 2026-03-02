@@ -46,7 +46,7 @@ body {margin: 0;
     line-height: 1;}
 
 .menu-trigger {position: absolute;
-    left: 30px;
+    left: 100px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -193,7 +193,8 @@ body {margin: 0;
     justify-content: center !important;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    margin-left: 150px;
+    right: 100px;
+    margin-top: 50px;
     user-select: none;}
 
 .search-icon::before, 
@@ -268,9 +269,7 @@ body {margin: 0;
   align-items: center;
   padding: 8px;
   text-decoration: none;
-  color: white;
-  width: 120px;
-  height: 160px;}
+  color: white;}
 
 .search-item img {width: 60px;
   height: 80px;
@@ -310,7 +309,7 @@ body {margin: 0;
   border-radius: 8px;
   margin-top: 5px;
   display: none;
-  max-height: 250px;
+  max-height: 500px;
   overflow-y: auto;
   z-index: 999;}
 
