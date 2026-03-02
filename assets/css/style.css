@@ -357,7 +357,10 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     border: 3px solid #d4487f; 
     box-shadow: 0 0 20px rgba(212, 72, 127, 0.5);
 }
-
+.slide img {width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;}
 /* --- NỘI DUNG TRONG SLIDE (CONTAINER CHUNG) --- */
 .slide-content {
     position: absolute;
