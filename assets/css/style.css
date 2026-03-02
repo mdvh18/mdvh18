@@ -752,7 +752,8 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     font-size: 13px;
     font-weight: bold;
     text-align: center;
-    white-space: nowrap;
+    white-space: nowrap; 
+    margin:auto;
     transition: 0.3s;
     border-bottom: 1px dashed #a43973;}
 
