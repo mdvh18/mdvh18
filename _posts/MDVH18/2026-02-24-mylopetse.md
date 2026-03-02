@@ -16,7 +16,7 @@ phienban: "Full"
 dev: "DKL"
 genre: "2DCG, Animated, Solo, Cosplay"
 
-linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC91RU9sVzc="
-linkpixel: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3FETmJ4NlQ4"
-linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xNC1wUlg0ZzBMR09jYUFpamItUFdiZw=="
+linkgofile: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC91RU9sVzc="
+linkpixel: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3FETmJ4NlQ4"
+linktera: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xNC1wUlg0ZzBMR09jYUFpamItUFdiZw=="
 ---
