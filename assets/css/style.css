@@ -401,8 +401,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: bold;
     text-align: center !important;
-    left: 10px;              
-    white-space: nowrap;
+    left: 10px;
     margin-bottom: 3px;              
     max-width: 70%;}
 
@@ -518,7 +517,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 .pagination {text-align: center; margin: 40px 0;}
 
- .pagination a:hover, .current-page.active {background: radial-gradient(circle, #241032, #4a1e4c, #752b62, #a43973, #d4487f);
+.pagination a:hover, .current-page.active {background: radial-gradient(circle, #241032, #4a1e4c, #752b62, #a43973, #d4487f);
         -webkit-background-clip: text; 
         background-clip: text; 
         -webkit-text-fill-color: transparent !important; 
