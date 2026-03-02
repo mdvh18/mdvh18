@@ -3,8 +3,8 @@
    ============================================================ */
 
 const CONFIG = {
-    itemsPerLoad: 12,
-    currentShown: 12
+    itemsPerLoad: 21,
+    currentShown: 21
 };
 
 function initPituEngine() {
