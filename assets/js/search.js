@@ -102,14 +102,6 @@ function toggleMenu() {
     }
 }
 
-// 6. Máy lọc link Redirect (MDVH18)
-(function() {
-    const currentUrl = window.location.href;
-    if (window.location.pathname === '/mdvh18/') {
-  window.location.replace('/');
-}
-})();
-
 // 7. Chống copy/Redirect tên miền (Đoạn mã hóa hex của bro)
 (function() {
     var _0x4212=["hostname","mdvh18.github.io","innerHTML","body","<div style=\"background:#000;color:#ff4a7b;height:100vh;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:bold;text-align:center;family:sans-serif;\">BẢN DỊCH CỦA MDVH18 BỊ CƯỚP!<br>ĐANG CHUYỂN VỀ TRANG CHÍNH CHỦ...</div>","href","location","https://mdvh18.github.io/mdvh18/"];
