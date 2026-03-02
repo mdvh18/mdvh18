@@ -94,9 +94,16 @@
     
 <div class="main-content-wrapper">
    <div class="game-grid">
-  {% assign posts = paginator.posts | default: site.posts %}
+  {% comment %} 
+  {% endcomment %}
+  
+  {% if page.tag_name %}
+    {% assign posts = site.tags[page.tag_name] %}
+  {% else %}
+    {% assign posts = paginator.posts | default: site.posts %}
+  {% endif %}
+
   {% for post in posts %}
-    {% assign game_id = post.url | split: '/' | last | remove: '.html' %}
     <div class="game-card">
       <a href="{{ post.url | relative_url }}">
         <div class="card-thumb">
