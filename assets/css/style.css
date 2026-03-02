@@ -426,20 +426,6 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     box-shadow: 0 0 20px #d4487f;
 }
 
-/* --- FIX LỖI NOTICE LỆCH (DÁN ĐÈ LÊN CŨ) --- */
-.pitu-global-notice {
-    width: 95%;
-    max-width: 1080px; /* Cho bằng với Slider luôn cho đẹp */
-    margin: 20px auto !important;
-    padding: 12px 20px;
-    box-sizing: border-box; /* CỰC QUAN TRỌNG ĐỂ KHÔNG BỊ LỆCH */
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 0; 
-    transform: none; 
-}
-
 .game-grid {display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
