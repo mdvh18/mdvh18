@@ -52,30 +52,43 @@ function pituRender() {
 document.addEventListener("DOMContentLoaded", pituRender);
 
 function renderGridImages() {
-    // Đợi PITU_DATABASE sẵn sàng
+    // 1. Kiểm tra xem Database có tồn tại không
     if (typeof PITU_DATABASE === "undefined") {
-        setTimeout(renderGridImages, 100);
-        return;
+        console.error("LỖI CỰC NẶNG: PITU_DATABASE chưa được nạp vào trang này!");
+        return; 
     }
 
     const gridImages = document.querySelectorAll('.grid-pitu-img');
-    
+    console.log("Tìm thấy " + gridImages.length + " ảnh cần load banner.");
+
     gridImages.forEach(img => {
         const pituId = img.getAttribute('data-pitu');
+        
+        // Tìm trong mảng
         const game = PITU_DATABASE.find(item => item.id === pituId);
         
         if (game && game.banner) {
             img.src = game.banner;
             img.style.objectFit = "cover";
+            // Đánh dấu đã load xong
+            img.classList.add('loaded'); 
         } else {
-            console.warn("Không tìm thấy ảnh cho ID Grid:", pituId);
-            // Nếu không có ảnh trong pitu, có thể để ảnh mặc định của bro
-            img.src = "https://via.placeholder.com/350x200?text=No+Image";
+            // Nếu báo lỗi này, nghĩa là ID bốc được (pituId) KHÔNG KHỚP với ID trong Database
+            console.warn("Hụt ID: [" + pituId + "]. Check lại database xem có ID này không?");
+            img.src = "https://via.placeholder.com/350x200?text=Check+ID+" + pituId;
         }
     });
 }
 
-document.addEventListener("DOMContentLoaded", renderGridImages);
+// Gọi hàm ngay và luôn
+if (document.readyState === 'complete') {
+    renderGridImages();
+} else {
+    window.addEventListener('load', renderGridImages);
+}
 
-// 2. Chạy bồi thêm một lần sau 500ms để chắc chắn (Dành cho trang Tag/Label load chậm)
-window.addEventListener("load", renderGridImages);
+// Theo dõi nếu có bài viết mới hiện ra (Dành cho trang Tag)
+const observer = new MutationObserver((mutations) => {
+    renderGridImages();
+});
+observer.observe(document.body, { childList: true, subtree: true });
