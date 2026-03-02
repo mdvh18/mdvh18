@@ -392,7 +392,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     font-weight: bold;
     white-space: nowrap;}
 
-.slide-content p {position: absolute;
+.slide-content p {position: relative;
     top: 50%;
     font-size: 14px !important;
     margin: 0 !important;
