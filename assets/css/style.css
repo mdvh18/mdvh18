@@ -404,6 +404,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     position: static !important; 
     text-align: left !important;
     font-weight: bold;
+    padding-bottom: 10px
 }
 
 /* --- NÚT XEM BÀI (SIUUU TO) --- */
