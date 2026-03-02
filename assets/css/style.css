@@ -397,13 +397,13 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 /* --- TIÊU ĐỀ H2 (FIX MẤT CHỮ) --- */
 .slide-content h2 {
     font-size: 26px !important;
-    margin: 0 0 5px 0 !important;
+    margin: 0 !important;
     letter-spacing: 1px;
     color: #fff !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    /* Không dùng absolute ở h2 nữa để nó nằm chung với p */
     position: static !important; 
     text-align: left !important;
+    font-weight: bold;
 }
 
 /* --- NÚT XEM BÀI (SIUUU TO) --- */
