@@ -89,6 +89,8 @@ layout: default
 <script src="{{ '/assets/js/pitumdgame.js' | relative_url }}"></script> 
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>  
 
+{% assign posts = site.posts | limit: 5 %}   
+    
 <div class="main-content-wrapper">
     <div class="game-grid">
       {% for post in paginator.posts %}
