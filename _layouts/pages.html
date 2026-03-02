@@ -105,24 +105,18 @@
   {% endif %}
 
   {% for post in posts %}
-    <div class="game-card">
-      <a href="{{ post.url | relative_url }}">
+    <div class="game-grid">
+  {% for post in posts %}
+    <div class="game-card pitu-item" style="display: none;"> 
+      <a href="{{ post.url }}">
         <div class="card-thumb">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" 
+          <img src="data:image/png;base64,..." 
                class="grid-pitu-img" 
                data-pitu="{{ post.pitu_id }}" 
                alt="{{ post.title }}">
-          
-          <i class="fa-solid fa-angles-down download-icon-fa"></i>
-          
-          {% if post.categories.size > 0 %}
-            <div class="card-badge">{{ post.categories | first | replace: "-", " " }}</div>
-          {% endif %}
         </div>
-        
         <div class="card-info">
           <h3>{{ post.namebanner }}</h3>
-        </div>
       </a>
     </div>
   {% endfor %}
