@@ -138,13 +138,14 @@ body {margin: 0;
     opacity: 0;
     overflow: hidden;
     background: #0a0a0a;
-    border-left: 3px solid #d4487f; /* Vạch hồng bên trái menu con */
-    transition: max-height 0.4s ease-out; /* Chỉ bung chiều cao, không trượt dọc */
+    border-left: 3px solid #d4487f;
+    /* Dùng transition mượt cho chiều cao nhưng khóa vị trí nội dung */
+    transition: max-height 0.4s ease-out, opacity 0.3s ease !important;
 }
 
 .has-sub:hover .sub-wrapper {
-    max-height: 600px; /* Cho phép bung hết cỡ */
-    opacity: 1;
+    max-height: 800px !important;
+    opacity: 1 !important;
 }
 
 .sub-item {
@@ -152,17 +153,21 @@ body {margin: 0;
     padding: 10px 25px 10px 35px !important;
     color: #aaa !important;
     font-size: 13px !important;
-    text-decoration: none;
-    /* GỐC: Nằm lệch sang trái 25px */
-    transform: translateX(-25px); 
-    opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    text-decoration: none !important;
+    white-space: nowrap; /* Giữ chữ trên một dòng, không cho nhảy dòng gây tụt */
+
+    /* ÉP CHỈ TRƯỢT NGANG */
+    transform: translateX(-30px) !important; 
+    opacity: 0 !important;
+    
+    /* Cực kỳ quan trọng: Khóa cứng sự thay đổi chiều cao của từng item */
+    transition: transform 0.4s ease, opacity 0.4s ease !important;
 }
 
 /* HIỆU ỨNG TRƯỢT SANG PHẢI KHI HOVER VÀO CHA */
 .has-sub:hover .sub-item {
-    transform: translateX(0); /* Bò về vị trí cũ */
-    opacity: 1;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
 }
 
 /* Khi hover trực tiếp vào chính cái sub-item */
