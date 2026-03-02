@@ -93,33 +93,39 @@
 {% assign posts = site.posts | limit: 5 %}   
     
 <div class="main-content-wrapper">
-    <div class="game-grid">
-      {% for post in paginator.posts %}
-        {% assign game_id = post.url | split: '/' | last | remove: '.html' %}
-        <div class="game-card">
-          <a href="{{ post.url | relative_url }}">
-            <div class="card-thumb">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" 
-                   class="grid-pitu-img" 
-                   data-pitu="{{ game_id }}" 
-                   alt="{{ post.title }}">
-              <i class="fa-solid fa-angles-down download-icon-fa"></i> {% if post.categories.size > 0 %}
-                <div class="card-badge">{{ post.categories | first | replace: "-", " " }}</div>
-              {% endif %}
-            </div>
-            <div class="card-info">
-              <h3>{{ post.namebanner }}</h3>
-            </div>
-          </a>
-          </div>
-      {% endfor %}
+   <div class="game-grid">
+  {% assign posts = paginator.posts | default: site.posts %}
+  {% for post in posts %}
+    {% assign game_id = post.url | split: '/' | last | remove: '.html' %}
+    <div class="game-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="card-thumb">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" 
+               class="grid-pitu-img" 
+               data-pitu="{{ game_id }}" 
+               alt="{{ post.title }}">
+          
+          <i class="fa-solid fa-angles-down download-icon-fa"></i>
+          
+          {% if post.categories.size > 0 %}
+            <div class="card-badge">{{ post.categories | first | replace: "-", " " }}</div>
+          {% endif %}
+        </div>
+        
+        <div class="card-info">
+          <h3>{{ post.title }}</h3>
+        </div>
+      </a>
     </div>
+  {% endfor %}
 </div>
+
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Trước</a>
   {% endif %}
+
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <span class="current-page">{{ page }}</span>
@@ -129,6 +135,7 @@
       <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
+
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url }}">Sau &raquo;</a>
   {% endif %}
