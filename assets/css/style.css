@@ -744,19 +744,13 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     overflow: hidden;
     white-space: nowrap;}
 
-.notice-p {
-    color: #d4487f;
-    text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);
-    display: table;
-    text-align: center;
-    margin: auto 20px;
-}
+.notice-text b {color: #d4487f; text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);}
 
 .notice-link {color: #a43973;
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
-    margin-left: 15px;
+    text-align: center;
     white-space: nowrap;
     transition: 0.3s;
     border-bottom: 1px dashed #a43973;}
