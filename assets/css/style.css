@@ -387,7 +387,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     color: #fff !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     position: static !important; 
-    text-align: left !important;
+    text-align: center !important;
     font-weight: bold;
     padding-bottom: 5px !important;}
 
