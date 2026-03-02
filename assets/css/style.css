@@ -323,7 +323,7 @@ body {margin: 0;
     
 .header-section.scrolled .brand-container {padding: 5px 0 !important; margin-bottom: 0 !important; gap: 10px !important;}
     
-.header-section.scrolled .menu-trigger {top: 50%; transform: translateY(-50%);}
+.header-section.scrolled .menu-trigger {top: 50%; transform: translate(-50%);}
     
 .header-section.scrolled .sub-nav-wrapper {padding: 8px 0 !important; margin-bottom: 0 !important;}
     
