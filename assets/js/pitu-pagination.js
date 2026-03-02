@@ -33,7 +33,12 @@
 
         function updateDisplay() {
             items.forEach((item, index) => {
-                item.style.display = (index < CONFIG.currentShown) ? 'flex' : 'none';
+                if (index < CONFIG.currentShown) {
+                    item.style.display = 'flex';
+                    item.classList.add('is-visible'); // Thêm hiệu ứng fadeIn
+                } else {
+                    item.style.display = 'none';
+                }
             });
 
             if (container) {
@@ -42,6 +47,18 @@
             loadVisibleImages();
         }
 
+        // TỰ ĐỘNG: Load khi cuộn chuột
+        window.addEventListener('scroll', () => {
+            if (CONFIG.currentShown < items.length) {
+                const triggerPoint = window.innerHeight + window.scrollY;
+                if (triggerPoint >= document.body.offsetHeight - 500) { // Cách đáy 500px là load
+                    CONFIG.currentShown += CONFIG.itemsPerLoad;
+                    updateDisplay();
+                }
+            }
+        });
+
+        // BẤM NÚT: Vẫn giữ để sơ cua
         if (btn) {
             btn.onclick = function(e) {
                 e.preventDefault();
