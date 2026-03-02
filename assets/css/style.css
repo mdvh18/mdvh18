@@ -395,7 +395,8 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  overflow: hidden;}
+  overflow: hidden;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);}
 
 .game-grid {display: grid;
     grid-template-columns: repeat(3, 1fr); 
