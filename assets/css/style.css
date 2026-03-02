@@ -342,62 +342,103 @@ button,
 [role="button"] {cursor: url('https://blogger.googleusercontent.com/img/a/AVvXsEh4YJIj5s0o26hGviEV5RENQVRW4BX9TIpm-vOzx2hJ4qYorV44U4pxixl6fpPvMXvGO78n72VHXPHzs5-egyIY8OpkaWTs_Uihwy5BZLjxciB-YjGwAkADh3QpLx6lyy0VIxQx2386pqjwIq2RCRSGqQYYkQgkNu6HlQ0HA6rYjZ7Dej682fHloqQfaos=s16000'), pointer !important;}
 h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
-.hero-slider {max-width: 1080px !important;
+/* --- KHUNG SLIDER CHÍNH --- */
+.hero-slider {
+    max-width: 1080px !important;
     height: 420px !important;
     margin: 20px auto !important;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
     margin-bottom: 40px !important;
-    z-index: 1; 
-    cursor: pointer !important;}
+    z-index: 1;
+    cursor: pointer !important;
+    /* THÊM VIỀN TÍM NEON BÊN NGOÀI */
+    border: 3px solid #d4487f; 
+    box-shadow: 0 0 20px rgba(212, 72, 127, 0.5);
+}
 
-.slides {display: flex; height: 100%; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);}
-
-.slide {min-width: 100%; position: relative; height: 100%;}
-
-.slide img {width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;}
-
-.slide-content {position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 40px;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-  color: white;
-  display: flex;    
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;}
-
-.slide-content h2 {
-    font-size: 26px;
-    margin: 0;
-    padding: 60px 80px;
-    letter-spacing: 1px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to top, 
-        rgba(36, 16, 50, 0.9) 0%,
-        rgba(117, 43, 98, 0.6) 50%,
-        rgba(212, 72, 127, 0) 100% );
+/* --- NỘI DUNG TRONG SLIDE (CONTAINER CHUNG) --- */
+.slide-content {
     position: absolute;
     bottom: 0;
-    text-align: center;
+    left: 0;
     width: 100%;
-    z-index: 999;
-    box-sizing: border-box;}
+    /* Tăng padding để đẩy nội dung vào trong, không sát mép */
+    padding: 20px 40px; 
+    /* Gradient bao phủ toàn bộ đáy slide */
+    background: linear-gradient(to top, rgba(36, 16, 50, 0.95) 0%, rgba(36, 16, 50, 0.4) 70%, transparent 100%);
+    color: white;
+    display: flex;
+    align-items: flex-end; /* Căn các thành phần xuống đáy */
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 10;
+}
 
-.slide-content p {font-size: 14px;
-  margin: 0;
-  opacity: 0.8;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;}
+/* --- TIÊU ĐỀ GAME (H2) --- */
+.slide-content h2 {
+    font-size: 26px;
+    margin: 0 0 10px 0; /* Cách dòng p một chút */
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    /* Bỏ position absolute ở đây để nó đi theo dòng chảy tự nhiên */
+    position: relative; 
+    text-align: left;
+    width: auto;
+    z-index: 11;
+}
+
+/* --- ĐOẠN MÔ TẢ (P) --- */
+.slide-content p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+    max-width: 70%; /* Giới hạn để không đè vào nút bấm */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Cho hiện 2 dòng cho rõ */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* --- NÚT XEM BÀI (SIUUU TO) --- */
+.btn.view {
+    background: #5a0078;
+    color: #fff;
+    padding: 15px 35px; /* Làm nút to ra */
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.3s;
+    border: 2px solid #d4487f;
+    cursor: pointer;
+    white-space: nowrap; /* Không cho chữ nhảy dòng */
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn.view:hover {
+    background: #d4487f;
+    transform: scale(1.1); /* Phóng to nhẹ khi di chuột */
+    box-shadow: 0 0 20px #d4487f;
+}
+
+/* --- FIX LỖI NOTICE LỆCH (DÁN ĐÈ LÊN CŨ) --- */
+.pitu-global-notice {
+    width: 95%;
+    max-width: 1080px; /* Cho bằng với Slider luôn cho đẹp */
+    margin: 20px auto !important;
+    padding: 12px 20px;
+    box-sizing: border-box; /* CỰC QUAN TRỌNG ĐỂ KHÔNG BỊ LỆCH */
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0; 
+    transform: none; 
+}
 
 .game-grid {display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -518,8 +559,6 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
   font-size: 14px;
   transition: all 0.3s ease;
   white-space: nowrap;}
-
-.btn.view {background: #5a0078; color: #fff; z-index: 9999}
 
 .btn.download {
   background: #5a0078;
