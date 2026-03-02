@@ -722,8 +722,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 .pitu-global-notice {width: 980px !important;
     margin: 20px auto;
     position: relative !important;
-    left: 0 !important;
-    background: rgba(255,255,255,0.3);                 
+    left: 0 !important;               
     box-sizing: border-box !important;}
 
 .notice-tag {
@@ -733,9 +732,11 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     font-size: 12px;
     font-weight: bold;
     border-radius: 4px;
-    display: block;
+    display: table;
     margin: 20px auto 4px auto; 
-    white-space: nowrap;}
+    white-space: nowrap;
+    box-shadow: 0 0 10px #d4487f;
+}
 
 .notice-text {flex-grow: 1;
     color: #eee;
@@ -745,6 +746,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 .notice-text b {
     color: #d4487f;
+    text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);
     display: block;
     text-align: center;
     margin: 20px auto;
