@@ -375,7 +375,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 .slide-content h2 {
     font-size: 26px;
     margin: 0;
-    padding: 40px 60px;
+    padding: 60px 80px;
     letter-spacing: 1px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
