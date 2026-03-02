@@ -1,93 +1,92 @@
-/* ============================================================
-   PITU GAME ENGINE - CHỐT HẠ FIX LỖI DATABASE
-   ============================================================ */
-
-// 1. Hàm Render Ảnh cho TRANG BÀI VIẾT (Banner & Previews)
 function pituRender() {
-    // Đợi Database sẵn sàng
-    if (typeof PITU_DATABASE === "undefined") {
-        setTimeout(pituRender, 100);
-        return;
-    }
-
     const path = window.location.pathname;
+   
     const segments = path.split("/").filter(Boolean);
     let lastSegment = segments.pop() || "index";
-    
-    // Bốc ID từ URL, loại bỏ .html
-    const currentPageId = lastSegment.replace(".html", "").trim();
 
-    // Tìm game trong Database (Dùng trim() để tránh lỗi khoảng trắng)
-    const game = PITU_DATABASE.find(item => item.id.trim() === currentPageId);
+    const currentPageId = lastSegment.replace(".html", "");
+
+    console.log("ID Game thực tế bốc được là:", currentPageId);
+
+    const game = PITU_DATABASE.find(item => item.id === currentPageId);
 
     if (!game) {
-        console.warn("Không tìm thấy data cho ID bài viết:", currentPageId);
+        console.error("Không tìm thấy data cho ID:", currentPageId);
+        console.log("Danh sách ID hiện có:", PITU_DATABASE.map(g => g.id));
         return;
     }
 
-    // Load Banner chính
-    const bannerImg = document.querySelector('.game-banner img');
-    if (bannerImg && game.banner) {
-        bannerImg.src = game.banner;
-        bannerImg.alt = (game.name || "Game") + " Banner";
-        bannerImg.style.display = "block";
-        bannerImg.style.width = "100%";
-        bannerImg.style.height = "100%";
-        bannerImg.style.objectFit = "cover";
+    const bannerWrapper = document.querySelector('.game-banner');
+
+    if (bannerWrapper) {
+        const actualImg = bannerWrapper.querySelector('img');
+
+        if (actualImg) {
+            actualImg.src = game.banner;
+            actualImg.alt = game.name + " Banner";
+            actualImg.setAttribute('fetchpriority', 'high');
+            actualImg.width = 1093;
+            actualImg.height = 468;
+            actualImg.style.width = "100%";
+            actualImg.style.height = "100%";
+            actualImg.style.display = "block";
+        }
     }
 
-    // Load ảnh Screenshots (Previews)
     const previews = document.querySelectorAll('.image-grid img');
-    if (game.previews && previews.length > 0) {
-        previews.forEach((img, i) => {
-            if (game.previews[i]) {
-                img.src = game.previews[i];
-                img.style.width = "100%";
-                img.style.height = "auto";
-                img.style.objectFit = "cover";
-            }
-        });
-    }
-}
 
-// 2. Hàm Render Ảnh cho TRANG CHỦ & TRANG TAG (Grid)
-function renderGridImages() {
-    if (typeof PITU_DATABASE === "undefined") {
-        setTimeout(renderGridImages, 100);
-        return;
-    }
-
-    const gridImages = document.querySelectorAll('.grid-pitu-img');
-    
-    gridImages.forEach(img => {
-        const pituId = img.getAttribute('data-pitu');
-        if (!pituId) return;
-
-        const game = PITU_DATABASE.find(item => item.id.trim() === pituId.trim());
-        
-        if (game && game.banner) {
-            img.src = game.banner;
+    previews.forEach((img, i) => {
+        if (game.previews[i]) {
+            img.src = game.previews[i];
+            img.alt = game.name + " Việt Hóa Screenshot " + (i + 1);
+            img.setAttribute('loading', 'lazy');
+            img.width = 533;
+            img.height = 300;
+            img.style.width = "100%";
+            img.style.height = "auto";
             img.style.objectFit = "cover";
-            img.classList.add('loaded'); 
-        } else {
-            console.warn("Hụt ID Grid:", pituId);
-            img.src = "https://via.placeholder.com/350x200?text=Check+ID+" + pituId;
         }
     });
 }
 
-// ============================================================
-// KHỞI CHẠY (EXECUTION)
-// ============================================================
+document.addEventListener("DOMContentLoaded", pituRender);
 
-// Chạy khi toàn bộ tài nguyên (bao gồm cả file Database lớn) load xong
-window.addEventListener('load', () => {
-    pituRender();
+function renderGridImages() {
+    // 1. Kiểm tra xem Database có tồn tại không
+    if (typeof PITU_DATABASE === "undefined") {
+        console.error("LỖI CỰC NẶNG: PITU_DATABASE chưa được nạp vào trang này!");
+        return; 
+    }
+
+    const gridImages = document.querySelectorAll('.grid-pitu-img');
+    console.log("Tìm thấy " + gridImages.length + " ảnh cần load banner.");
+
+    gridImages.forEach(img => {
+      const pituId = img.getAttribute('data-pitu');
+   
+        // Tìm trong mảng
+        const game = PITU_DATABASE.find(item => item.id === pituId);
+        
+        if (game && game.banner) {
+            img.src = game.banner;
+            img.style.objectFit = "cover";
+            // Đánh dấu đã load xong
+            img.classList.add('loaded'); 
+        } else {
+            // Nếu báo lỗi này, nghĩa là ID bốc được (pituId) KHÔNG KHỚP với ID trong Database
+            console.warn("Hụt ID: [" + pituId + "]. Check lại database xem có ID này không?");
+            img.src = "https://via.placeholder.com/350x200?text=Check+ID+" + pituId;
+        }
+    });
+}
+// Gọi hàm ngay và luôn
+if (document.readyState === 'complete') {
     renderGridImages();
-});
-
-// Quan sát thay đổi DOM (Dành cho Infinite Scroll / Tag filtering)
-const observer = new MutationObserver(() => {
+} else {
+    window.addEventListener('load', renderGridImages);
+}
+// Theo dõi nếu có bài viết mới hiện ra (Dành cho trang Tag)
+const observer = new MutationObserver((mutations) => {
     renderGridImages();
 });
 observer.observe(document.body, { childList: true, subtree: true });
