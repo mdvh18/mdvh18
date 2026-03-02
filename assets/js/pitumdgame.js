@@ -190,7 +190,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEiCuYIPYxdEwqwn3GNy8fDt8VCtpzVwS0ppi3AkZNMGaeFBfxhozRYrrYxnIeSp7uYmtm058A-qDvbRvOYPo8pjeXDRbh4JkHhWVohz33cH20DxaX3kh3ZsZvs3WRIoudABiv1iGRUu_fI9ZEJXkW60nQ8VbGhqQz_uuXozRlhQfnFf0XS2qL7Fu7_7Zy4=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEg8zXoNPG16h8zX6q8ANKCe7yCNnZANINBrDIrnLgKyDvQEDuMwIM5s1Xxt16hhdrc6vwpJuL7Bo_Ubu09H5dTC8if6a6iopMq_kFT0jblQcXXnmtW3-Lh5jeEw8Wmi3qm_0-IHcGyNchAhmrm7xfj_ndfzvW7RfSeKWIXtT4OfWkE9E6tbVLw7hVyqeCA=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEjepaHvxT8IjXYZ_h2CvojpzdX89z8izUN7EVF6a9mrVKciGkOR42yREfLyE0aPOk9vXDwD6Yvu47ogDe96KKtSlH84cP2-VVsON6RLydNewtr3vI06uOF-QjOtylpnWbssUS3sOFjy-YXiDG9iY4gBkRK42xPACix9PKQnuptRTOMEYoogNq2COkYPJ2M=s16000"]},
-    {id: "tgse",
+    {id: "ltgse",
     name: "Việt Hóa Let It Go SE",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEgaBhtA8pXAS_1Tr8lv3V-3UeuUrvk0gCG6kte8KjfRJrmiUP7R860qrNDI4qfw3UPtsW7vh7PT6RHXADq0GdjF3FJLQYf8mzD5_c-VAP_Aum-10C0tl1zFuk1kl1uNjm7uMCkECfxFecFH-Zf38DhCs3hLFW7pmTGQYNHjhQx-bK3sbRMgrG2A0OKJxAI=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEirTEq-YBydB07V5J0_WhioiBIe7SptCtJXloTblE0RKvXHxst4POMBhfxCAt4Ua46N8PzO7jQk-d_4JheEfgxPU_oiV6g15e5kobNcGCnwQB9EqCcU_tqCixyErBd6aByyBzU9u2NAcQrX9TEVgnWaFViE6RcR_kvktU6EtWLVd1g7qs6qIHCIm_BSMsc=s16000",
