@@ -347,7 +347,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    margin-bottom: 70px !important;
+    margin-bottom: 40px !important;
     z-index: 1; 
     cursor: pointer !important;}
 
@@ -703,7 +703,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     to { opacity: 1; transform: translateY(0); }
 }
 .pitu-global-notice {
-    max-width: 980px; /* Bằng chiều rộng Banner bro vừa chỉnh */
+    max-width: 980px;
     margin: 20px auto;
     padding: 10px 20px;
     background: rgba(36, 16, 50, 0.8); /* Màu #241032 mờ */
@@ -715,8 +715,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     align-items: center;
     overflow: hidden;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 95%;
 }
 
 .notice-tag {
