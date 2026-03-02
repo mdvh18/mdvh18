@@ -17,6 +17,6 @@ phienban: "Full"
 dev: "DKL"
 genre: "3DCG, Animated, Graphic violence, Incest, Milf, Mobile Game, Toys"
 
-linkgofile: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9xMHB4Sm0="
-linktera: "https://mdvh18.github.io/mdvh18/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xenVTOUZSS2VrdW5peVE0VGJJeU9WQQ=="
+linkgofile: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9xMHB4Sm0="
+linktera: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xenVTOUZSS2VrdW5peVE0VGJJeU9WQQ=="
 ---
