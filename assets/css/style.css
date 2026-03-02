@@ -61,12 +61,15 @@ body {margin: 0;
 .menu-container {
     position: absolute;
     left: 20px;
-    top: 50px; /* Chỉnh lại cho sát nút trigger */
+    top: 50px; 
     z-index: 10002;
-    padding-top: 15px; /* Cầu nối để di chuột không bị mất menu */
+    padding-top: 15px;
+    
+    /* KHÓA CỨNG VỊ TRÍ - KHÔNG CHO TRƯỢT DỌC */
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Chỉ dùng opacity để hiện hình, không dùng transform trượt xuống */
+    transform: none !important; /* Diệt sạch mọi loại translate cũ */
+    transition: opacity 0.3s ease !important; /* Chỉ cho phép mờ ảo, không cho di chuyển */
 }
 
 /* HIỆN MENU KHI HOVER */
@@ -74,6 +77,7 @@ body {margin: 0;
 .menu-container:hover {
     visibility: visible !important;
     opacity: 1 !important;
+    transform: none !important; /* Giữ nguyên vị trí, không trượt xuống */
 }
 
 /* --- NỘI DUNG DROPDOWN --- */
@@ -123,38 +127,40 @@ body {margin: 0;
     opacity: 0;
     overflow: hidden;
     background: #0a0a0a;
-    border-left: 3px solid #d4487f; /* Vạch hồng bên trái menu con */
-    transition: max-height 0.4s ease-out; /* Chỉ bung chiều cao, không trượt dọc */
+    border-left: 3px solid #d4487f;
+    /* Chỉ bung chiều cao, không dùng transform ở đây */
+    transition: max-height 0.4s ease-out, opacity 0.3s ease;
 }
 
 .has-sub:hover .sub-wrapper {
-    max-height: 600px; /* Cho phép bung hết cỡ */
+    max-height: 800px; /* Cho phép bung thoải mái */
     opacity: 1;
 }
-
 .sub-item {
     display: block !important;
     padding: 10px 25px 10px 35px !important;
     color: #aaa !important;
     font-size: 13px !important;
     text-decoration: none;
-    /* GỐC: Nằm lệch sang trái 25px */
-    transform: translateX(-25px); 
+    
+    /* HIỆU ỨNG TRƯỢT NGANG: Bắt đầu từ bên trái (-30px) */
+    transform: translateX(-30px) !important; 
     opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
 }
 
-/* HIỆU ỨNG TRƯỢT SANG PHẢI KHI HOVER VÀO CHA */
+/* KHI HOVER VÀO MỤC CHA THÌ MỤC CON MỚI TRƯỢT SANG PHẢI */
 .has-sub:hover .sub-item {
-    transform: translateX(0); /* Bò về vị trí cũ */
+    transform: translateX(0) !important; /* Bò về vị trí chuẩn */
     opacity: 1;
 }
 
-/* Khi hover trực tiếp vào chính cái sub-item */
+/* Khi hover trực tiếp vào sub-item */
 .sub-item:hover {
     color: #d4487f !important;
     background: #151515 !important;
     padding-left: 45px !important;
+    transform: translateX(5px) !important; /* Nhích nhẹ thêm 5px cho xịn */
 }
       
 .brand-link { display: flex; align-items: center; gap: 20px; text-decoration: none; }
