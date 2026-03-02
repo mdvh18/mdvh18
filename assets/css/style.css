@@ -748,6 +748,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     color: #d4487f;
     text-shadow: 0 0 5px rgba(212, 72, 127, 0.5);
     display: table;
+    margin: auto 20px; 
     text-align: center;
 }
 
