@@ -660,3 +660,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 #back-to-top:hover {transform: scale(1.15); box-shadow: 0 0 25px #f78f90, 0 0 50px #D79BBB;}
       
 @keyframes animeFloat {0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); }}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } }
