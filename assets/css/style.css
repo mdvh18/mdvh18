@@ -47,7 +47,7 @@ body {margin: 0;
 
 .menu-trigger {position: absolute;
     top: 50%;
-    left: 300px;
+    margin: 20px auto !important;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ body {margin: 0;
     position: relative;
     transform: translateY(-50%);
     top: 50%;
-    right: 300px;
+    margin: 20px auto !important;
     user-select: none;}
 
 .search-icon::before, 
@@ -356,7 +356,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 }
 
 .slides {
-    display: block; 
+    display: flex; 
     height: 100%; 
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -383,7 +383,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     padding: 30px 40px;
     background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
     color: white;
-    display: block;    
+    display: flex;    
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
