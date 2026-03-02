@@ -732,7 +732,7 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     font-size: 12px;
     font-weight: bold;
     border-radius: 4px;
-    display: table;
+    display: block;
     margin: 20px auto 4px auto; 
     white-space: nowrap;
     box-shadow: 0 0 10px #d4487f;
