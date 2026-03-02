@@ -13,11 +13,9 @@
         .btn-manual { display: none; background: #f78f90; color: white; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
         .btn-manual:hover { background: #fff; color: #f78f90; box-shadow: 0 0 15px #f78f90; }
         
-        /* CSS dùng chung cho cả 2 loại Toast */
         .toast-custom { position: fixed; bottom: 30px; right: 30px; background: #1a1131; color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); z-index: 10000; font-family: "Segoe UI", sans-serif; max-width: 320px; animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes slideIn { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
         
-        /* Hiệu ứng Hover cho nút bấm trong Toast */
         #pixeldrain-toast a:hover { background: #fff !important; color: #f78f90 !important; }
         #terabox-toast a:hover { background: #fff !important; color: #54b5f5 !important; }
     </style>
@@ -43,22 +41,13 @@
 
             if (encoded) {
                 try {
-                    // 1. Giải mã Base64
                     targetUrl = atob(encoded);
-
-                    // 2. Tự động sửa lỗi đường dẫn cũ (Nếu có)
                     if (targetUrl.includes('mdvh18.github.io/mdvh18/')) {
-                        targetUrl = targetUrl.replace('mdvh18.github.io/mdvh18/', 'mdvh18.github.io/');
-                    }
-
-                    // 3. Máy quét dịch vụ lưu trữ
+                        targetUrl = targetUrl.replace('mdvh18.github.io/mdvh18/', 'mdvh18.github.io/');}
                     if (targetUrl.includes('pixeldrain.com')) {
-                        showPixeldrainFAQ();
-                    } else if (targetUrl.includes('terabox.com') || targetUrl.includes('teraboxapp.com') || targetUrl.includes('1024tera.com')) {
-                        showTeraboxFAQ();
-                    }
-
-                    // 4. Đồng hồ đếm ngược
+                        showPixeldrainFAQ();} 
+                    else if (targetUrl.includes('terabox.com') || targetUrl.includes('teraboxapp.com') || targetUrl.includes('1024tera.com')) {
+                        showTeraboxFAQ();}
                     let timeLeft = 4;
                     const countdown = setInterval(() => {
                         timeLeft--;
@@ -67,18 +56,10 @@
                             clearInterval(countdown);
                             window.location.href = targetUrl;
                             manualBtn.style.display = 'inline-block';
-                            manualBtn.href = targetUrl;
-                        }
-                    }, 1000);
+                            manualBtn.href = targetUrl;}}, 1000);} 
+                catch (e) {boxEl.innerHTML = "<h3>LỖI GIẢI MÃ</h3><p>Dữ liệu link không đúng định dạng.</p>";}} 
+            else {boxEl.innerHTML = "<h3>LỖI ĐƯỜNG DẪN</h3><p>Không tìm thấy liên kết yêu cầu.</p>";}
 
-                } catch (e) {
-                    boxEl.innerHTML = "<h3>LỖI GIẢI MÃ</h3><p>Dữ liệu link không đúng định dạng.</p>";
-                }
-            } else {
-                boxEl.innerHTML = "<h3>LỖI ĐƯỜNG DẪN</h3><p>Không tìm thấy liên kết yêu cầu.</p>";
-            }
-
-            // Hàm hiện thông báo Pixeldrain
             function showPixeldrainFAQ() {
                 const toast = document.createElement('div');
                 toast.id = 'pixeldrain-toast';
@@ -94,10 +75,8 @@
                         <a href="https://mdvh18.blogspot.com/p/faq.html" target="_blank" style="background:#f78f90; color:#1a1131; padding:8px 15px; border-radius:20px; text-decoration:none; font-weight:bold; font-size:13px; display:inline-block; transition:0.3s;">XEM FAQ NGAY</a>
                     </div>`;
                 document.body.appendChild(toast);
-                autoRemove(toast);
-            }
+                autoRemove(toast);}
 
-            // Hàm hiện thông báo Terabox
             function showTeraboxFAQ() {
                 if (document.getElementById('terabox-toast')) return;
                 const toast = document.createElement('div');
@@ -114,18 +93,12 @@
                         <a href="https://mdvh18.blogspot.com/p/faq.html" target="_blank" style="background:#54b5f5; color:#1a1131; padding:8px 15px; border-radius:20px; text-decoration:none; font-weight:bold; font-size:13px; display:inline-block; transition:0.3s;">XEM FAQ NGAY</a>
                     </div>`;
                 document.body.appendChild(toast);
-                autoRemove(toast);
-            }
+                autoRemove(toast);}
 
-            // Hàm tự xóa Toast
             function autoRemove(el) {
                 setTimeout(() => {
                     el.style.transform = 'translateX(120%)';
                     el.style.transition = '0.8s ease-in';
-                    setTimeout(() => el.remove(), 800);
-                }, 10000);
-            }
-        })();
-    </script>
+                    setTimeout(() => el.remove(), 800);}, 10000); }})();</script>
 </body>
 </html>
