@@ -45,9 +45,7 @@ body {margin: 0;
     white-space: nowrap; 
     line-height: 1;}
 
-/* --- NÚT TRIGGER (BA GẠCH) --- */
-.menu-trigger {
-    position: absolute;
+.menu-trigger {position: absolute;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
@@ -56,126 +54,85 @@ body {margin: 0;
     gap: 6px;
     z-index: 10001;
     padding: 10px;
-    cursor: pointer;
-}
+    cursor: pointer;}
 
-.menu-trigger span {
-    display: block;
+.menu-trigger span {display: block;
     width: 35px;
     height: 3px;
     background: #ffffff;
-    transition: 0.3s ease;
-}
+    transition: 0.3s ease;}
 
-.menu-trigger:hover span {
-    background: #d4487f;
-    box-shadow: 0 0 8px rgba(212, 72, 127, 0.8);
-}
+.menu-trigger:hover span {background: #d4487f; box-shadow: 0 0 8px rgba(212, 72, 127, 0.8);}
 
-/* --- KHUNG CHỨA MENU (MENU-CONTAINER) --- */
-.menu-container {
-    position: absolute;
+.menu-container {position: absolute;
     left: 20px;
-    top: 50px; /* Chỉnh lại cho sát nút trigger */
+    top: 50px;
     z-index: 10002;
-    padding-top: 15px; /* Cầu nối để di chuột không bị mất menu */
+    padding-top: 15px;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Chỉ dùng opacity để hiện hình, không dùng transform trượt xuống */
-}
+    transition: opacity 0.3s ease;}
 
-/* HIỆN MENU KHI HOVER */
 .menu-trigger:hover ~ .menu-container,
-.menu-container:hover {
-    visibility: visible !important;
-    opacity: 1 !important;
-}
+.menu-container:hover {visibility: visible !important; opacity: 1 !important;}
 
-/* --- NỘI DUNG DROPDOWN --- */
-.dropdown-content {
-    background: #111111 !important;
+.dropdown-content {background: #111111 !important;
     width: 280px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
     overflow: hidden;
-    border: 1px solid #222;
-}
+    border: 1px solid #222;}
 
-.dropdown-header {
-    color: #d4487f;
+.dropdown-header {color: #d4487f;
     font-size: 18px;
     font-weight: bold;
     padding: 20px 25px 12px;
     border-bottom: 3px solid #d4487f;
     text-transform: uppercase;
-    background: #151515;
-}
+    background: #151515;}
 
 .dropdown-content ul { list-style: none; padding: 0; margin: 0; }
 .dropdown-content li { border-bottom: 1px solid #1a1a1a; position: relative; }
 
-.dropdown-content li a {
-    color: #ffffff !important;
+.dropdown-content li a {color: #ffffff !important;
     padding: 14px 25px;
     display: block;
     font-weight: 600;
     text-decoration: none;
     font-size: 15px;
-    transition: 0.3s ease;
-}
+    transition: 0.3s ease;}
 
-.dropdown-content li a:hover {
-    background: rgba(212, 72, 127, 0.1);
+.dropdown-content li a:hover {background: rgba(212, 72, 127, 0.1);
     color: #d4487f !important;
-    padding-left: 35px;
-}
+    padding-left: 35px;}
 
-/* --- XỬ LÝ SUB-MENU (TRƯỢT TRÁI QUA PHẢI) --- */
 .has-sub { overflow: visible !important; }
 
-.sub-wrapper {
-    max-height: 0;
+.sub-wrapper {max-height: 0;
     opacity: 0;
     overflow: hidden;
     background: #0a0a0a;
     border-left: 3px solid #d4487f;
-    /* Dùng transition mượt cho chiều cao nhưng khóa vị trí nội dung */
-    transition: max-height 0.4s ease-out, opacity 0.3s ease !important;
-}
+    transition: max-height 0.4s ease-out, opacity 0.3s ease !important;}
 
-.has-sub:hover .sub-wrapper {
-    max-height: 800px !important;
-    opacity: 1 !important;
-}
+.has-sub:hover .sub-wrapper {max-height: 800px !important; opacity: 1 !important;}
 
-.sub-item {
-    display: block !important;
+.sub-item {display: block !important;
     padding: 10px 25px 10px 35px !important;
     color: #aaa !important;
     font-size: 13px !important;
     text-decoration: none !important;
-    white-space: nowrap; /* Giữ chữ trên một dòng, không cho nhảy dòng gây tụt */
-
-    /* ÉP CHỈ TRƯỢT NGANG */
+    white-space: nowrap;
     transform: translateX(-30px) !important; 
     opacity: 0 !important;
-    
-    /* Cực kỳ quan trọng: Khóa cứng sự thay đổi chiều cao của từng item */
-    transition: transform 0.4s ease, opacity 0.4s ease !important;
-}
+    transition: transform 0.4s ease, opacity 0.4s ease !important;}
 
-/* HIỆU ỨNG TRƯỢT SANG PHẢI KHI HOVER VÀO CHA */
-.has-sub:hover .sub-item {
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-}
+.has-sub:hover .sub-item {transform: translateX(0) !important; opacity: 1 !important;}
 
-/* Khi hover trực tiếp vào chính cái sub-item */
 .sub-item:hover {
     color: #d4487f !important;
     background: #151515 !important;
-    padding-left: 45px !important;
-}
+    padding-left: 45px !important;}
 
 .sub-nav-wrapper {background: linear-gradient(135deg,#241032,#d4487f) bottom / 100% 3px no-repeat;
     padding: 15px 0 !important;
@@ -502,7 +459,9 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     border: none !important;
     margin-top: -2px;
     position: relative;
-    z-index: 5;}
+    z-index: 5;
+    top: 50%;
+    bottom: 50%;}
 
 .card-info h3 {font-size: 13px;
     text-decoration: none !important;
