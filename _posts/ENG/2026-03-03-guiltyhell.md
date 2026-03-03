@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "guiltyhell"
+date: 2026-03-03 12:00:00 +0700
 title: "[ENG] Guilty Hell 2 - MDVH18"
 tags: [all, english, pc]
 namebanner: "[ENG] Guilty Hell 2 v0.52d - [2.5GB]"
