@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "backttpast"
+date: 2026-03-01 16:30:00 +0700
 title: "[ENG] Back to the Past APK/PC - MDVH18"
 tags: [all, english, apk, pc]
 namebanner: "[ENG] Back to the Past v0.10 APK/PC - [1.1GB]"
