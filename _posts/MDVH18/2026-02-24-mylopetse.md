@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "mylopetse"
+date: 2026-02-24 14:30:00 +0700
 title: "[Việt Hóa] My Loyal Pets SE - MDVH18"
 tags: [all, mdvh18, allvh, pc]
 namebanner: "[Việt Hóa] My Loyal Pets SE - [882MB]"
