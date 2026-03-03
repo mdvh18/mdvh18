@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "strongdesi7"
+date: 2026-03-03 14:00:00 +0700
 title: "[ENG] Strong Desire - MDVH18"
 tags: [all, english, pc]
 namebanner: "[ENG] Strong Desire Ep.7b - [4GB]"
