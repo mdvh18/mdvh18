@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "neurosplice"
+date: 2026-03-03 13:00:00 +0700
 title: "[ENG] NeuroSplice - MDVH18"
 tags: [all, english, pc]
 namebanner: "[ENG] NeuroSplice v0.02.1 - [161MB]"
