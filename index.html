@@ -144,7 +144,9 @@ layout: default
 
 <div class="main-content-wrapper">
     <div class="game-grid">
-      {% for post in paginator.posts %}
+      {% assign sorted_posts = paginator.posts | sort: 'date' | reverse %}
+      {% for post in sorted_posts %}
+      
         {% assign game_id = post.url | split: '/' | last | remove: '.html' %}
         <div class="game-card">
           <a href="{{ post.url | relative_url }}">
@@ -153,7 +155,8 @@ layout: default
                    class="grid-pitu-img" 
                    data-pitu="{{ game_id }}" 
                    alt="{{ post.title }}">
-              <i class="fa-solid fa-angles-down download-icon-fa"></i> {% if post.categories.size > 0 %}
+              <i class="fa-solid fa-angles-down download-icon-fa"></i> 
+              {% if post.categories.size > 0 %}
                 <div class="card-badge">{{ post.categories | first | replace: "-", " " }}</div>
               {% endif %}
             </div>
@@ -161,7 +164,7 @@ layout: default
               <h3>{{ post.namebanner }}</h3>
             </div>
           </a>
-          </div>
+        </div>
       {% endfor %}
     </div>
 </div>
