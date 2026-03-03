@@ -323,4 +323,17 @@ input.addEventListener('input', function() {
         if (window.pageYOffset > 300) {backToTopBtn.classList.add('show');} else {backToTopBtn.classList.remove('show');}});
     backToTopBtn.addEventListener('click', () => {window.scrollTo({top: 0,behavior: 'smooth'});});
 </script>
+<script>let currentSlide = 0;
+
+function moveSlide(step) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    
+    // Ẩn slide hiện tại (hoặc xử lý logic trượt của bạn ở đây)
+    currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+    
+    // Ví dụ đơn giản: Cuộn đến slide tiếp theo
+    const sliderContainer = document.querySelector('.slides');
+    sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+}</script>  
 </html>
