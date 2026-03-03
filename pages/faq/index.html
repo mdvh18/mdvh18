@@ -154,19 +154,6 @@ layout: default
     text-shadow: 0 0 15px rgba(247, 143, 144, 0.4);
   }
 
-  .faq-item {
-    background: rgba(255, 255, 255, 0.03);
-    margin-bottom: 15px;
-    border-radius: 12px;
-    border: 1px solid rgba(247, 143, 144, 0.15);
-    transition: 0.3s;
-  }
-
-  .faq-item:target {
-    border-color: #f78f90;
-    box-shadow: 0 0 20px rgba(247, 143, 144, 0.2);
-  }
-
   .faq-question {
     padding: 20px;
     background: linear-gradient(135deg, #f78f90, #D79BBB);
@@ -180,47 +167,45 @@ layout: default
     font-size: 18px;
   }
 
-  .faq-answer {
-    padding: 0;
-    max-height: 0;
+  /* Xóa bỏ phần :target cũ và thay bằng style cho details */
+details.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    margin-bottom: 15px;
+    border-radius: 12px;
     overflow: hidden;
-    transition: all 0.4s ease-out;
+    border: 1px solid rgba(247, 143, 144, 0.15);
+    transition: all 0.3s ease;
+}
+
+details.faq-item[open] {
+    border-color: #f78f90;
+    box-shadow: 0 0 20px rgba(247, 143, 144, 0.2);
+}
+
+summary.faq-question {
+    padding: 20px;
+    background: linear-gradient(135deg, #f78f90, #D79BBB);
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none; /* Ẩn dấu mũi tên mặc định của trình duyệt */
+    font-size: 18px;
+}
+
+/* Ẩn dấu mũi tên mặc định trên Safari */
+summary.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-answer {
+    padding: 25px;
     background: rgba(15, 12, 41, 0.7);
     line-height: 1.8;
-  }
-
-  /* Khi được click (Target) thì xổ ra */
-  .faq-item:target .faq-answer {
-    padding: 25px;
-    max-height: 2000px; /* Cho phép chứa nội dung dài */
-  }
-
-  .faq-answer p {
-    color: #ffd166 !important;
-    font-weight: 600;
-    margin: 15px 0;
-    display: inline-block;
-    border-left: 3px solid #f78f90;
-    padding-left: 10px;
-  }
-
-  .faq-answer img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-    border: 2px solid rgba(247, 143, 144, 0.5);
-    display: block;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: zoom-in;
-  }
-
-  .faq-answer img:hover {
-    transform: scale(1.05);
-    border-color: #f78f90;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-    z-index: 10;
-  }
+    border-top: 1px solid rgba(247, 143, 144, 0.1);
+}
 
   /* Mobile Responsive */
   @media screen and (max-width: 992px) {
@@ -244,26 +229,26 @@ layout: default
 <section class="faq-content">
     <div class="faq-header">Hỏi Đáp Thường Gặp</div>
 
-    <div class="faq-item" id="huong-dan">
-      <a href="#huong-dan" class="faq-question">1. Cách cài đặt Game Visual Novel? <span>▼</span></a>
-      <div class="faq-answer">
+    <details class="faq-item" id="huong-dan">
+  <summary class="faq-question">1. Cách cài đặt Game Visual Novel? <span>▼</span></summary>
+  <div class="faq-answer">
         Sau khi tải về, bạn cần giải nén bằng WinRAR hoặc 7-Zip bản mới nhất để tránh lỗi file. Sau đó tìm file có đuôi <b>.exe</b> để mở game.
         <br>
         <p>Lưu ý: Luôn tắt phần mềm diệt Virus (Antivirus) trước khi giải nén để tránh bị xóa nhầm file crack của game.</p>
       </div>
     </div>
 
-    <div class="faq-item" id="ma-giai-nen">
-      <a href="#ma-giai-nen" class="faq-question">2. Lấy mã giải nén ở đâu? <span>▼</span></a>
-      <div class="faq-answer">
+    <details class="faq-item" id="ma-giai-nen">
+  <summary class="faq-question">2. Lấy mã giải nén ở đâu? <span>▼</span></summary>
+  <div class="faq-answer">
         Mã giải nén mặc định thường là tên website hoặc được ghi rõ trong bài viết. 
         <br>Đối với các <b>Game VIP</b>, nếu không thấy mã, vui lòng nhắn tin trực tiếp cho Fanpage để được cấp mã nhanh nhất.
       </div>
     </div>
 
-    <div class="faq-item" id="tai-pixel">
-      <a href="#tai-pixel" class="faq-question">3. Cách tải Pixeldrain vượt giới hạn 6GB? <span>▼</span></a>
-      <div class="faq-answer">
+    <<details class="faq-item" id="tai-pixel">
+  <summary class="faq-question">2. Lấy mã giải nén ở đâu? <span>▼</span></summary>
+  <div class="faq-answer">
         Khi dính giới hạn dung lượng, hãy thực hiện theo các bước "vượt rào" sau:
         <br>
         <img alt="Step 1" src="https://blogger.googleusercontent.com/img/a/AVvXsEgN_9oqH8xD-KjJ8V7NAnIAjtGlXc39QjlJPRGrP7UNkv7KrCwnWPr9RYTcuA8_mftxtgucikLtOT0QKWpOIrIIPFhwLyFx-pcfMe9ghTRVfQWeJo7DwdiUddJ-0K7rhwMwuk8uGZ-f-ZzOpR6UgbqlupNDVdy3Vw5p1xncDY9SykjI9sErL9AxW95CKkk=s16000" />
@@ -277,9 +262,9 @@ layout: default
       </div>
     </div>
 
-    <div class="faq-item" id="tai-tera">
-      <a href="#tai-tera" class="faq-question">4. Mẹo tải Terabox nhanh không cần login? <span>▼</span></a>
-      <div class="faq-answer">
+    <details class="faq-item" id="tai-tera">
+  <summary class="faq-question">2. Lấy mã giải nén ở đâu? <span>▼</span></summary>
+  <div class="faq-answer">
         Sử dụng tool get link trung gian để lấy link tải trực tiếp tốc độ cao:
         <br>
         <img alt="Tera 1" src="https://blogger.googleusercontent.com/img/a/AVvXsEjAGwUKvoPmaWouNcsaFCUwwtT9VNTH3Ur9TsellQaKhaxYaU16LlyEy5eARz-FtS4sA6jLY1l3EB10maH_Z6p0A00gtmC8zEIIzXYlTC5T4kKiTuleh7Un1QXugcpDyFOmpiojq8k73Xf5TmCeLRnGeErxwcNF_wahRQ_20ROykoeCn_Go_krK7ht1oXU=s16000" />
@@ -296,12 +281,12 @@ layout: default
         <div class="footer-col" style="flex: 1; min-width: 250px;">
             <h4 style="margin-bottom: 15px; color: #f78f90; font-size: 16px;">Truy Cập Nhanh</h4>
             <div class="tag-cloud" style="display: flex; flex-wrap: wrap; gap: 6px;">
-                <a href="https://mdvh18.blogspot.com/search/label/All" class="tag-item">All</a>
-                <a href="https://mdvh18.blogspot.com/search/label/MDVH18" class="tag-item">MDVH18</a>
-                <a href="https://mdvh18.blogspot.com/search/label/AllVH" class="tag-item">Tiếng Việt</a>
-                <a href="https://mdvh18.blogspot.com/search/label/English" class="tag-item">Tiếng Anh</a>
-                <a href="https://mdvh18.blogspot.com/search/label/PC" class="tag-item">PC</a>
-                <a href="https://mdvh18.blogspot.com/search/label/Android" class="tag-item">Android</a>
+                <a href="https://mdvh18.github.io/pages/all/" class="tag-item">All</a>
+                <a href="https://mdvh18.github.io/pages/mdvh18/" class="tag-item">MDVH18</a>
+                <a href="https://mdvh18.github.io/pages/allvh/" class="tag-item">Tiếng Việt</a>
+                <a href="https://mdvh18.github.io/pages/english/" class="tag-item">Tiếng Anh</a>
+                <a href="https://mdvh18.github.io/pages/pc/" class="tag-item">PC</a>
+                <a href="https://mdvh18.github.io/pages/apk" class="tag-item">Android</a>
             </div>
         </div>
         <div class="footer-col" style="flex: 1; min-width: 220px; text-align: center;">
@@ -320,7 +305,7 @@ layout: default
                 <h4 style="margin-bottom: 12px; font-size: 16px;">Help Center</h4>
                 <div class="help-links" style="display: flex; flex-direction: column; gap: 5px; margin-bottom: 15px;">
                     <a href="#" style="color: #ccc; text-decoration: none; font-size: 13px;">Contact</a>
-                    <a href="#" style="color: #ccc; text-decoration: none; font-size: 13px;">FAQ</a>
+                    <a href="https://mdvh18.github.io/pages/faq" style="color: #ccc; text-decoration: none; font-size: 13px;">FAQ</a>
                     <a href="#" style="color: #ccc; text-decoration: none; font-size: 13px;">Request</a>
                 </div>
                 <div style="display: flex; gap: 15px; justify-content: flex-end; align-items: center;">
