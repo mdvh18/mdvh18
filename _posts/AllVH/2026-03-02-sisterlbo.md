@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "sisterlbo"
+date: 2026-03-02 10:30:00 +0700
 title: "[Việt Hóa] Sister live broadcast - MDVH18"
 tags: [all, allvh, pc]
 namebanner: "[Việt Hóa] Sister live broadcast 1.25 - [601MB]"
