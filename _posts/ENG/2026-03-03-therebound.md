@@ -1,6 +1,7 @@
 ---
 layout: game
 pitu_id: "therebound"
+date: 2026-03-03 11:30:00 +0700
 title: "[ENG] The Rebound - MDVH18"
 tags: [all, english, apk, pc]
 namebanner: "[ENG] The Rebound v0.1.4.1 - [489MB]"
