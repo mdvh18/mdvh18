@@ -6,7 +6,7 @@ title: "[Việt Hóa] Jerez s Arena - MDVH18"
 tags: [all, allvh, pc]
 namebanner: "[Việt Hóa] Jerez s Arena - [330MB]"
 mota: |
- Bạn nhập vai vào một quản lý, nơi buôn bán những người thú, ở đây bạn sẽ cho những người thú của mình làm những điều đen tối nhất bất kỳ việc gì chỉ để kiếm tiền....
+ Glenn là một chủ nô, kẻ coi trọng tiền bạc hơn cả mạng sống con người. Hắn đã thắng thầu Claudia, con gái của gia tộc Quinel từng là quý tộc, tại một buổi đấu giá.
 gametype: "Sandbox"
 language: "Tiếng Việt"
 mdvh18: "Other"
