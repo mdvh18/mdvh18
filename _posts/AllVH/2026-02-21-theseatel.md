@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "theseatel"
-date: 2026-02-23 15:30:00 +0700
+date: 2026-02-21 21:30:00 +0700
 title: "[Việt Hóa] The Secret Atelier - MDVH18"
 tags: [all, allvh, pc]
 namebanner: "[Việt Hóa] The Secret Atelier v3.0- [5.36GB]"
