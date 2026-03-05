@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "strangessis"
-date: 2026-02-23 15:30:00 +0700
+date: 2026-03-05 15:30:00 +0700
 title: "[Việt Hóa] Strange Search Sister APK/PC - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 namebanner: "[Việt Hóa] Strange Search Sister APK/PC V0.1- [236MB]"
