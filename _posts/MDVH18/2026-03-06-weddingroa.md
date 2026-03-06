@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "weddingroa"
-date: 2026-02-23 15:30:00 +0700
+date: 2026-03-06 11:30:00 +0700
 title: "[Việt Hóa] Wedding Roaming - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 namebanner: "[Việt Hóa] Wedding Roaming v1.0 APK/PC - [410MB]"
