@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "familychem"
-date: 2026-02-23 15:30:00 +0700
+date: 2026-03-06 14:30:00 +0700
 title: "[Việt Hóa] Family Chemistry - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 namebanner: "[Việt Hóa] Family Chemistry SE APK/PC - [921MB]"
