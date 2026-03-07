@@ -9,7 +9,7 @@ mota: |
  Tựa game này được chuyển thể từ bộ tiểu thuyết kinh điển Kim Bình Mai.
 gametype: "Sandbox"
 language: "Tiếng Việt"
-mdvh18: "Erovns"
+mdvh18: "khohieu"
 platform: "APK/PC"
 dungluong: "1.6GB"
 phienban: "Full"
