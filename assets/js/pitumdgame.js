@@ -703,7 +703,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEhsOHr9J9VOfarlcnwgtFMvifNxqQkoBCb1djEkRJ3dlWPyAFr_1c5H61D2VMV4tD8AEENotZIKIxKak79Q69YdyBvys8eCxWXvWVkNQhn_Kffbf2q5VMzUcaSv1saUSt1V2wwuFQaIKwoldmx7s12p1IENUQCHSdEwMQPQ20iFdQYBKHP75-1qzT68CrE=s16000"]},
     {id: "opentolove",
     name: "Việt Hóa Opening to Love",
-    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEhGf9R85B8_kF3Uf-TX5Jq-KvAtq4I7XRQ96YmBsy7gNoKkpWU9BpdsmRf0EKtouGVGEjwUXX5UUXAc-wH-hEVsxbSekaUl8r2qp9bXfZxGb_sZMJTen3sSZMqpglf7nWkqwHJPstX4_A8X6gM6-5D-Jhr3y4Cyex8BNr3rn5iHYaLbLWOst883UigxtEc=s16000",
+    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEg904r9mWrQEYluo3GnpPsBVDXoNzySNEeO-GCuFGG6jV_J4UhWwviUvbIvUFac8W2UrW5ElWfTAqa_yVM-nz664Rzu3sEX8dBlJWf8WPEB8QWnWPpftpd6bxE-2NCyZ7VnSkrkGHhMDRVPYm399ahJ6ATLQR78BvGQBwDhwj3bbAepIy9nQvo0J6spaOI=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEhWjHSPGCQ_iMqgeRqtGMeUJN3IUd-lOCH6SQ-JhoT5kis-fDT6l-QGKL9xnDigiDR9H0N357UVd5BhA9IDW7sn-BFmMFdEKdb81QKxr69gTVeJItB0M7si55GRSwjDZGE0RAX1ihn50U-gN2r923y8CGhel5xFyhcsRREDQPIJGnJybhHP6SLTidgDcbk=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEiScmgkzni8X-k-D0FTmk7CXVSdF_uMj2ceiDyEbG8-BPWM4AdjcSUsKJSv_oszfM3RXr5ATtW7ZjbZZS8liXB1vJI8cYbqnLI7vZStBZVVXlyh6Oc1rvX7QeFaqfE-nysjYg8tP0En2SR4mTtQtIQhCJY6hzXn94fy7Z-rqBazHDNjlJAKYG7Gy3-HgvQ=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEhgVz4BlytvQQtBYp777Dml1QC6aPKAyf6icD_0KjJf2r3c-rNKuXMUFqP3OFvP-Y0jbl_Pf5DNAclimimiB_VLYVnA_c1qLd8s9ivJchcvNrqfAhPhWp974-2jNr5vC1ge-xBtmNS7G4Gz7-QOygDHF__XnBwPOaIRCgumvAbreuF632xIaYHfLNChxRA=s16000",
