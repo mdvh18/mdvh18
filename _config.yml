@@ -5,5 +5,5 @@ permalink: /:title/
 plugins:
   - jekyll-paginate
 
-paginate: 21
+paginate: 15
 paginate_path: "/page:num/"
