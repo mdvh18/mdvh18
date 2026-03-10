@@ -17,6 +17,6 @@ dev: "Duppyc"
 genre: "3DCG, Animated, Footj, Handj, Humor, Le, Mastur, Milf, Monster, Romance, Vore (Dream)"
 
 linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L0tWd2pXUkJN"
-linkpixelapk: "https://mdvh18.github.io/download.html?url="
+linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3FRMUppZkQz"
 linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xanQ5X1lGeFFDaVp6QXJHVl9uOUR0QQ=="
 ---
