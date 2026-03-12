@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "pocketdesires"
-date: 2026-03-13 10:00:00 +0700
+date: 2026-03-13 4:00:00 +0700
 title: "ENG] Pocket Desires - MDVH18"
 tags: [all, english, apk, pc]
 namebanner: "[ENG] Pocket Desires v1.5 - [310MB]"
