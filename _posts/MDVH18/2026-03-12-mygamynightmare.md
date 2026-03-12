@@ -16,6 +16,7 @@ phienban: "v0.6.5"
 dev: "Jester"
 genre: "2DCG, AI CG, Romance, Dating Sim, PoV, Handj, Mastur"
 
-linkpixel: "https://mdvh18.github.io/download.html?url="
-linktera: "https://mdvh18.github.io/download.html?url="
+linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L0dmc0NreHJt"
+linkpixelapk: "https://mdvh18.github.io/download.html?url="
+linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xSU5ES19TS2ZCOXAwcUQ2cWgzZGxYUQ=="
 ---
