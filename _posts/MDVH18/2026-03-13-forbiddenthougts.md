@@ -17,6 +17,6 @@ dev: "SecretGallery"
 genre: "3DCG, Groping, Milf, Romance, Harem, Handj, Animated, Mastur, Toys"
 
 linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L1Q1bUU5bmJk"
-linkpixelapk: "https://mdvh18.github.io/download.html?url="
+linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2h3ZHFlNFJS"
 linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xVkFrOG8zcXN5YTZwT3hwSzFrWGpDQQ=="
 ---
