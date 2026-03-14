@@ -50,35 +50,46 @@
 
         if (encoded) {
             try {
-                // 1. Chuẩn hóa chuỗi mã hóa trước khi giải mã
-                // Thay thế khoảng trắng bằng '+' và xóa các ký tự lạ ở hai đầu
+                // 1. Làm sạch chuỗi Base64
                 let cleanEncoded = encoded.trim().replace(/\s/g, '+');
                 
-                // 2. Giải mã Base64
+                // 2. Giải mã
                 targetUrl = atob(cleanEncoded);
                 
-                // 3. HÀM DỌN DẸP SIÊU SẠCH (Quan trọng cho Google Drive)
-                // - Loại bỏ các ký tự không in được (control characters)
-                // - Chỉ giữ lại các ký tự URL hợp lệ từ mã ASCII 33 đến 126
+                // 3. Dọn dẹp link siêu sạch (để chạy được Drive)
                 targetUrl = targetUrl.replace(/[^\x21-\x7E]/g, '').trim();
 
-                // 4. Logic xử lý domain nội bộ
+                // 4. Logic domain nội bộ
                 if (targetUrl.includes('mdvh18.github.io/mdvh18/')) {
                     targetUrl = targetUrl.replace('mdvh18.github.io/mdvh18/', 'mdvh18.github.io/');
                 }
 
-                // 5. Hiển thị thông báo hỗ trợ theo domain
+                // --- HÀM THỰC HIỆN CHUYỂN HƯỚNG NHANH ---
+                const redirectNow = (url) => {
+                    const ghostLink = document.createElement('a');
+                    ghostLink.href = url;
+                    ghostLink.rel = "noreferrer";
+                    document.body.appendChild(ghostLink);
+                    ghostLink.click();
+                    setTimeout(() => window.location.replace(url), 300);
+                };
+
+                // 5. KIỂM TRA LOẠI TRỪ GOOGLE DRIVE
+                if (targetUrl.includes('drive.google.com')) {
+                    // Nếu là Drive, đi luôn không chờ, không hiện toast
+                    redirectNow(targetUrl);
+                    return; // Dừng script tại đây
+                }
+
+                // 6. Xử lý các link khác (vẫn chờ và hiện thông báo)
                 if (targetUrl.includes('pixeldrain.com')) {
-                    showToast('🚀', 'Phát hiện Pixeldrain!', 'Giới hạn 6GB/ngày. Xem FAQ để tải không giới hạn.', '#f78f90');
+                    showToast('🚀', 'Phát hiện Pixeldrain!', 'Giới hạn 6GB/ngày. Xem FAQ để biết mẹo tải.', '#f78f90');
                 } else if (/terabox|1024tera|teraboxapp/.test(targetUrl)) {
                     showToast('☁️', 'Phát hiện Terabox!', 'Nên dùng App hoặc đăng nhập để tải nhanh hơn.', '#54b5f5');
                 } else if (targetUrl.includes('buzzheavier.com')) {
-                    showToast('⚡', 'Phát hiện Buzzheavier!', 'Dịch vụ tốc độ cao. Nếu lỗi hãy thử tắt VPN.', '#ffeb3b');
-                } else if (targetUrl.includes('drive.google.com')) {
-                    showToast('🤖', 'Google Drive', 'Đang chuẩn bị link tải an toàn...', '#4caf50');
+                    showToast('⚡', 'Phát hiện Buzzheavier!', 'Dịch vụ tốc độ cao. Nếu lỗi hãy tắt VPN.', '#ffeb3b');
                 }
 
-                // 6. Đếm ngược và chuyển hướng
                 let timeLeft = 4;
                 const countdown = setInterval(() => {
                     timeLeft--;
@@ -86,33 +97,19 @@
                     
                     if (timeLeft <= 0) {
                         clearInterval(countdown);
-                        
-                        // Cập nhật nút bấm thủ công
                         if (manualBtn) {
                             manualBtn.href = targetUrl;
                             manualBtn.style.display = 'inline-block';
                         }
-                        
-                        // CHUYỂN HƯỚNG BẰNG CÁCH GIẢ LẬP CLICK (Vượt rào tốt hơn)
-                        const ghostLink = document.createElement('a');
-                        ghostLink.href = targetUrl;
-                        ghostLink.rel = "noreferrer"; // Xóa referrer để tránh bị Google/Buzz chặn
-                        document.body.appendChild(ghostLink);
-                        ghostLink.click();
-                        
-                        // Dự phòng nếu click không chạy
-                        setTimeout(() => {
-                            window.location.replace(targetUrl);
-                        }, 500);
+                        redirectNow(targetUrl);
                     }
                 }, 1000);
 
             } catch (e) {
-                console.error("Lỗi giải mã:", e);
-                boxEl.innerHTML = "<h3>LỖI GIẢI MÃ</h3><p>Link mã hóa không hợp lệ hoặc bị thiếu ký tự.</p>";
+                boxEl.innerHTML = "<h3>LỖI GIẢI MÃ</h3><p>Link không hợp lệ.</p>";
             }
         } else {
-            boxEl.innerHTML = "<h3>LỖI ĐƯỜNG DẪN</h3><p>Không tìm thấy liên kết yêu cầu.</p>";
+            boxEl.innerHTML = "<h3>LỖI ĐƯỜNG DẪN</h3><p>Không tìm thấy liên kết.</p>";
         }
 
         function showToast(icon, title, desc, color) {
