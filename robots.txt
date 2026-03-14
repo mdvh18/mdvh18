@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://mdvh18.github.io/sitemap.xml
