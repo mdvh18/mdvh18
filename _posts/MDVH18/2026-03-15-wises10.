@@ -1,0 +1,21 @@
+---
+layout: game
+pitu_id: "wises10"
+date: 2026-03-15 11:30:00 +0700
+title: "Việt Hóa Wishes v1.0 - MDVH18"
+tags: [all, mdvh18, allvh, pc, apk]
+namebanner: "[Việt Hóa] Wishes v1.0 APK/PC - [B]"
+mota: |
+ Một ngày mới ở trường. Có thứ gì đó vừa làm tôi chú ý. Trông nó cứ như... một chiếc đèn thần vậy. Nếu tôi thổi bụi rồi xoa vào nó, liệu thần đèn có hiện ra không nhỉ?
+gametype: "Visual Novel"
+language: "Tiếng Việt"
+mdvh18: "MDVH18"
+platform: "APK/PC"
+dungluong: ""
+phienban: "v1.0"
+dev: "mushi"
+genre: "2DCG, Mobile game, Voiced"
+
+linkpixel: "https://mdvh18.github.io/download.html?url="
+linktera: "https://mdvh18.github.io/download.html?url="
+---
