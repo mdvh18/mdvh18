@@ -4,6 +4,7 @@ pitu_id: "summerclover"
 date: 2026-02-20 12:30:00 +0700
 title: "Việt Hóa Summer Clover - MDVH18"
 tags: [all, allvh, pc]
+typegame: ["PC"]
 namebanner: "[Việt Hóa] Summer Clover v1.11 - [3.6GB]"
 mota: |
  Trong một bước ngoặt của số phận, cấp trên của bạn là Shizuko đã đề xuất một sự thay đổi công việc đầy bất ngờ: một vị trí quản gia tại biệt thự của chính chủ thuê bạn!
