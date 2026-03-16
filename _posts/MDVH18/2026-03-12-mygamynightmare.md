@@ -2,9 +2,10 @@
 layout: game
 pitu_id: "mygamynightmare"
 date: 2026-03-12 16:30:00 +0700
-title: "Việt Hóa My Girlfriend and My Nightmare APK/PC - MDVH18"
+title: "Việt Hóa My Girlfriend and My Nightmare - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
-namebanner: "[Việt Hóa] My Girlfriend and My Nightmare v0.6.5 APK/PC - [891MB]"
+typegame: ["PC", "APK"]
+namebanner: "[Việt Hóa] My Girlfriend and My Nightmare v0.6.5 - [891MB]"
 mota: |
  Bạn vào vai Alan, một anh chàng mắc kẹt trong một công việc chẳng ra gì, chỉ cố gắng sống qua ngày đoạn tháng. Một buổi sáng nọ, cậu bất ngờ gặp lại người bạn thời thơ ấu Nala
 gametype: "Visual Novel"
