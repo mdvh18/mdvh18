@@ -4,6 +4,7 @@ pitu_id: "mymosecret"
 date: 2026-02-21 14:00:00 +0700
 title: "[Việt Hóa] My Moms Secre - MDVH18"
 tags: [all, allvh, pc]
+typegame: ["PC"]
 namebanner: "[Việt Hóa] My Moms Secret SE - [886MB]"
 mota: |
  
