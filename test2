@@ -4,6 +4,7 @@ pitu_id: ""
 date: 2026-02-23 15:30:00 +0700
 title: " - MDVH18"
 tags: [all, mdvh18, allvh, pc]
+typegame: ["PC", "APK"]
 namebanner: "[Việt Hóa]  - [B]"
 mota: |
 
@@ -26,6 +27,7 @@ pitu_id: ""
 date: 2026-02-23 15:30:00 +0700
 title: " - MDVH18"
 tags: [all, english, apk, pc]
+typegame: ["PC", "APK"]
 namebanner: "[ENG] - [B]"
 mota: |
 
