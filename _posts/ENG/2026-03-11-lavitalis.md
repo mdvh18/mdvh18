@@ -4,6 +4,7 @@ pitu_id: "lavitalis"
 date: 2026-03-11 12:30:00 +0700
 title: "ENG La Vitalis: Immortal Loss v0.41.0 - MDVH18"
 tags: [all, english, pc]
+typegame: ["PC"]
 namebanner: "[ENG] La Vitalis: Immortal Loss v0.41.0 - [1.1GB]"
 mota: |
  Một sinh viên y thuật trẻ tuổi đầy quyến rũ... Một vương quốc hoàng kim bị tàn phá bởi một căn bệnh chưa từng được biết đến... Và những bí mật của giả kim thuật có thể thiêu rụi mọi thứ...
