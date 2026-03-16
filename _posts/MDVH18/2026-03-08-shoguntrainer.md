@@ -4,7 +4,8 @@ pitu_id: "shoguntrainer"
 date: 2026-03-08 12:30:00 +0700
 title: "Việt Hóa Shogun Trainer - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
-namebanner: "[Việt Hóa] Shogun Trainer Beta v0.1 APK/PC - [212MB]"
+typegame: ["PC", "APK"]
+namebanner: "[Việt Hóa] Shogun Trainer Beta v0.1 - [212MB]"
 mota: |
  Chào mừng bạn đến với Shogun Trainer, một tựa game dành cho người hâm mộ (fangame) lấy bối cảnh trong vũ trụ Genshin với nhân vật chính là Raiden Shogun. Trong trò chơi này, bạn sẽ vào vai Quan Đại Thần Quản Trị của Hiệp Hội Shogun.
 gametype: "Visual Novel"
