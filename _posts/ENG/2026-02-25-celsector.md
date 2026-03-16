@@ -2,7 +2,7 @@
 layout: game
 pitu_id: "celsector"
 date: 2026-02-25 18:30:00 +0700
-title: "[ENG] CelSector v1.1.1 - MDVH18"
+title: "ENG CelSector v1.1.1 - MDVH18"
 tags: [all, english, pc, apk]
 typegame: ["PC", "APK"]
 namebanner: "[ENG] CelSector v1.1.1 - [489MB]"
