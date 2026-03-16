@@ -17,6 +17,6 @@ dev: "RoyalCandy"
 genre: "3DCG, Adventure, MILF, Romance"
 
 linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91LzM0WnZESHNw"
-linkpixelapk: "https://mdvh18.github.io/download.html?url="
+linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L0tqeWt5em54"
 linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xaFJDaE5RR3ZvZ2FvQ3RjNkF2YWo0UQ=="
 ---
