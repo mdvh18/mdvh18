@@ -4,6 +4,7 @@ pitu_id: "taleunendingss1"
 date: 2026-03-13 15:30:00 +0700
 title: "Việt Hóa Tales from the Unending Void Season 1 - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
+typegame: ["PC", "APK"]
 namebanner: "[Việt Hóa] Tales from the Unending Void Season 1 - [3.3GB]"
 mota: |
  Camran là một quý tộc nhỏ tuổi đến từ Sovereignty, một phần không gian do con người thống trị. Từng là học viên của Học viện Hải quân Terran, Cam bị hoàn cảnh buộc phải du hành khắp thiên hà cùng với một nhóm bạn bè
