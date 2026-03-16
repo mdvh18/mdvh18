@@ -4,7 +4,7 @@ pitu_id: "nomoremoney"
 date: 2026-03-15 12:30:00 +0700
 title: "Việt Hóa No More Money GE - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
-typegame: ["PC", "APK", "Compressed"]
+typegame: ["APK", "Compressed"]
 namebanner: "[Việt Hóa] No More Money v4.3.1 GE - [2.7B]"
 mota: |
  Mọi chuyện bắt đầu từ khi chú tôi mất công ty và cả nhà bị buộc phải dời sang một thành phố khác. Tại đây chúng tôi phải bắt đầu lại từ con số không trong một căn hộ nhỏ chỉ có hai phòng ngủ.
