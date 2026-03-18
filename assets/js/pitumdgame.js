@@ -1149,6 +1149,20 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEgJIctQjSV5NfV-v_VTRfF2nlODPQjbM86HAl4MHkOtJBjm7bgAcIi9-uh7-julIBdWsGOjG5MtY0lsz6_UDID_cvqEucy2t94qWsU6BETjI76CFOU_kxR5nVrU1Tje5eDY2cnPBiaJUGvLBN7SLJ2CLC7zQcg23ltvLh2zWbYNjuUkTnLf-6l7Om8GNws=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEiHeShgCMp4kC0uCFa8StZDgtjZV2DYS-_Rso8fW0v4quSzRJKxrxjK924Ja2CRRcTmi7x2HY1nx6kcwYQRuKkWiOcXpI15xZlJiz6Mn9uIJe_3BQBaL5da0GD9hIiVljUCGatVOjZ9E6oxVnAKuSYJg-FFNOIVjPw053_rAZgX-Bif7mMn3chbtkBSIBg=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEgMnJN5ZIZ0YbYmetEV4lViWiYj47ZqIqjZMsapG7_b5d-2uEbv6FjlsAFcYcLHg9KnanrUyhGpVV5vAtXTmH_hsshfaKffDL66mNcvZHq7fn8q0Way8zV9BSgfYeguWdlXdU1mYS-uc0tuaDGNmaVpPch-dEw0Wz8jbxAbGg4ME8L8X3IWq0O1i4h0v8I=s16000"]},
+    {id: "lustforwealth",
+    name: "Việt Hóa Lust for Wealth",
+    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEgRjPhRq7EajjWD-nyBw3KIpVRFhgmggqxJQZznxSM7AJOp00OTn-uLeNJIICGx5ifqBOtM5O2fu2Bm2ALm7sfLUVyzGGd-eugFeFeP-cgWaPv_PWuRDT5by_X8YvmzMYvqz3kBq8oxPkXopb16fYZXoAJD4o858FVbzXCvYtMvFICBN6e4c4HBxKFqZ6k=s16000",
+    previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEgDeONnScClw9vf80RjNQVEZ9CXzR3zLYot_JBI-e2tzHFWbzTpVnSs-9sl0cuRTMKQ10XAoBC4ITbaGe0HejdHY5AMg9wh7V7yXrXPyrz8nvPxtredGGDhrG43sxL_zXWYtUOm70t1_7oF4H2U4UAxFALMLPTwj0ivyGJ-SAoi1_FollOIDfYeGeh0GbI=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEi6rQeZkqH4yQ8lpi6Cicx47Sm06opg1s2aJe2MOt1JjWGXZIaTzFMaey8nfF0BlGTUZw0XGobljh3trwd7bweSQXrydsB4fiYO0zF6CfRJirTOkaihnUCOOpCBIJxtTGHiWCS0UROrdjdNmxGXWznciwMV5zPw4mZ9ouxcD-_U7mk4tru_Zj4JQkaMHCM=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEjzgS-_8I56RABBaW1JXyKQlgwupTlhfoWkDKk5Xp2WK1Yd6xyHww5SZRoVchz4q81mbxxA4mzV4aHpE6mDh3rmPoU_Mym2L7BHgULe88_B96sUd0yTUM0PGxG7F5SV0hMR0Inidlk2Qv0jYiqzQ7ukNA29jNOZdTQXvd9BBpCWuzJehLCkHOA0lfVrZ1I=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEjAOD1a73ZxGro3gLNFWHT4qCUmj8--YyUYwhBqkhZyig_dXPmIVdLqaI6XDEIckg32SmlhWBVPbn9pSjnR1aqCDwjv6FpGx6iDirT4yGq0xCgPzm0tmbEPiYpvv95HmVuwzz7JyHq0a7Hn27eZBwaC15awoErwF7XSXgtEnGkBrwgvM8zC5rGP6XKpr74=s16000"]},
+    {id: "thebosswada",
+    name: "Việt Hóa The Boss's Wife: A Dangerous Affair",
+    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEiPspLsx_syKS20NT0an_dnHaaGxqyrtBx8rp1F3DnS3nY7pT8GhcoWEc54RURBvZyl1hMIwIcRNIO099p4kx6TIxN85keF9OLyuUIqQzXC5ql-tSdVt9YGscugU51Msb8G8QSnKg61NDyalpn9mVfX6VMKhtejQtjtK7V4yEtRkfr-SwBRdbkzjN8vEmw=s16000",
+    previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEiZtNzBp-rqawKjADZwsXeFbkWahcMrnR3DV3FzAYA164bfLrGgZ7Bg7J_K8dgAcs6GpNypkSuzXVkrOiPtmLQFuL2m9NwN0M6O4qp1Z8HnZ-MeZmSQS9LCry8FNhJx6HeKf7UcmBeGFsVLTeETnBBYGRZMomr6556uoOMHA9RAgj8X7vkeZPoHwMykd2w=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEj60yLQgvyDKTcxvxaVogfS2NjVrJgAM0zmFAqE2rsQcOMkSa84uqSvB4OsE_LmS6zMyC9TwJq-GjetRzDAsgcMy34cRdR4hnQrYfRtrN_2AVqZKdwif76hyKhnuYOD-Dkt0S7_XDeikS3tAbnOf2EGPOXmNw3ElKXSL9A39wFYhY-cmL_Uj2qRuEyKDsA=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEiN3MH0eTkHyF3mxmz59xkEsWwDJMbP6FQa4xF37eE7CAmToWd4lebeTq5q4vML5GETRDdZpbkdGKB2IK7ip0IyJQLQKVKXEGlSZRKsGcUbIA14n4mGAMxLgpWtUQzcFZMI2_lcHXWDf3vfhoCZQR7ss4wp_TCJgtxm65tP_o9tAW7qv1g2TanDJc3x4fM=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEgnbbxou9nmkGsgLEWEY5g0eQKYn9SypWevGA9pq5Cho4XJQuxQnJOf-Xo4JKk4ku98ZnYdCcIppq_NIMtSKwf0CCi5nFjJkCCQSYf-8qOhA5Yq72c9mH3SiTL-kq3OYSfcFKLDbjIV5EvuwWtOkQlxi8UnA2dkyKgsZBIlGYa2tnxFJRPzbjTX4ICTydA=s16000"]},
     {id: "",
     name: "",
     banner: "",
@@ -1156,4 +1170,5 @@ const PITU_DATABASE = [
                "",
                "",
                ""]}
+    
 ];
