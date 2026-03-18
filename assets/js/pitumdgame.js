@@ -1151,7 +1151,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEgMnJN5ZIZ0YbYmetEV4lViWiYj47ZqIqjZMsapG7_b5d-2uEbv6FjlsAFcYcLHg9KnanrUyhGpVV5vAtXTmH_hsshfaKffDL66mNcvZHq7fn8q0Way8zV9BSgfYeguWdlXdU1mYS-uc0tuaDGNmaVpPch-dEw0Wz8jbxAbGg4ME8L8X3IWq0O1i4h0v8I=s16000"]},
     {id: "lustforwealth",
     name: "Việt Hóa Lust for Wealth",
-    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEgRjPhRq7EajjWD-nyBw3KIpVRFhgmggqxJQZznxSM7AJOp00OTn-uLeNJIICGx5ifqBOtM5O2fu2Bm2ALm7sfLUVyzGGd-eugFeFeP-cgWaPv_PWuRDT5by_X8YvmzMYvqz3kBq8oxPkXopb16fYZXoAJD4o858FVbzXCvYtMvFICBN6e4c4HBxKFqZ6k=s16000",
+    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEgqwEj70qtKypjRJoqyABRDcTR_RvsAs9q0XWZHvu-UNoQr5dulF_YlI602U_EwPEvL1b9QzaXaheHCr5WQ9K_S_rloJVBnKrl8waIZWbjHzfqO5ZfC34U4A0kJbS0ldB00K72_W24W8jDeTAwuwLUiMsezPCdF5JEVJy9Xeg-jZJgltkPZvuwzVk2nrmA=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEgDeONnScClw9vf80RjNQVEZ9CXzR3zLYot_JBI-e2tzHFWbzTpVnSs-9sl0cuRTMKQ10XAoBC4ITbaGe0HejdHY5AMg9wh7V7yXrXPyrz8nvPxtredGGDhrG43sxL_zXWYtUOm70t1_7oF4H2U4UAxFALMLPTwj0ivyGJ-SAoi1_FollOIDfYeGeh0GbI=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEi6rQeZkqH4yQ8lpi6Cicx47Sm06opg1s2aJe2MOt1JjWGXZIaTzFMaey8nfF0BlGTUZw0XGobljh3trwd7bweSQXrydsB4fiYO0zF6CfRJirTOkaihnUCOOpCBIJxtTGHiWCS0UROrdjdNmxGXWznciwMV5zPw4mZ9ouxcD-_U7mk4tru_Zj4JQkaMHCM=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEjzgS-_8I56RABBaW1JXyKQlgwupTlhfoWkDKk5Xp2WK1Yd6xyHww5SZRoVchz4q81mbxxA4mzV4aHpE6mDh3rmPoU_Mym2L7BHgULe88_B96sUd0yTUM0PGxG7F5SV0hMR0Inidlk2Qv0jYiqzQ7ukNA29jNOZdTQXvd9BBpCWuzJehLCkHOA0lfVrZ1I=s16000",
