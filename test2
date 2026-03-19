@@ -3,7 +3,7 @@ layout: game
 pitu_id: ""
 date: 2026-02-23 15:30:00 +0700
 title: " - MDVH18"
-tags: [all, mdvh18, allvh, pc]
+tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
 namebanner: "[Việt Hóa]  - [B]"
 mota: |
@@ -11,7 +11,7 @@ mota: |
 gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
-platform: "PC"
+platform: "APK/PC"
 dungluong: ""
 phienban: ""
 dev: ""
