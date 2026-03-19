@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "driftborne"
-date: 2026-03-19 13:30:00 +0700
+date: 2026-03-19 14:30:00 +0700
 title: "Việt Hóa Driftborne - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK", "Compressed"]
