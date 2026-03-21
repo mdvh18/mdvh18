@@ -3,20 +3,20 @@ layout: game
 pitu_id: "xxxfilevh"
 date: 2026-03-19 20:30:00 +0700
 title: "Việt Hóa xxxFiles v0.1.5 - MDVH18"
-tags: [all, mdvh18, pc, apk]
-typegame: ["PC", "APK"]
+tags: [all, mdvh18, pc]
+typegame: ["PC"]
 namebanner: "[Việt Hóa] xxxFiles v0.1.5 - [3.9GB]"
 mota: |
  Về trò chơi thì nó giống như game Prototype hoặc Venom nhưng có thêm yếu tố tình dục. Cũng chẳng có gì nhiều để nói ở đây cả. Bạn không có một quá khứ đau thương hay bất cứ thứ gì đại loại thế, bạn chỉ đơn giản là một sinh vật ngoài hành tinh thích làm ... mà thôi.​
 gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
-platform: "APK/PC"
+platform: "PC"
 dungluong: "3.9GB"
 phienban: "0.1.5"
 dev: "Caine.Totally.Sane"
 genre: "3DCG, Exhibitionism, Monster, Sci-fi, Tentacles, Management, Multiple Endings, Corruption, Romance, Sandbox, Harem, Superpowers, Cosplay, Animated, Milf, Teasing, Adventure, Combat"
 
-linkpixelapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS9sL2RoazdETkgx"
-linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xWFltR252V0FOT2FoQ0hOMmZQM2lTdw=="
+linkpixel: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS9sL2RoazdETkgx"
+linktera: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xWFltR252V0FOT2FoQ0hOMmZQM2lTdw=="
 ---
