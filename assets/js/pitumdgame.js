@@ -2621,7 +2621,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEgUUGUG4bvjNfbTirxmXGGXzWktmNK0uIMSRnPPK60xgAQBLSXDjTfUeor8Kum7minZXM9lL3h_0x0S9eFKxbl6DrA6T75koaLn32Z9SUnzvoq55GF_0LokDdvvo5PcSfW4BiHZu9NdP8dm2JIErL7r4RaIhi2V_qZeSutirUDHHtl12mmmyr21l8K3xe0=s16000"]},
     {id: "abyssallust",
     name: "Việt Hóa Abyssal Lust v0.4.2",
-    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEhVueZCHhe5YRmAMEsLLaAxRduSBcZ-P5GgTsBv4CAQVpLTBS80RMVgOhuS6nvioRqJA3R8yoSmJclvkGhBmvSZRnpExUAu0hoeHmiKTuh8WrqLfKocpQXdOxN_WdEmmk_697u7wqcTqz4WirSvgU8qJB5SMo6rhLP1M_HMxtS4ATCZOyrZ8LGYeJVfpdA=s16000",
+    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEhcl9mOndvIkR_wMIn9QfxX930g3Vs1BEn9qScRpIrOTmOAkLBbe0laL97C_fwGzRB71k0Y-F451YOawt70k9gOSSx-XOiXXeCBFfnj8nP4HLqIXTi4M2_DSrW7UzUROBLIT24m2vL1IR4wbcxj7kUG_Oo_Z9AUxBDLsYJU2V0hHfhUphgY2dmXsSgsj2k=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEjC1OumgNcvLXgEq0fSCldBo2WZgqGrW2e4QZlraeeOMpcVza0ycPXUgo5yU8SSXK5rSxn1_BcgNoeWyHD6uIE3ziqCCrkGc1GbIY72wB0ynclPyjDu1fNnt2YIpeOWp1Z2F0UG5VJ6aBh-E6RoDkM5e80E9D2ybhtnNbYiJp_53lRBcb1WxazxknrEFCA=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEhftV5t1eWKSx-FzHPshR_K_mhkIUlTbgi1xyg3Jc5VHUOUKQFBmtmh7P6XWY64DTd-0obh6fFD945s99pMcdsXbP2LVPyIPSMR9AQM7wZBoJrsglmam6jORuCSGkJXqLsU18WbEhwVPpFvnq_Gm59U8pF3OdKMTxtgLBhumD08nDfim_ZPUohxl46bpS8=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEgAmjp4qyobxu0V9lMCrwyXDMSOKYVMXb0RxJuMIDXlDra6UUFVTKEJHaN4wX3FzQNkfQAPMRl2cg_Z9EnsXNMd9ROB0W8_iQ3g2wcZA4Ma28HBqJYgeJCjkwurh5FOXxa8NGeoCoWvs-VfvbHZdFd0wmUbc8u3CjvjnT-uzT9BpyPrNHjyZ-9laSl-5X0=s16000",
