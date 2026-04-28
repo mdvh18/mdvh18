@@ -179,15 +179,15 @@ layout: default
 </div>
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Trước</a>
+  
+  {% if paginator.page > 1 %}
+    <a href="{{ '/' | relative_url }}">Đầu</a>
   {% endif %}
 
   {% assign current = paginator.page %}
   {% assign total = paginator.total_pages %}
   {% assign limit = 5 %}
   
-  {% comment %} Tính toán điểm bắt đầu và kết thúc {% endcomment %}
   {% assign start = current | minus: 2 %}
   {% assign end = current | plus: 2 %}
 
@@ -202,7 +202,6 @@ layout: default
     {% if start < 1 %}{% assign start = 1 %}{% endif %}
   {% endif %}
 
-  {% comment %} Hiển thị các số trang trong khoảng start -> end {% endcomment %}
   {% for page in (start..end) %}
     {% if page == current %}
       <span class="current-page">{{ page }}</span>
@@ -213,9 +212,10 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Sau &raquo;</a>
+  {% if paginator.page < total %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', total }}">Cuối</a>
   {% endif %}
+
 </div>
 {% endif %}
 <footer class="footer-section" style="background: linear-gradient(to bottom, #1a1131, #0a0a0a); padding: 30px 0 15px 0; margin-top: 40px; border-top: 1px solid rgba(247, 143, 144, 0.2); font-family: 'Segoe UI', Roboto, sans-serif; color: #eee; width: 100%;">
