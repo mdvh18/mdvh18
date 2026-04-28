@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "idolforgin"
-date: 2026-05-29 02:00:00 +0700
+date: 2026-04-29 05:00:00 +0700
 title: "Việt Hóa Idol Forgin - MDVH18"
 tags: [all, allvh]
 typegame: ["PC"]
