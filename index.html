@@ -182,8 +182,29 @@ layout: default
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Trước</a>
   {% endif %}
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
+
+  {% assign current = paginator.page %}
+  {% assign total = paginator.total_pages %}
+  {% assign limit = 5 %}
+  
+  {% comment %} Tính toán điểm bắt đầu và kết thúc {% endcomment %}
+  {% assign start = current | minus: 2 %}
+  {% assign end = current | plus: 2 %}
+
+  {% if start < 1 %}
+    {% assign start = 1 %}
+    {% assign end = limit %}
+  {% endif %}
+
+  {% if end > total %}
+    {% assign end = total %}
+    {% assign start = total | minus: limit | plus: 1 %}
+    {% if start < 1 %}{% assign start = 1 %}{% endif %}
+  {% endif %}
+
+  {% comment %} Hiển thị các số trang trong khoảng start -> end {% endcomment %}
+  {% for page in (start..end) %}
+    {% if page == current %}
       <span class="current-page">{{ page }}</span>
     {% elsif page == 1 %}
       <a href="{{ '/' | relative_url }}">1</a>
@@ -191,6 +212,7 @@ layout: default
       <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
+
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url }}">Sau &raquo;</a>
   {% endif %}
