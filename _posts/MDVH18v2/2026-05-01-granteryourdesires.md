@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "granteryourdesires"
-date: 2026-05-01 12:30:00 +0700
+date: 2026-05-01 12:00:00 +0700
 title: "Việt Hóa Granter of Your Desires R - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
