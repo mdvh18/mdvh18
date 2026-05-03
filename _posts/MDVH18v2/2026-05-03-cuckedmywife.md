@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "cuckedmywife"
-date: 2026-05-03 10:30:00 +0700
+date: 2026-05-03 10:00:00 +0700
 title: "Việt Hóa Cucked by My Wife Final - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
