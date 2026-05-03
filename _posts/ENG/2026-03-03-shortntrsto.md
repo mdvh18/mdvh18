@@ -20,6 +20,5 @@ dev: "LustfulFantasy"
 genre: "3dcg, Animated, Mobile game, Corruption"
 
 linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2J0eHhHQm5x"
-linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91LzR2eU05YzRj"
 linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xbWZHMDBQY1JBV0ZhblY0b0xvRmNkZw=="
 ---
