@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "wantedwildsl"
-date: 2026-05-05 17:30:00 +0700
+date: 2026-05-05 17:00:00 +0700
 title: "Việt Hóa WANTED: Wild Sluts Completed - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
