@@ -359,20 +359,30 @@
     Các bản dịch còn nhiều thiếu sót, mọi sự ủng hộ của các bro là nguồn động lực lớn nhất để tôi tiếp tục việt hóa vì đam mê. Hoặc các bro có thể dành chút ít thời gian click vào link quảng cáo để ủng hộ Team. 
     Cảm ơn các bro.
     <a href="https://mdvh18.github.io/donate" target="_blank" style="color: #ff4757; font-weight: bold; text-decoration: none; transition: all 0.3s ease; display: inline-block; padding: 0 5px;">
-        DONATE -
+        DONATE
     </a>
     <a href="https://work.ink/2z4w/mdvh18-cm-n-bro" target="_blank" style="color: #ff4757; font-weight: bold; text-decoration: none; transition: all 0.3s ease; display: inline-block; padding: 0 5px;">
-    QUẢNG CÁO
+        QUẢNG CÁO
     </a>
     
     <style>
-        /* Hiệu ứng khi di chuột vào chữ DONATE */
-        a[href="https://mdvh18.github.io/donate"]:hover {
-            color: #ff6b81 !important;
-            transform: scale(1.1);
-            text-shadow: 0 0 8px rgba(255, 71, 87, 0.5);
-        }
-    </style>
+   
+    a[href*="donate"], 
+    a[href*="work.ink"] {
+        display: inline-block;
+        transition: all 0.3s ease; 
+        text-decoration: none; 
+    }
+
+
+    a[href*="donate"]:hover, 
+    a[href*="work.ink"]:hover {
+        color: #ff6b81 !important;
+        transform: scale(1.1);
+        text-shadow: 0 0 10px rgba(255, 107, 129, 0.6);
+        cursor: pointer;
+    }
+</style>
 </div>
 <script src="{{ '/assets/js/pitumdgame.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/search.js' | relative_url }}"></script>   
