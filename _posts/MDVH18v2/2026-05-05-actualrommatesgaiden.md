@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "actualrommatesgaiden"
-date: 2026-05-05 15:30:00 +0700
+date: 2026-05-05 15:00:00 +0700
 title: "Việt Hóa Actual Roommates Gaiden: TWWLHC - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
