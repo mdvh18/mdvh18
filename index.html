@@ -282,16 +282,15 @@ layout: default
     <div class="megumin-left">
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAWkPOxJVqkc0xIyKBoulfxbN9BXFI1j6jQMc9SnV2HjiESbR7VvDZM6FheAGZ86P57AnIEhX0Wy8HFw0xkd8lGV4svCOHtD9oecMQr22ItBvEVrLcJMixvPtvN31uIZZY-z0clWZD4iPkQ8A7Gpo_JkJkI9tW0dOvw9nmT1Lr1znL3xKJaLbq49s_Yw/s1600/IMG_20220521_032343.png" alt="Megumin Left">
 </div>
-<div id="fix-popup" class="fix-popup-container" style="display: none;">
-    <div id="fix-popup" class="fix-popup-container" style="display: none;">
+<div id="fix-popup" class="fix-popup-container">
     <div class="fix-popup-content">
-        <img src="path/to/sorry-image.png" alt="Sorry" class="popup-img">
+        
+        <img src="https://i.pinimg.com/1200x/7b/c1/c5/7bc1c5910abd210b06e3a5394cc07543.jpg" alt="Sorry" class="popup-img">
         <h3>THÔNG BÁO FIX LỖI</h3>
         <p>Hiện tại đã fix lỗi không hiển thị chọn tiếng Việt ở bản APK. Cũng như fix cảnh H video game Simple Days Việt Hóa.</p>
-        <p class="sorry-text">Sorry anh em vì sự bất tiện này, nếu có phát hiện lỗi, anh em nhắn lên page nhé! <span class="heart">♥</span></p>
+        <p class="sorry-text">Sorry anh em vì sự bất tiện này! <span class="heart">♥</span></p>
         <button onclick="closePopup()" class="popup-btn">Đã hiểu</button>
     </div>
-</div>
 </div>
 </footer>
 </body>
@@ -347,28 +346,19 @@ const backToTopBtn = document.getElementById('back-to-top');
  </script>
 <script>
     
-    window.onload = function() {
-        const hasSeen = localStorage.getItem('hasSeenFixPopup');
-        
-        if (!hasSeen) {
-            const popup = document.getElementById('fix-popup');
-            popup.style.display = 'block';
-
-            
-            setTimeout(() => {
-                closePopup();
-            }, 10000);
-
-            
-            localStorage.setItem('hasSeenFixPopup', 'true');
-        }
-    };
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            closePopup();
+        }, 10000);
+    });
 
     function closePopup() {
         const popup = document.getElementById('fix-popup');
-        popup.style.animation = 'fadeOut 0.5s forwards';
-        setTimeout(() => {
-            popup.style.display = 'none';
-        }, 500);
+        if (popup) {
+            popup.style.animation = 'fadeOutDown 0.6s forwards';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 600);
+        }
     }
 </script>
