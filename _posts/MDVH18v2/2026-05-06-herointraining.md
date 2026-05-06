@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "herointraining"
-date: 2026-05-06 17:30:00 +0700
+date: 2026-05-06 17:00:00 +0700
 title: "Việt Hóa Hero in Training - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
