@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "shopliftergirl"
-date: 2026-05-06 10:30:00 +0700
+date: 2026-05-06 10:00:00 +0700
 title: "Việt Hóa Shoplifter Girl Final - MDVH18"
 tags: [all, mdvh18, allvh, pc]
 typegame: ["PC"]
