@@ -345,11 +345,35 @@ const backToTopBtn = document.getElementById('back-to-top');
     backToTopBtn.addEventListener('click', () => {window.scrollTo({top: 0,behavior: 'smooth'});});
  </script>
 <script>
-    
     window.addEventListener('load', function() {
-        setTimeout(function() {
-            closePopup();
-        }, 10000);
+        
+        let hasSeen = false;
+        try {
+            hasSeen = localStorage.getItem('hasSeenFixPopup');
+        } catch (e) {
+            
+            hasSeen = false; 
+        }
+
+       
+        if (!hasSeen) {
+            const popup = document.getElementById('fix-popup');
+            if (popup) {
+                popup.style.display = 'block';
+
+                
+                setTimeout(function() {
+                    closePopup();
+                }, 10000);
+
+               
+                try {
+                    localStorage.setItem('hasSeenFixPopup', 'true');
+                } catch (e) {
+                    
+                }
+            }
+        }
     });
 
     function closePopup() {
