@@ -892,3 +892,347 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     
     .heart { color: #f78f90; display: inline-block; animation: beat .3s infinite alternate; }
     @keyframes beat { to { transform: scale(1.2); } }
+    /* --- Tối ưu hóa tổng thể cho Mobile --- */
+
+@media (max-width: 1024px) {
+    /* Điều chỉnh lại khoảng trống phía trên do header fixed */
+    body {
+        padding-top: 160px !important;
+    }
+
+    /* Đưa menu-trigger và menu-container về vị trí hợp lý hơn trên màn hình hẹp */
+    .menu-trigger {
+        left: 20px !important; /* Không để 300px vì sẽ bị tràn */
+    }
+
+    .menu-container {
+        left: 20px !important;
+        width: calc(100% - 40px); /* Co giãn theo chiều rộng máy */
+    }
+
+    .dropdown-content {
+        width: 100%; /* Menu chiếm trọn chiều ngang khả dụng */
+        max-width: 320px;
+    }
+
+    /* Điều chỉnh Search Box */
+    .search-icon {
+        right: 20px !important; /* Căn phải màn hình */
+    }
+
+    .search-box {
+        right: 20px !important;
+        width: calc(100% - 40px);
+    }
+
+    .search-box input {
+        width: 100%; /* Input chiếm hết chiều rộng box */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Cho điện thoại nhỏ */
+    body {
+        padding-top: 140px !important;
+    }
+
+    .brand-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-name {
+        font-size: 20px !important;
+    }
+
+    .brand-link {
+        gap: 10px;
+    }
+
+    /* Thu nhỏ khoảng cách giữa các mục sub-nav để không bị tràn hàng */
+    .sub-nav-list {
+        gap: 15px !important;
+        flex-wrap: wrap; /* Cho phép rớt dòng nếu quá nhiều mục */
+        justify-content: center;
+    }
+
+    .sub-nav-list li a {
+        font-size: 13px !important;
+    }
+}
+
+/* --- Sửa lỗi hiển thị chung --- */
+
+/* Đảm bảo ảnh không bị méo trên các tỉ lệ màn hình khác nhau */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ẩn con trỏ chuột tùy chỉnh trên điện thoại (vì điện thoại dùng cảm ứng, không có con trỏ) */
+@media (hover: none) and (pointer: coarse) {
+    html, body, *, a, button {
+        cursor: auto !important;
+    }
+}
+
+/* Đảm bảo header không chiếm quá nhiều diện tích khi cuộn trên mobile */
+.header-section.scrolled .brand-name {
+    font-size: 16px !important;
+}
+
+.header-section.scrolled .brand-logo {
+    width: 35px !important;
+    height: 35px !important;
+}
+/* --- Tối ưu Slider cho Mobile --- */
+@media (max-width: 1300px) {
+    .hero-slider {
+        width: 95% !important; /* Slider chiếm 95% chiều ngang màn hình */
+        height: auto !important; /* Để chiều cao tự nhảy theo ảnh */
+        aspect-ratio: 16 / 7; /* Giữ tỉ lệ khung hình ổn định */
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 250px !important; /* Giảm chiều cao trên điện thoại */
+        border-width: 2px;
+    }
+
+    .slide-content {
+        height: 100px; /* Thu thấp phần bóng mờ chứa chữ */
+    }
+
+    .slide-content h2 {
+        font-size: 18px !important; /* Chữ nhỏ lại */
+        top: 10%;
+    }
+
+    .slide-content p {
+        font-size: 12px !important;
+        left: 20px; /* Đưa text vào giữa hơn */
+        max-width: 60%;
+        top: 40%;
+    }
+
+    /* Thu nhỏ nút Xem */
+    .btn.view {
+        right: 15px;
+        padding: 8px 15px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    /* Thu nhỏ nút qua lại */
+    .prev-slide, .next-slide {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
+/* --- Tối ưu Lưới Game --- */
+@media (max-width: 1024px) {
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr); /* Máy tính bảng hiện 2 cột */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-grid {
+        grid-template-columns: repeat(1, 1fr); /* Điện thoại hiện 1 cột dọc */
+        padding: 10px;
+    }
+
+    .card-info h3 {
+        font-size: 18px; /* Trên mobile 1 cột thì chữ cần to hơn chút cho dễ đọc */
+    }
+    
+    .download-icon-fa {
+        font-size: 40px !important; /* Icon tải nhỏ lại */
+    }
+}
+/* --- Tối ưu Lưới Game --- */
+@media (max-width: 1024px) {
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr); /* Máy tính bảng hiện 2 cột */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-grid {
+        grid-template-columns: repeat(1, 1fr); /* Điện thoại hiện 1 cột dọc */
+        padding: 10px;
+    }
+
+    .card-info h3 {
+        font-size: 18px; /* Trên mobile 1 cột thì chữ cần to hơn chút cho dễ đọc */
+    }
+    
+    .download-icon-fa {
+        font-size: 40px !important; /* Icon tải nhỏ lại */
+    }
+}
+/* Đảm bảo ảnh trong slide luôn nằm gọn */
+.slide img {
+    max-width: 100%;
+    object-position: center;
+}
+
+/* Fix lỗi padding/border làm tràn màn hình */
+* {
+    box-sizing: border-box !important;
+}
+
+/* Ẩn con trỏ chuột custom trên thiết bị cảm ứng để tránh lag */
+@media (pointer: coarse) {
+    * {
+        cursor: auto !important;
+    }
+}
+/* --- Tối ưu Phân trang và Nút --- */
+@media (max-width: 768px) {
+    .pagination {
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Nếu quá nhiều số trang sẽ tự rớt dòng */
+        gap: 8px;
+    }
+
+    .pagination a, .current-page {
+        padding: 10px 14px; /* Tăng diện tích bấm */
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center; /* Căn giữa các nút bấm */
+        padding: 0 15px;
+    }
+
+    .btn {
+        flex: 1; /* Nút tự giãn đều nhau trên mobile */
+        text-align: center;
+        padding: 12px 10px;
+    }
+}
+/* --- Tối ưu Footer --- */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 40px 15px 20px 15px;
+    }
+
+    .footer-container {
+        flex-direction: column; /* Chuyển từ hàng ngang sang hàng dọc */
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .tag-cloud {
+        justify-content: center; /* Căn giữa các tag cho đẹp */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .top-btn {
+        right: 20px; /* Đưa nút lên đầu trang sát lề hơn */
+        bottom: 40px; /* Tránh bị đè lên các thành phần khác */
+        width: 40px;
+        height: 40px;
+    }
+}
+/* --- Xử lý nhân vật trang trí (Megumin) --- */
+@media (max-width: 1100px) {
+    /* Ẩn Megumin khi màn hình nhỏ hơn 1100px để tránh che nội dung */
+    .megumin-left {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Nếu bạn có các icon điều hướng (prev/next) của Slider trên mobile */
+    .nav {
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.5); /* Đậm hơn chút để dễ nhìn trên mobile */
+    }
+    
+    .prev { left: 5px; }
+    .next { right: 5px; }
+}
+/* --- Tối ưu nút điều hướng phụ --- */
+@media (max-width: 768px) {
+    #back-to-top {
+        width: 50px; /* Thu nhỏ để không chiếm chỗ */
+        height: 50px;
+        bottom: 20px; /* Đưa sát xuống góc hơn */
+        right: 20px;
+        font-size: 14px; /* Chữ "TOP" nhỏ lại */
+    }
+
+    #btn-load-more {
+        width: 80%; /* Nút tải thêm to ra cho dễ bấm */
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+/* --- Tối ưu Thông báo đầu trang --- */
+@media (max-width: 1000px) {
+    .pitu-global-notice {
+        width: 95% !important; /* Co lại theo màn hình */
+        margin: 10px auto;
+    }
+
+    .notice-text {
+        white-space: normal; /* Cho phép xuống dòng nếu thông báo dài */
+        text-align: center;
+        font-size: 14px;
+        display: block;
+    }
+}
+/* --- Tối ưu Popup thông báo --- */
+@media (max-width: 480px) {
+    .fix-popup-container {
+        width: calc(100% - 40px); /* Gần như toàn màn hình nhưng có lề */
+        max-width: none;
+        right: 20px;
+        left: 20px; /* Căn giữa popup trên mobile */
+        bottom: 80px; /* Đẩy lên cao hơn nút Back-to-top để không đè nhau */
+    }
+
+    .fix-popup-content {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .popup-img {
+        width: 60px; /* Ảnh nhỏ lại cho đỡ choán chỗ */
+    }
+
+    .fix-popup-content h3 {
+        font-size: 16px;
+    }
+
+    .fix-popup-content p {
+        font-size: 12px;
+    }
+}
+/* --- Quản lý linh vật Megumin --- */
+@media (max-width: 1100px) {
+    /* Ẩn khi màn hình bắt đầu hẹp (Tablet & Mobile) */
+    .megumin-left {
+        display: none !important;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
