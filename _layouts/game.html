@@ -158,14 +158,27 @@
     }
 
     /* Đẩy icon tìm kiếm sát lề phải hơn */
+    @media (max-width: 768px) {
     .search-icon {
+        /* Đẩy lên góc trên cùng bên phải */
+        position: absolute !important;
+        top: 25px !important; /* Điều chỉnh số này để khớp với độ cao của Logo */
         right: 15px !important;
-        font-size: 24px !important; /* Thu nhỏ icon search cho cân xứng */
+        
+        /* Reset lại transform để không bị căn giữa theo chiều dọc của container thấp */
+        transform: none !important; 
+        
+        /* Đảm bảo nó luôn nằm trên các lớp khác */
+        z-index: 10005 !important;
+        
+        font-size: 28px !important; /* Cho to ra một chút để dễ bấm bằng ngón tay */
     }
 
-    /* Nếu cái tiêu đề dài quá, ta có thể ẩn bớt phần phụ phía sau */
-    /* Giả sử bạn muốn ẩn chữ "Việt Hóa Game..." chỉ để lại tên chính */
-    /* .brand-name { ... } */
+    /* Khi cuộn trang (scrolled), đẩy nó lên cao hơn nữa để khớp với header thu nhỏ */
+    .header-section.scrolled .search-icon {
+        top: 15px !important;
+        font-size: 22px !important;
+    }
 }
 
 /* --- Xử lý dòng menu bên dưới (Sub Nav) --- */
