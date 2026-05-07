@@ -908,13 +908,10 @@ img {
     /* 2. Đưa icon search về lại dải menu hồng (không dùng fixed nữa) */
     .search-icon {
         position: absolute !important;
-        top: 22px !important;  /* Chỉnh cho cân với Logo */
+        top: 22px !important;
         right: 15px !important;
-        display: flex !important;
         z-index: 999999 !important;
-        width: 30px !important;
-        height: 30px !important;
-        background: transparent !important;
+        display: flex !important;
     }
 
     /* 3. TUYỆT CHIÊU: Đưa Search Box ra chính giữa màn hình khi hiện lên */
@@ -922,16 +919,16 @@ img {
         position: fixed !important;
         top: 50% !important;
         left: 50% !important;
-        transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; /* Căn giữa tuyệt đối */
         
-        /* Ép kích thước thực tế */
-        width: 85vw !important; 
-        max-width: 350px !important;
+        /* Chỉnh lại kích thước cho vừa mắt */
+        width: 80% !important; 
+        max-width: 300px !important; /* Giới hạn để không bị quá to trên máy tính bảng */
         height: auto !important;
-        min-height: 60px !important; /* Đảm bảo không bị bóp nghẹt chiều cao */
         
-        /* Hiển thị cưỡng bách */
-        display: block !important; 
+        /* Ép hiển thị, phá bỏ lệnh width: 0 của theme */
+        display: flex !important; 
+        flex-direction: column !important;
         visibility: visible !important;
         opacity: 1 !important;
         
@@ -940,21 +937,20 @@ img {
         border-radius: 12px;
         border: 2px solid #ff6b81;
         z-index: 1000000 !important;
-        box-shadow: 0 0 40px rgba(0,0,0,0.9);
+        box-shadow: 0 0 30px rgba(0,0,0,0.8);
     }
 
     /* Đảm bảo ô input bên trong to rõ */
     .search-box input {
         display: block !important;
         width: 100% !important;
-        min-width: 100% !important;
-        padding: 12px !important;
+        box-sizing: border-box !important; /* Đảm bảo padding không làm tràn hộp */
+        padding: 10px 15px !important;
+        font-size: 15px !important;
         background: #2d1a44 !important;
         color: #fff !important;
         border: 1px solid #444 !important;
-        border-radius: 8px !important;
-        font-size: 16px !important;
-        visibility: visible !important;
+        border-radius: 6px !important;
     }
 
     /* 4. Chỉnh lại dải menu hồng để chứa icon search cân đối */
