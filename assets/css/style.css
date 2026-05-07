@@ -908,8 +908,8 @@ img {
     /* 2. Đưa icon search về lại dải menu hồng (không dùng fixed nữa) */
     .search-icon {
         position: absolute !important;
-        top: 0px !important;
-        right: 0px !important;
+        top: 5px !important;
+        right: 10px !important;
         z-index: 999999 !important;
         display: flex !important;
     }
@@ -927,8 +927,6 @@ img {
         border-radius: 25px;
         border: 1.5px solid #ff6b81;
         z-index: 1000000 !important;
-        
-        /* Chìa khóa ở đây: Ẩn đi khi chưa được kích hoạt */
         display: none; 
         opacity: 0;
         pointer-events: none;
