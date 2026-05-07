@@ -1013,40 +1013,6 @@ img {
         left: 15px !important;
         transform: translateY(-50%) scale(0.8); /* Thu nhỏ icon menu */
     }
-
-    /* Đẩy icon tìm kiếm sát lề phải hơn */
-    @media (max-width: 768px) {
-    /* Ép icon search leo lên hàng đầu tiên */
-    .search-icon {
-        position: absolute !important;
-        top: 15px !important; /* Chỉnh số này để nó thẳng hàng với Logo bên trái */
-        right: 15px !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        display: block !important;
-        z-index: 99999 !important; /* Đảm bảo không bị cái gì đè lên */
-        transform: none !important;
-    }
-
-    /* Tăng diện tích bấm cho kính lúp để dễ chạm tay */
-    .search-icon i, .search-icon svg {
-        font-size: 24px !important;
-        color: #fff !important;
-    }
-
-    /* Khi cuộn trang (scrolled), header thu nhỏ lại thì icon cũng nhích lên cho khít */
-    .header-section.scrolled .search-icon {
-        top: 10px !important;
-    }
-}
-
-    /* Khi cuộn trang (scrolled), đẩy nó lên cao hơn nữa để khớp với header thu nhỏ */
-    .header-section.scrolled .search-icon {
-        top: 15px !important;
-        font-size: 22px !important;
-    }
-}
-
 /* --- Xử lý dòng menu bên dưới (Sub Nav) --- */
 @media (max-width: 768px) {
     .sub-nav-list {
