@@ -895,38 +895,33 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 
 @media (max-width: 1024px) {
-
-    body {
-        padding-top: 160px !important;
-    }
-
-  
-    .menu-trigger {
-        left: 20px !important; 
-    }
-
-    .menu-container {
-        left: 20px !important;
-        width: calc(100% - 40px);
-    }
-
-    .dropdown-content {
-        width: 100%; 
-        max-width: 320px;
-    }
-
-   
+    /* 1. Đưa icon search lên góc cao nhất bên phải */
     .search-icon {
+        position: fixed !important; /* Dùng fixed để nó độc lập hoàn toàn */
+        top: 25px !important;       /* Căn chỉnh số này cho ngang hàng logo bên trái */
         right: 20px !important;
+        z-index: 999999 !important;
+        display: flex !important;
+        background: transparent !important;
     }
 
+    /* 2. Đảm bảo cái hộp tìm kiếm khi hiện ra cũng phải nằm trên cao */
     .search-box {
+        position: fixed !important;
+        top: 80px !important;       /* Nằm ngay dưới icon search khi nhấn */
         right: 20px !important;
-        width: calc(100% - 40px);
+        width: calc(100% - 40px) !important;
+        z-index: 999998 !important;
     }
 
-    .search-box input {
-        width: 100%;
+    /* 3. Chỉnh lại Header Container để không chặn icon */
+    .header-section, .header-container {
+        overflow: visible !important;
+    }
+
+    /* 4. Tùy chỉnh khi cuộn trang (Scrolled) */
+    .header-section.scrolled .search-icon {
+        top: 15px !important; /* Khi header co lại thì icon cũng nhích lên */
     }
 }
 
@@ -977,27 +972,27 @@ img {
 }
 
 
-/* --- Tối ưu Header Section khi cuộn trên Mobile --- */
+
 @media (max-width: 768px) {
-    /* Khung chứa logo và tên thương hiệu */
+
     .brand-container {
         padding: 5px 10px !important;
-        justify-content: flex-start !important; /* Đẩy về bên trái để nhường chỗ bên phải */
+        justify-content: flex-start !important; 
         gap: 8px !important;
         min-height: 60px !important;
     }
 
-    /* Thu nhỏ tên thương hiệu và xử lý tràn chữ */
+    
     .brand-name {
-        font-size: 14px !important; /* Nhỏ hơn xíu nữa */
-        max-width: 180px; /* Giới hạn chiều rộng chữ */
+        font-size: 14px !important; 
+        max-width: 180px;
         overflow: hidden;
-        text-overflow: ellipsis; /* Nếu dài quá sẽ hiện dấu ... */
+        text-overflow: ellipsis; 
         white-space: nowrap;
         display: block;
     }
 
-    /* Khi cuộn trang, làm header gọn nhất có thể */
+   
     .header-section.scrolled .brand-name {
         font-size: 13px !important;
         max-width: 150px;
