@@ -899,137 +899,87 @@ img {
     height: auto;
 }
 /* --- HỆ THỐNG HEADER MOBILE TỔNG HỢP (768px & 480px) --- */
+/* --- TỐI ƯU HEADER MOBILE: ICON SEARCH TRONG MENU, SEARCH BOX GIỮA MÀN HÌNH --- */
+
 @media (max-width: 1024px) {
-    /* 1. Giải phóng các thẻ cha để không bị nhốt icon */
-    .header-section, 
-    .header-container, 
-    .sub-nav-wrapper, 
-    .nav-search {
-        overflow: visible !important;
+    /* 1. Ẩn nút menu 3 gạch trên mobile */
+    .menu-trigger {
+        display: none !important;
     }
 
-    /* 2. Định vị Icon Search lên góc cao nhất bên phải */
+    /* 2. Đưa icon search về lại dải menu hồng (không dùng fixed nữa) */
     .search-icon {
-        position: fixed !important;
-        top: 18px !important; /* Căn chỉnh cho bằng vai với Logo MDVH18 */
-        right: 15px !important;
-        left: auto !important;
-        width: 40px !important;
-        height: 40px !important;
-        z-index: 1000000 !important; /* Cao nhất để không bị dải menu đè */
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
         display: flex !important;
-        background: transparent !important;
-        transform: none !important;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 10px !important; /* Tạo khoảng cách trong dải menu */
+        z-index: 100 !important;
     }
 
-    .search-icon i, .search-icon svg {
-        font-size: 24px !important;
-        color: #ffffff !important;
-    }
-
-    /* 3. Ô tìm kiếm khi nhấn vào */
+    /* 3. TUYỆT CHIÊU: Đưa Search Box ra chính giữa màn hình khi hiện lên */
     .search-box {
         position: fixed !important;
-        top: 50% !important;   /* Đưa vào giữa màn hình theo chiều dọc */
-        left: 50% !important;  /* Đưa vào giữa màn hình theo chiều ngang */
-        transform: translate(-50%, -50%) !important; /* Căn chuẩn tâm giữa */
-        width: 90% !important; /* Chiếm 90% chiều rộng điện thoại */
-        max-width: 400px !important;
-        z-index: 999999 !important;
-        background: rgba(27, 15, 43, 0.98) !important;
+        top: 50% !important;   /* Căn giữa dọc */
+        left: 50% !important;  /* Căn giữa ngang */
+        transform: translate(-50%, -50%) !important; /* Lấy tâm làm chuẩn */
+        width: 90% !important; /* Chiếm gần hết chiều ngang đt */
+        max-width: 350px !important;
+        height: auto !important;
+        z-index: 999999 !important; /* Nằm trên tất cả mọi thứ */
+        
+        /* Làm nổi bật hộp search */
+        background: #1b0f2b !important; 
         padding: 20px !important;
         border-radius: 15px;
         border: 2px solid #d4487f;
-        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+        box-shadow: 0 0 50px rgba(0,0,0,0.9);
     }
 
-    /* 4. Điều chỉnh Brand Container chung */
-    .brand-container {
-        padding: 5px 10px !important;
-        justify-content: flex-start !important;
-        gap: 8px !important;
-        min-height: 60px !important;
+    /* Đảm bảo ô input bên trong to rõ */
+    .search-box input {
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
     }
 
-    /* 5. Xử lý Brand Name (Tên Web) - Giới hạn để không đè Search */
-    .header-section, 
-    .header-container, 
-    .sub-nav-wrapper,
-    .nav-search {
-        overflow: visible !important;
+    /* 4. Chỉnh lại dải menu hồng để chứa icon search cân đối */
+    .sub-nav-list {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
     }
 
-    /* 4. Tên web - Giới hạn lại để không đâm vào kính lúp */
+    /* 5. Thu gọn Brand Name để header thanh thoát */
     .brand-name {
-        max-width: 140px !important;
-        font-size: 14px !important;
+        max-width: 180px !important;
+        font-size: 15px !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
     }
-}
-@media (max-width: 1024px) {
-    .header-section.scrolled .search-icon {
-        top: 12px !important; /* Nhích lên một chút cho đẹp khi header co lại */
-    }
-}
-    /* 6. Logo */
+
     .brand-logo {
         width: 40px !important;
         height: 40px !important;
     }
-
-    /* 7. Menu 3 gạch */
-    .menu-trigger {
-        left: 15px !important;
-        transform: translateY(-50%) scale(0.85);
-    }
-
-    /* 8. Dải menu phụ bên dưới (Donate, All Game...) */
-    .sub-nav-list {
-        gap: 10px !important;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px !important;
-    }
-
-    .sub-nav-list li a {
-        font-size: 12px !important;
-    }
 }
 
+/* --- Tinh chỉnh cho màn hình siêu nhỏ --- */
 @media (max-width: 480px) {
-    body {
-        padding-top: 150px !important;
-    }
-
     .brand-name {
-        font-size: 14px !important; 
         max-width: 140px !important;
-    }
-
-    .brand-logo {
-        width: 35px !important;
-        height: 35px !important;
+        font-size: 14px !important;
     }
     
-    .sub-nav-list {
-        gap: 8px !important;
-    }
-}
-@media (max-width: 1024px) {
-    .header-section.scrolled .brand-name {
-        font-size: 13px !important;
-        max-width: 130px !important;
-    }
-
-    .header-section.scrolled .brand-logo {
-        width: 30px !important;
-        height: 30px !important;
-    }
-
-    .header-section.scrolled .search-icon {
-        top: 10px !important;
+    .sub-nav-list li a {
+        font-size: 11px !important;
     }
 }
 
