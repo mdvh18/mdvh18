@@ -113,59 +113,91 @@
     }
 }
 
-@media (max-width: 768px) {
-    .main-container {
-        padding: 0 10px !important;
+@media (max-width: 1024px) {
+    /* 1. Ẩn nút menu 3 gạch trên mobile */
+    .menu-trigger {
+        display: none !important;
+    }
+
+    /* 2. Đưa icon search về lại dải menu hồng (không dùng fixed nữa) */
+    .search-icon {
+        position: absolute !important;
+        top: 12px !important;
+        z-index: 999999 !important;
+        display: flex !important;
+    }
+
+    /* 3. TUYỆT CHIÊU: Đưa Search Box ra chính giữa màn hình khi hiện lên */
+    .search-box {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -60%) scale(0.9) !important; /* Hơi lệch lên và nhỏ lại khi ẩn */
+        width: 85vw !important; 
+        max-width: 320px !important;
+        background: #1b0f2b !important;
+        padding: 10px !important;
+        border-radius: 25px;
+        border: 1.5px solid #ff6b81;
+        z-index: 1000000 !important;
+        display: none; 
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .search-box.active, 
+    .search-box.show,
+    .nav-search.active .search-box { 
+        display: block !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: translate(-50%, -50%) scale(1) !important;
+    }
+
+    .search-box input {
         width: 100% !important;
-        box-sizing: border-box !important;
+        background: transparent !important;
+        border: none !important;
+        color: #fff !important;
+        padding: 8px 15px !important;
+        font-size: 15px !important;
+        outline: none !important;
     }
 }
 
-@media (max-width: 768px) {
-  
-    .brand-container {
-        padding: 5px 10px !important;
-        justify-content: flex-start !important; 
-        gap: 8px !important;
-        min-height: 60px !important;
-    }
-
-   
-    .brand-name {
-        font-size: 14px !important;
-        max-width: 180px; 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        display: block;
-    }
-
- 
-    .header-section.scrolled .brand-name {
-        font-size: 13px !important;
-        max-width: 150px;
-    }
-
-    .header-section.scrolled .brand-logo {
-        width: 30px !important;
-        height: 30px !important;
-    }
-
-  
-    .menu-trigger {
-        left: 15px !important;
-        transform: translateY(-50%) scale(0.8); 
-    }
-@media (max-width: 768px) {
     .sub-nav-list {
-        gap: 10px !important;
-        padding: 0 5px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
     }
 
-    .sub-nav-list li a {
-        font-size: 12px !important; 
+    .brand-name {
+        max-width: 180px !important;
+        font-size: 15px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
-}      
+
+    .brand-logo {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+/* --- Tinh chỉnh cho màn hình siêu nhỏ --- */
+@media (max-width: 480px) {
+    .brand-name {
+        max-width: 140px !important;
+        font-size: 14px !important;
+    }
+    
+    .sub-nav-list li a {
+        font-size: 11px !important;
+    }
+}   
 </style>
     
 <style>
