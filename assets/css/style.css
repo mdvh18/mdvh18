@@ -977,13 +977,64 @@ img {
 }
 
 
-.header-section.scrolled .brand-name {
-    font-size: 16px !important;
+/* --- Tối ưu Header Section khi cuộn trên Mobile --- */
+@media (max-width: 768px) {
+    /* Khung chứa logo và tên thương hiệu */
+    .brand-container {
+        padding: 5px 10px !important;
+        justify-content: flex-start !important; /* Đẩy về bên trái để nhường chỗ bên phải */
+        gap: 8px !important;
+        min-height: 60px !important;
+    }
+
+    /* Thu nhỏ tên thương hiệu và xử lý tràn chữ */
+    .brand-name {
+        font-size: 14px !important; /* Nhỏ hơn xíu nữa */
+        max-width: 180px; /* Giới hạn chiều rộng chữ */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Nếu dài quá sẽ hiện dấu ... */
+        white-space: nowrap;
+        display: block;
+    }
+
+    /* Khi cuộn trang, làm header gọn nhất có thể */
+    .header-section.scrolled .brand-name {
+        font-size: 13px !important;
+        max-width: 150px;
+    }
+
+    .header-section.scrolled .brand-logo {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    /* Điều chỉnh menu trigger (nút 3 gạch) không để bị đè */
+    .menu-trigger {
+        left: 15px !important;
+        transform: translateY(-50%) scale(0.8); /* Thu nhỏ icon menu */
+    }
+
+    /* Đẩy icon tìm kiếm sát lề phải hơn */
+    .search-icon {
+        right: 15px !important;
+        font-size: 24px !important; /* Thu nhỏ icon search cho cân xứng */
+    }
+
+    /* Nếu cái tiêu đề dài quá, ta có thể ẩn bớt phần phụ phía sau */
+    /* Giả sử bạn muốn ẩn chữ "Việt Hóa Game..." chỉ để lại tên chính */
+    /* .brand-name { ... } */
 }
 
-.header-section.scrolled .brand-logo {
-    width: 35px !important;
-    height: 35px !important;
+/* --- Xử lý dòng menu bên dưới (Sub Nav) --- */
+@media (max-width: 768px) {
+    .sub-nav-list {
+        gap: 10px !important; /* Thu hẹp khoảng cách các mục All Game, Fanpage... */
+        padding: 0 5px !important;
+    }
+
+    .sub-nav-list li a {
+        font-size: 12px !important; /* Chữ nhỏ lại để nằm vừa 1 dòng */
+    }
 }
 
 @media (max-width: 1300px) {
