@@ -908,8 +908,8 @@ img {
     /* 2. Đưa icon search về lại dải menu hồng (không dùng fixed nữa) */
     .search-icon {
         position: absolute !important;
-        top: 50px !important;
-        right: 15px !important;
+        top: 0px !important;
+        right: 0px !important;
         z-index: 999999 !important;
         display: flex !important;
     }
