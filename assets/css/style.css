@@ -903,84 +903,87 @@ img {
 
 /* --- PHƯƠNG ÁN CHỐT HẠ: SEARCH LÊN CẠNH LOGO, SEARCH BOX GIỮA MÀN HÌNH --- */
 
+/* --- TỐI ƯU HEADER MOBILE: ICON SEARCH TRONG MENU, SEARCH BOX GIỮA MÀN HÌNH --- */
+
 @media (max-width: 1024px) {
-    /* 1. Ẩn nút menu 3 gạch theo ý bro */
+    /* 1. Ẩn nút menu 3 gạch trên mobile */
     .menu-trigger {
         display: none !important;
     }
 
-    /* 2. Ép tất cả các hộp bao quanh phải cho phép nội dung thò ra ngoài */
-    .header-section, 
-    .header-container, 
-    .sub-nav-wrapper, 
-    .nav-search,
-    .brand-container {
-        overflow: visible !important;
-        position: static !important; /* Phá vỡ sự kìm kẹp của container cũ */
-    }
-
-    /* 3. Đưa kính lúp lên nằm cạnh Logo (bên phải) */
+    /* 2. Đưa icon search về lại dải menu hồng (không dùng fixed nữa) */
     .search-icon {
-        position: absolute !important;
-        top: 20px !important;   /* Chỉnh số này để nó ngang hàng với Logo của bro */
-        right: 20px !important;  /* Cách mép phải màn hình 20px */
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
         display: flex !important;
-        z-index: 999999 !important;
-        cursor: pointer !important;
-        transform: none !important;
-        width: 35px !important;
-        height: 35px !important;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 10px !important; /* Tạo khoảng cách trong dải menu */
+        z-index: 100 !important;
     }
 
-    .search-icon i, .search-icon svg {
-        font-size: 24px !important;
-        color: #ffffff !important;
-    }
-
-    /* 4. Search Box xuất hiện chính giữa màn hình (như bản trước bro ưng) */
+    /* 3. TUYỆT CHIÊU: Đưa Search Box ra chính giữa màn hình khi hiện lên */
     .search-box {
         position: fixed !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        width: 85% !important;
+        top: 50% !important;   /* Căn giữa dọc */
+        left: 50% !important;  /* Căn giữa ngang */
+        transform: translate(-50%, -50%) !important; /* Lấy tâm làm chuẩn */
+        width: 90% !important; /* Chiếm gần hết chiều ngang đt */
         max-width: 350px !important;
-        z-index: 1000000 !important;
-        background: #1b0f2b !important;
+        height: auto !important;
+        z-index: 999999 !important; /* Nằm trên tất cả mọi thứ */
+        
+        /* Làm nổi bật hộp search */
+        background: #1b0f2b !important; 
         padding: 20px !important;
         border-radius: 15px;
         border: 2px solid #d4487f;
-        box-shadow: 0 0 40px rgba(0,0,0,0.9);
+        box-shadow: 0 0 50px rgba(0,0,0,0.9);
     }
 
-    /* 5. Giữ yên Logo và Brand Name, chỉ giới hạn độ dài để không chạm kính lúp */
+    /* Đảm bảo ô input bên trong to rõ */
+    .search-box input {
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+    }
+
+    /* 4. Chỉnh lại dải menu hồng để chứa icon search cân đối */
+    .sub-nav-list {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+    }
+
+    /* 5. Thu gọn Brand Name để header thanh thoát */
     .brand-name {
+        max-width: 180px !important;
         font-size: 15px !important;
-        max-width: 170px !important; /* Đảm bảo không đè lên kính lúp bên phải */
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        display: block !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
 
     .brand-logo {
         width: 40px !important;
         height: 40px !important;
-        display: block !important;
-    }
-
-    /* 6. Dải menu hồng (Donate, All Game...) giờ sẽ gọn gàng vì không còn kính lúp */
-    .sub-nav-list {
-        justify-content: center !important;
-        gap: 12px !important;
-        padding: 8px 0 !important;
     }
 }
 
-/* 7. Khi cuộn trang (Scrolled) - Nhích kính lúp lên theo Header co lại */
-@media (max-width: 1024px) {
-    .header-section.scrolled .search-icon {
-        top: 12px !important;
+/* --- Tinh chỉnh cho màn hình siêu nhỏ --- */
+@media (max-width: 480px) {
+    .brand-name {
+        max-width: 140px !important;
+        font-size: 14px !important;
+    }
+    
+    .sub-nav-list li a {
+        font-size: 11px !important;
     }
 }
 
