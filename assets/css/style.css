@@ -894,116 +894,118 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
     @keyframes beat { to { transform: scale(1.2); } }
 
 
-@media (max-width: 1024px) {
-    /* 1. Ép tất cả các thẻ cha trung gian không được chặn nội dung (overflow) */
-    .header-container, 
-    .sub-nav-wrapper, 
-    .nav-search {
-        position: static !important; /* Phá bỏ mốc tọa độ cũ */
-        overflow: visible !important; /* Cho phép icon 'vượt rào' */
-    }
-
-    /* 2. Định vị lại icon search dựa trên thẻ cha lớn nhất (header-section) */
-    .search-icon {
-        position: absolute !important;
-        top: 25px !important;  /* Con số này sẽ đưa nó lên ngang hàng Logo */
-        right: 20px !important;
-        bottom: auto !important; /* Hủy bỏ mọi lệnh căn dưới cũ */
-        display: flex !important;
-        z-index: 999999 !important;
-        transform: none !important; /* Hủy bỏ lệnh căn giữa cũ */
-    }
-
-    /* 3. Đảm bảo cái nút 3 gạch (menu-trigger) cũng không bị đè */
-    .menu-trigger {
-        top: 25px !important; 
-        transform: none !important;
-    }
-
-    /* 4. Điều chỉnh Brand Name để không đâm vào icon search */
-    .brand-name {
-        max-width: 60% !important; /* Ép tên web ngắn lại để nhường chỗ cho kính lúp */
-        display: inline-block !important;
-    }
-
-    /* 5. Khi cuộn trang (Scrolled) */
-    .header-section.scrolled .search-icon,
-    .header-section.scrolled .menu-trigger {
-        top: 15px !important;
-    }
-}
-
-@media (max-width: 480px) {
-
-    body {
-        padding-top: 140px !important;
-    }
-
-    .brand-logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .brand-name {
-        font-size: 20px !important;
-    }
-
-    .brand-link {
-        gap: 10px;
-    }
-
-   
-    .sub-nav-list {
-        gap: 15px !important;
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-
-    .sub-nav-list li a {
-        font-size: 13px !important;
-    }
-}
-
-
-
-
 img {
     max-width: 100%;
     height: auto;
 }
-
-
-@media (hover: none) and (pointer: coarse) {
-    html, body, *, a, button {
-        cursor: auto !important;
+/* --- HỆ THỐNG HEADER MOBILE TỔNG HỢP (768px & 480px) --- */
+@media (max-width: 1024px) {
+    /* 1. Giải phóng các thẻ cha để không bị nhốt icon */
+    .header-section, 
+    .header-container, 
+    .sub-nav-wrapper, 
+    .nav-search {
+        overflow: visible !important;
     }
-}
 
+    /* 2. Định vị Icon Search lên góc cao nhất bên phải */
+    .search-icon {
+        position: fixed !important;
+        top: 15px !important;
+        right: 15px !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999 !important;
+        background: transparent !important;
+    }
 
+    .search-icon i, .search-icon svg {
+        font-size: 24px !important;
+        color: #ffffff !important;
+    }
 
-@media (max-width: 768px) {
+    /* 3. Ô tìm kiếm khi nhấn vào */
+    .search-box {
+        position: fixed !important;
+        top: 65px !important;
+        right: 10px !important;
+        width: calc(100% - 20px) !important;
+        z-index: 999998 !important;
+        background: #1b0f2b !important;
+        padding: 10px !important;
+        border-radius: 10px;
+        border: 1px solid #d4487f;
+    }
 
+    /* 4. Điều chỉnh Brand Container chung */
     .brand-container {
         padding: 5px 10px !important;
-        justify-content: flex-start !important; 
+        justify-content: flex-start !important;
         gap: 8px !important;
         min-height: 60px !important;
     }
 
-    
+    /* 5. Xử lý Brand Name (Tên Web) - Giới hạn để không đè Search */
     .brand-name {
-        font-size: 14px !important; 
-        max-width: 180px;
-        overflow: hidden;
-        text-overflow: ellipsis; 
-        white-space: nowrap;
-        display: block;
+        font-size: 16px !important; /* Cỡ chữ vừa phải cho Mobile */
+        max-width: 180px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        display: block !important;
     }
 
-   
+    /* 6. Logo */
+    .brand-logo {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    /* 7. Menu 3 gạch */
+    .menu-trigger {
+        left: 15px !important;
+        transform: translateY(-50%) scale(0.85);
+    }
+
+    /* 8. Dải menu phụ bên dưới (Donate, All Game...) */
+    .sub-nav-list {
+        gap: 10px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px !important;
+    }
+
+    .sub-nav-list li a {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 150px !important;
+    }
+
+    .brand-name {
+        font-size: 14px !important; 
+        max-width: 140px !important;
+    }
+
+    .brand-logo {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .sub-nav-list {
+        gap: 8px !important;
+    }
+}
+@media (max-width: 1024px) {
     .header-section.scrolled .brand-name {
         font-size: 13px !important;
-        max-width: 150px;
+        max-width: 130px !important;
     }
 
     .header-section.scrolled .brand-logo {
@@ -1011,12 +1013,17 @@ img {
         height: 30px !important;
     }
 
-    /* Điều chỉnh menu trigger (nút 3 gạch) không để bị đè */
-    .menu-trigger {
-        left: 15px !important;
-        transform: translateY(-50%) scale(0.8); /* Thu nhỏ icon menu */
+    .header-section.scrolled .search-icon {
+        top: 10px !important;
     }
-/* --- Xử lý dòng menu bên dưới (Sub Nav) --- */
+}
+
+@media (hover: none) and (pointer: coarse) {
+    html, body, *, a, button {
+        cursor: auto !important;
+    }
+}
+
 @media (max-width: 768px) {
     .sub-nav-list {
         gap: 10px !important; /* Thu hẹp khoảng cách các mục All Game, Fanpage... */
