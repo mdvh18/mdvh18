@@ -921,39 +921,32 @@ img {
         left: 50% !important;
         transform: translate(-50%, -50%) !important; /* Căn giữa tuyệt đối */
         
-        /* Chỉnh lại kích thước cho vừa mắt */
-        width: 80% !important; 
-        max-width: 300px !important; /* Giới hạn để không bị quá to trên máy tính bảng */
+        /* Kích thước chuẩn như ảnh 2 */
+        width: 85vw !important; 
+        max-width: 320px !important; 
         height: auto !important;
         
-        /* Ép hiển thị, phá bỏ lệnh width: 0 của theme */
-        display: flex !important; 
-        flex-direction: column !important;
+        /* Ép hiển thị dãn ra */
+        display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
         
         background: #1b0f2b !important;
-        padding: 15px !important;
-        border-radius: 12px;
-        border: 2px solid #ff6b81;
+        padding: 10px !important;
+        border-radius: 25px; /* Bo tròn dài như ảnh 2 */
+        border: 1.5px solid #ff6b81;
         z-index: 1000000 !important;
-        box-shadow: 0 0 30px rgba(0,0,0,0.8);
     }
-
-    /* Đảm bảo ô input bên trong to rõ */
     .search-box input {
-        display: block !important;
         width: 100% !important;
-        box-sizing: border-box !important; /* Đảm bảo padding không làm tràn hộp */
-        padding: 10px 15px !important;
-        font-size: 15px !important;
-        background: #2d1a44 !important;
+        background: transparent !important;
+        border: none !important;
         color: #fff !important;
-        border: 1px solid #444 !important;
-        border-radius: 6px !important;
+        padding: 8px 15px !important;
+        font-size: 15px !important;
+        outline: none !important;
     }
 
-    /* 4. Chỉnh lại dải menu hồng để chứa icon search cân đối */
     .sub-nav-list {
         display: flex !important;
         align-items: center !important;
@@ -962,7 +955,6 @@ img {
         gap: 12px !important;
     }
 
-    /* 5. Thu gọn Brand Name để header thanh thoát */
     .brand-name {
         max-width: 180px !important;
         font-size: 15px !important;
