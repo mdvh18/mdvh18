@@ -895,33 +895,41 @@ h1, h2, h3, h4, span, p, div { cursor: inherit; }
 
 
 @media (max-width: 1024px) {
-    /* 1. Đưa icon search lên góc cao nhất bên phải */
+    /* 1. Ép tất cả các thẻ cha trung gian không được chặn nội dung (overflow) */
+    .header-container, 
+    .sub-nav-wrapper, 
+    .nav-search {
+        position: static !important; /* Phá bỏ mốc tọa độ cũ */
+        overflow: visible !important; /* Cho phép icon 'vượt rào' */
+    }
+
+    /* 2. Định vị lại icon search dựa trên thẻ cha lớn nhất (header-section) */
     .search-icon {
-        position: fixed !important; /* Dùng fixed để nó độc lập hoàn toàn */
-        top: 25px !important;       /* Căn chỉnh số này cho ngang hàng logo bên trái */
+        position: absolute !important;
+        top: 25px !important;  /* Con số này sẽ đưa nó lên ngang hàng Logo */
         right: 20px !important;
-        z-index: 999999 !important;
+        bottom: auto !important; /* Hủy bỏ mọi lệnh căn dưới cũ */
         display: flex !important;
-        background: transparent !important;
+        z-index: 999999 !important;
+        transform: none !important; /* Hủy bỏ lệnh căn giữa cũ */
     }
 
-    /* 2. Đảm bảo cái hộp tìm kiếm khi hiện ra cũng phải nằm trên cao */
-    .search-box {
-        position: fixed !important;
-        top: 80px !important;       /* Nằm ngay dưới icon search khi nhấn */
-        right: 20px !important;
-        width: calc(100% - 40px) !important;
-        z-index: 999998 !important;
+    /* 3. Đảm bảo cái nút 3 gạch (menu-trigger) cũng không bị đè */
+    .menu-trigger {
+        top: 25px !important; 
+        transform: none !important;
     }
 
-    /* 3. Chỉnh lại Header Container để không chặn icon */
-    .header-section, .header-container {
-        overflow: visible !important;
+    /* 4. Điều chỉnh Brand Name để không đâm vào icon search */
+    .brand-name {
+        max-width: 60% !important; /* Ép tên web ngắn lại để nhường chỗ cho kính lúp */
+        display: inline-block !important;
     }
 
-    /* 4. Tùy chỉnh khi cuộn trang (Scrolled) */
-    .header-section.scrolled .search-icon {
-        top: 15px !important; /* Khi header co lại thì icon cũng nhích lên */
+    /* 5. Khi cuộn trang (Scrolled) */
+    .header-section.scrolled .search-icon,
+    .header-section.scrolled .menu-trigger {
+        top: 15px !important;
     }
 }
 
