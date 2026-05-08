@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "lifeinasecretshare"
-date: 2026-05-08 10:30:00 +0700
+date: 2026-05-08 09:00:00 +0700
 title: "Việt Hóa Life in a Secret Share House - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
