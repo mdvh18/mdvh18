@@ -2928,12 +2928,19 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEh6EfiDd2tzkyyQs9SbnjBKPrYilbr-99G30dgrVL659ARvfC2Ov9UkwiUX8A2LmOHdyRjO5wZK5UCW3ivhnk-M25e8HNv50Uox8JD6LUle9EPFXxHsaLT-Xl7kZ9eXeMOLOv7_2KVNrgP_TT6QLr_v8RH8n8DeAjJP_NVApM4WFWF62kJXyJ-scAoRp2I=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEi-oRQurUkwtvdGTqz8xg_WqqaKp5Vo8nQjgJIqcHctwEUERQCbCC1MeqVitmajD-y221XXSKtBS41XxhIgnC055f5nQ_F6ns1zqdYY-k9zuqSAXiTCOnjIWGVXAyAvDFVN93rQboP_qzhrwGsvDmEBEzXHlmTG29N-pDnIJ9J7VMDI8nEFJJX0js2gRRw=s16000"]},
     {id: "personaeuphoria",
-    name: "Việt Hóa Persona 5: Euphoria",
+    name: "Việt Hóa Persona 5 Euphoria",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEg-OJxI6_L-25g9fkI5MdQ_Q0XHpLUYxGoX2Ifs38cOyYbFg5VPslMlHzZhlI_LxL7XW-Ea6Hcfbiaq9wqHglsge8D4AlqGNSyYQw3kyINb-x-hFGPVrSwsO3FQ_fkwd7PI5ibqN2Hyu1oVqnDIxcJZbnvtEQV3wnfp2v6kd-YqZzbUqEubfNq8Y2PLmE8=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEj4Kyr4O2bS61wPBCQVgqhcRjdZZYPGN_9i_Cw2_TdNoI2gAKy0ryDA5hmAoNZ29aLzU8xYC2vtJygYKBkhWuZG8KS3MX_I7c4BkZaolTA6krXfEAir39FcSONeJgQMMZt4osSQw1lWWw0brSxLKM60NszkTOC85oNpK7wn7ioFphTrR47FsUztsAlcB2o=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEiEoSjgqtvOMOHc2rRS4FfHlF_8An8a2mBkbD_nDtSvgWrnzZqPM8d5SzL4dhV0qgv9CRMEtCT2ZYd-uTUOvV4Y7j34-iAZojhEJ1CMTohqesOcxX0YfZbWKofc-qGgnD_6PE20AizoMHPDrZMDf0tIZL3EJ8qGCAcRaLym7VFKFi_DleNi3309qGsStpU=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEi5hSqlUGGFvZS4GCHopeFGpAyBMzaE3WooTnUR_ns-OvhdDTRYEf6X9McWsqY-h7yhKFaN7KpNRyOQtCExydRHCQHwmrcmRiKIcWfD5PcHbw_UjTEkF17uZOd39ldJNsUWD70ST6HwURk8x0GHlJjK4PPYD4feP_a8Z09_SNKAHG4YYeFxEhY7bCu8vXc=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEj0hImsUnQkp0zBcYorElrCo_Wm9hmFqJQ3vsyhwlPnRVZ-3CVoI-HPOkptcRwb-87oqjffwNrqi4EA40BQZB1PiWWVolGLs-L-KeQHFhOu_qzxsOugkgteC332eTKlZlLbA7r5ZjPFIlAEMWJzJrbhGsER8E2AkvMjZQpHYCGUeuUWIki8TydNpv_phFo=s16000"]},
+    {id: "succubustricks",
+    name: "Việt Hóa Succubus Trick Grown Up Problem",
+    banner: "https://blogger.googleusercontent.com/img/a/AVvXsEj_CSEFsOfYD4tjn_UzK_dLCxWXgd7EyQoW3ZqEeO-u92Uka50dBG7pHY5a3mCcEDp4LeijewVH4y1fB0RhjayD_4j1P1PzDg67NmvVGLVvsMeF07DHfZnmYseGyKfsvJXsO2fU_2HpksBz0e_4m8QYtb_Vk5ZSrEmfiYOAh0OHi78SdXNkvY-ECNeG5Yo=s16000",
+    previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEisgAf759tg9w8jhB7pWLHVd-J1uzDz7ePJoA7vuafFRc0LsLM518yr-upoOl4wKl7EVUCTH9qAlkPejgNUuSHU_Gc5vKWZrxDiDXt8ScPaXJk0aAOmko1tsX_526BjkpkBTFNG_X50EKojfE3AcmgPavYecapPcVCkoCn0izEyqDMLywl6mC9J3N2IF1c=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEhhEKgsRoePKzNr0YjmtCFjtWsWdg5AGuoNZAdkUjW373yIWzLPvwv3Amns5iJcUec-LDzVMP4mhac_RLid1iiaicfM78VB7Uq1a20jCDxzt1ZO6dGc2sPD89AWc9sskpai4H8yJTia8vF438QuSOx-KwHVbhDldTyYoNXQsMFSA2I-fjdY44lUn1OGCXg=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEi301zYh61oAywuhHWGfMnBxDwcRWfH4bS5NypfbNOiXOByGG4cySP-U6P0dXfmhS1ltgOycJptkChTn3ftG1YpaohSv2oEHf_L7BF6zepi1TyX804vihKxGjOCV-ry8yGJ9Nf9E6OjH67XWZpXfmD8aee2TrWLQ2evKD83Y8a2qVl-7kxLACO5WsoYJd8=s16000",
+               "https://blogger.googleusercontent.com/img/a/AVvXsEj0r26QH4NZ6yOmIuhHPq8xNyL60_J2X9mZRKB0O6ox4s5jF8CNxnYlHBri7yua04d1C5HB-16IsqgjKsU-cX7R0krgc2Mn0TUXBp82472124Z8F-S9YOmLh5Zop1mBQOUcNwWtPW9h87RqFzRWL28XP820i6lucpOW7Cu6GzOn0sFtjFpmQm3rfBXlQ7w=s16000"]},
     {id: "",
     name: "",
     banner: "",
@@ -2941,5 +2948,4 @@ const PITU_DATABASE = [
                "",
                "",
                ""]}
-];
 ];
