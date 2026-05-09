@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "shadowsofsummer"
-date: 2026-05-10 17:30:00 +0700
+date: 2026-05-09 17:30:00 +0700
 title: "Việt Hóa Shadows of Summer - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
