@@ -7,7 +7,7 @@ tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
 namebanner: "[Việt Hóa] Isekai Chan! v0.2.0 - [2.8GB]"
 mota: |
- Bạn vào vai nhân vật chính có gia đình đã mất tích một cách bí ẩn, để lại bạn một mình quản lý tòa nhà chung cư mà họ từng sở hữu.
+ Bạn vào vai nhân vật chính có gia đình đã mất tích một cách bí ẩn, để lại bạn một mình quản lý tòa nhà chung cư mà họ từng sở hữu. FIX: VÀO GAME NHÌN BÊN GÓC PHẢI CHỌN QUẢ CẦU, CHỌN NGÔN NGỮ VIỆT NAM LÀ CÓ TEXT NHÉ ANH EM. LÝ DO: TÔI BỊ NGU XÓA NHẦM NGÔN NGỮ MẶC ĐỊNH.
 gametype: "Sandbox"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
