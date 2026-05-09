@@ -346,7 +346,7 @@ const backToTopBtn = document.getElementById('back-to-top');
  </script>
 <script>
     (function() {
-    
+       
         window.closePopup = function() {
             const popup = document.getElementById('fix-popup');
             if (popup) {
@@ -357,38 +357,38 @@ const backToTopBtn = document.getElementById('back-to-top');
             }
         };
 
-       
         document.addEventListener('DOMContentLoaded', function() {
-            const STORAGE_KEY = 'hasSeenFixAnnouncement_v1';
-            let hasSeen = false;
+            const STORAGE_KEY = 'lastSeenFixAnnouncement_Time';
+            const TWELVE_HOURS = 12 * 60 * 60 * 1000; 
+            const now = new Date().getTime();
+            
+            let lastSeen = localStorage.getItem(STORAGE_KEY);
+            let shouldShow = false;
 
-            try {
-                hasSeen = localStorage.getItem(STORAGE_KEY);
-            } catch (e) {
-                hasSeen = false;
+            
+            if (!lastSeen || (now - lastSeen) > TWELVE_HOURS) {
+                shouldShow = true;
             }
 
-         
-            if (!hasSeen) {
-                const popup = document.getElementById('fix-popup');
-                if (popup) {
-              
+            const popup = document.getElementById('fix-popup');
+            if (popup) {
+                if (shouldShow) {
+               
                     popup.style.display = 'block';
 
-                   
+                    
                     try {
-                        localStorage.setItem(STORAGE_KEY, 'true');
+                        localStorage.setItem(STORAGE_KEY, now.toString());
                     } catch (e) {
-                      
+                        console.error("Không thể lưu localStorage", e);
                     }
 
                    
                     setTimeout(closePopup, 10000);
+                } else {
+                   
+                    popup.style.display = 'none';
                 }
-            } else {
-                
-                const popup = document.getElementById('fix-popup');
-                if (popup) popup.style.display = 'none';
             }
         });
     })();
