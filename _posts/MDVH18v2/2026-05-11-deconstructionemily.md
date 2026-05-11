@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "deconstructionemily"
-date: 2026-05-11 11:30:00 +0700
+date: 2026-05-12 11:30:00 +0700
 title: "Việt Hóa Deconstruction of Emily - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
