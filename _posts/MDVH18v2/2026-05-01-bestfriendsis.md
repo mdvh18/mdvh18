@@ -17,6 +17,7 @@ phienban: "Final"
 dev: "Naughty Sister"
 genre: "3dcg, animated, male protagonist, vaginal sex, oral sex, sex toys, big ass, big tits, creampie"
 
-linkpixelapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS9sLzF3dUJQQ29B"
+linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2JHSnIyemNt"
+linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L1ExVU1pbnR4"
 linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xMjNzWmRURFZDeVJkTlNscGtvcHJTQQ=="
 ---
