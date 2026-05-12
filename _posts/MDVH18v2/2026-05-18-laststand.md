@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "laststand"
-date: 2026-05-13 10:30:00 +0700
+date: 2026-05-18 15:30:00 +0700
 title: "Việt Hóa Last Stand Liberation from the Lust Prison - MDVH18"
 tags: [all, mdvh18, allvh, pc]
 typegame: ["PC"]
