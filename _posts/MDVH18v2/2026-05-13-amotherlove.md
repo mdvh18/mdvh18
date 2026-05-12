@@ -17,7 +17,6 @@ phienban: "16 Plus"
 dev: "OrbOrigin"
 genre: "3DCG, Animated, Male protagonist, Romance, Deal, Vaginal sex, Oral sex, Titfuck, Groping, Voyeurism, MILF, Not very big tits, NTR (Avoidable), Big ass, Big tits, Cheating, Corruption, Creampie, Footjob, Handjob, Male domination, Masturbation, School setting, Teasing, Spanking"
 
-linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3FmTWliMWdk"
-linkpixelapk: "https://mdvh18.github.io/download.html?url="
+linkpixel: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3FmTWliMWdk"
 linkggdrive: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMVJiWGN6V01qcF9xdHR1SEVzYWpKN1NJcGdmX2ZENFJ4P3VzcD1zaGFyaW5n"
 ---
