@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "ariasucuse"
-date: 2026-05-12 15:30:00 +0700
+date: 2026-05-18 15:30:00 +0700
 title: "Việt Hóa Aria Sucuse v1.20 Completed - MDVH18"
 tags: [all, mdvh18, allvh, pc]
 typegame: ["PC"]
