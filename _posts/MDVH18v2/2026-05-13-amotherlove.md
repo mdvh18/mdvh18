@@ -11,7 +11,7 @@ mota: |
 gametype: "Visual Novel"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
-platform: "APK/PC"
+platform: "JOIPLAY/PC"
 dungluong: "4.2GB"
 phienban: "16 Plus"
 dev: "OrbOrigin"
