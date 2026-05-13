@@ -2976,7 +2976,7 @@ const PITU_DATABASE = [
                "https://blogger.googleusercontent.com/img/a/AVvXsEgMQdfv2KXnIKz7YxXqgxe79aqjFjNZDhc9lqGZ9Hy4oC5CqXvLZzunxv8YyCHrddyQIi1kO-LX2DriQk_8O_KOLmLBRwqh2sktKVPzPJfV5E5uothlLoaS2q0HCJRk8ZQR3Z9VR6cBVxHLnMGaF6PiBgMM1-EmZwfOvJbXSixhLHbc8clgSzbLK_67Qsg=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEick2jL_P5u9hB8-hPoe8F2MaoH7Aj07RZu0RkRGNbmKPWiNUb6OzycCZBXEBcRzM_70YsBIvPjlQ0bfIeuqTtLem5vOv75gyz3h1IxNclbeeu-mEz3SkXZCL9rdT8FuO455ktRJBKPKitOq8puZ4HhpXs4NS1QhUu34JZowuwP2KQy2vdKcfT1MfYAFpI=s16000",
                "https://blogger.googleusercontent.com/img/a/AVvXsEjQErzKIabjEDBgMM6RPfhYv_8JVcAPMXTi048-2djKbRNk_ZFTo1TYcZ3ApL878DJsgiX4kFpJIie11AJzhMzMGnDfRt2-N34Uui1FSNtAtw6_sRI64p1QlnZ3IrwG4KYjQCBw7Exc6mneRuUEoaurtzHDFtgTX805ZrdyExO295qI7sulivSR16oan-U=s16000"]},
-    {id: "dimitrescutrial",
+    {id: "demitrescutrial",
     name: "Việt Hóa Dimitrescu's Trial Final",
     banner: "https://blogger.googleusercontent.com/img/a/AVvXsEjmuqu0A9E5yZ6TsV09JF6mGFo5Kxj0CsDba8VweAc0j8o-zgmM6qjJA1bJcmYr4uQJ9EupCVIk9nZgAFYerJrBO2-ovFewoboOY6pn25diOxH54vZiRamNPriTkxcwAkpQBEbwxnAXHy3TtokYi7SWLv78ZOJU3-4sqYxtZCZSrA8SuhMgObHSyhOhTVA=s16000",
     previews: ["https://blogger.googleusercontent.com/img/a/AVvXsEiiqwR_sndYWDIw9mGG4K3RaBimhrY3cCkoIrItsEIwQOBAAbUIhtrPfKJMR19Kp_cuCfViviE8lG7_Txbqm4idGxZVtgIVtBHkBTnEFna6W3qdFzOSXgtP1JR6Kvi8Ask22_Q0iqALEBzscduGGw4YbK72u30EQIifMwl6WOadgpgDRy_K4fe1drh2xOQ=s16000",
