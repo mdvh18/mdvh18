@@ -76,7 +76,48 @@
             <p class="footer-msg">Mọi sự ủng hộ của anh em là động lực cho Team tiếp tục cố gắng!</p>
         </div>
 
-        <a href="index.html" class="back-btn">QUAY LẠI TRANG CHỦ</a>
+        <a href="https://mdvh18.github.io/" class="back-btn">QUAY LẠI TRANG CHỦ</a>
     </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const donorList = document.querySelector('.donor-list');
+    
+    // Kiểm tra nếu danh sách có item thì mới chạy
+    if (donorList && donorList.children.length > 0) {
+        // Thiết lập CSS trực tiếp cho container để hỗ trợ trượt mượt
+        donorList.style.overflow = 'hidden';
+        donorList.style.display = 'flex';
+        donorList.style.flexDirection = 'column';
+        donorList.style.position = 'relative';
+        
+        // Tạo một bản sao của danh sách để tạo hiệu ứng vòng lặp vô tận (infinite loop)
+        const donorContent = donorList.innerHTML;
+        donorList.innerHTML = `<div class="scroll-wrapper">${donorContent}${donorContent}</div>`;
+        
+        const wrapper = donorList.querySelector('.scroll-wrapper');
+        let scrollSpeed = 0.5; // Tốc độ trượt (số càng nhỏ càng chậm/mượt)
+        let currentScroll = 0;
+
+        function animateScroll() {
+            currentScroll -= scrollSpeed;
+            
+            // Nếu trượt hết một nửa danh sách (phần gốc), reset về 0 để lặp lại
+            if (Math.abs(currentScroll) >= wrapper.offsetHeight / 2) {
+                currentScroll = 0;
+            }
+            
+            wrapper.style.transform = `translateY(${currentScroll}px)`;
+            requestAnimationFrame(animateScroll);
+        }
+
+        // Dừng trượt khi di chuột vào để anh em dễ đọc tên
+        donorList.addEventListener('mouseenter', () => scrollSpeed = 0);
+        donorList.addEventListener('mouseleave', () => scrollSpeed = 0.5);
+
+        // Bắt đầu chạy
+        animateScroll();
+    }
+});
+</script>
 </body>
 </html>
