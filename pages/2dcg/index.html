@@ -3,6 +3,8 @@ layout: pages
 title: "Thể loại: 2DCG"
 ---
 
+<div class="post-grid">
+
 {% for post in site.posts %}
 
   {% if post.genre %}
@@ -15,7 +17,14 @@ title: "Thể loại: 2DCG"
 
       {% if clean_genre == "2dcg" %}
 
-        {{ post.title }}
+        <article class="post-card">
+          <a href="{{ post.url }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <h2>{{ post.title }}</h2>
+          </a>
+        </article>
+
+        {% break %}
 
       {% endif %}
 
@@ -24,3 +33,5 @@ title: "Thể loại: 2DCG"
   {% endif %}
 
 {% endfor %}
+
+</div>
