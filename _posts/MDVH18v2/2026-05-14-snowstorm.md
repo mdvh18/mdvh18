@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "snowstorm"
-date: 2026-05-15 12:30:00 +0700
+date: 2026-05-14 12:30:00 +0700
 title: "Việt Hóa SnowStorm v0.12 - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["Compressed", "APK"]
@@ -18,5 +18,6 @@ dev: "GleenX Studio"
 genre: "3DCG, Adult, Adventure, Animated, Big Ass, Big Tits, Combat, Fantasy, Handjb, Humor, Male protagonist, MILF, Multiple endings, Romance"
 
 linkpixelapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS9sL0h5dXVvYWNw"
+linkgofile: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC9YNzdMSzA="
 linkteraapkpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly8xMDI0dGVyYWJveC5jb20vcy8xdWt4ZXo0RXhjMEFXLThzTFNpV1NTdw=="
 ---
