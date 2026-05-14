@@ -9,7 +9,9 @@ title: "Thể loại: 2DCG"
 
   {% for genre in genres %}
 
-    {% if genre | strip == "2dcg" %}
+    {% assign clean_genre = genre | strip %}
+
+    {% if clean_genre == "2dcg" %}
 
       {% include post-card.html %}
 
