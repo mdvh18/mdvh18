@@ -5,18 +5,22 @@ title: "Thể loại: 2DCG"
 
 {% for post in site.posts %}
 
-  {% assign genres = post.genre | downcase | split: "," %}
+  {% if post.genre %}
 
-  {% for genre in genres %}
+    {% assign genres = post.genre | downcase | split: "," %}
 
-    {% assign clean_genre = genre | strip %}
+    {% for genre in genres %}
 
-    {% if clean_genre == "2dcg" %}
+      {% assign clean_genre = genre | strip %}
 
-      {% include post-card.html %}
+      {% if clean_genre == "2dcg" %}
 
-    {% endif %}
+        {{ post.title }}
 
-  {% endfor %}
+      {% endif %}
+
+    {% endfor %}
+
+  {% endif %}
 
 {% endfor %}
