@@ -1,23 +1,5 @@
 ---
 layout: pages
-title: "Thể loại: 3DCG"
+title: "3DCG"
+genre: 3dcg
 ---
-
-  {% for post in site.posts %}
-    {% comment %} 
-       1. Lấy chuỗi genre, ví dụ: "Parody, 3dcg"
-       2. Chuyển tất cả về chữ thường: "parody, 3dcg"
-       3. Tách thành danh sách bằng dấu phẩy
-    {% endcomment %}
-    {% assign genre_list = post.genre | downcase | split: "," %}
-    
-    {% for genre_item in genre_list %}
-      {% comment %} 
-         4. Xóa khoảng trắng thừa hai đầu
-      {% endcomment %}
-      {% assign clean_genre = genre_item | strip %}
-      
-      {% if clean_genre == "3dcg" %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
