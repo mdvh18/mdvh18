@@ -5,9 +5,9 @@ title: "Thể loại: 2DCG"
 
 {% for post in site.posts %}
 
-  {% if post.genre %}
+  {% if page.genre %}
 
-    {% assign genres = post.genre | downcase | split: "," %}
+    {% assign genres = page.genre | downcase | split: "," %}
 
     {% for genre in genres %}
 
