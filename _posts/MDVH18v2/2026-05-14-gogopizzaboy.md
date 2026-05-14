@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "gogopizzaboy"
-date: 2026-05-18 17:30:00 +0700
+date: 2026-05-14 19:00:00 +0700
 title: "Việt Hóa Go!Go!PizzaBoy! v0.2.0 - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
