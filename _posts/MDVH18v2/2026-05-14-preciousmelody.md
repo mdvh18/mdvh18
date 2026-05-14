@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "preciousmelody"
-date: 2026-05-14 10:30:00 +0700
+date: 2026-05-15 10:30:00 +0700
 title: "Việt Hóa Precious Melody & Your Familiar Tale - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
