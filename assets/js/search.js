@@ -61,7 +61,3 @@ function toggleMenu() {
     if (sideMenu) sideMenu.classList.toggle('active');
     if (overlay) {
         overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';}}
-
-(function() {var _0x4212=["hostname","mdvh18.github.io","innerHTML","body","<div style=\"background:#000;color:#ff4a7b;height:100vh;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:bold;text-align:center;family:sans-serif;\">BẢN DỊCH CỦA MDVH18 BỊ CƯỚP!<br>ĐANG CHUYỂN VỀ TRANG CHÍNH CHỦ...</div>","href","location","https://mdvh18.github.io/mdvh18/"];
-    if(window[_0x4212[6]][_0x4212[0]] !== _0x4212[1]){document[_0x4212[3]][_0x4212[2]] = _0x4212[4];
-        setTimeout(function(){ window[_0x4212[6]][_0x4212[5]] = _0x4212[7];}, 3000);}})();
