@@ -1,73 +1,35 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Test Hệ Thống Level</title>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-</head>
-<body>
-    <h2>Check-in Nhận Cấp Độ</h2>
+// Dùng biến rõ ràng để dễ kiểm soát
+const SB_URL = 'https://uxkzytnuvzwefuvaqgwx.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4a3p5dG51dnp3ZWZ1dmFxZ3d4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3MjI4ODQsImV4cCI6MjA5NDI5ODg4NH0.z8IcOGVPXmF3KHFYMiIH1pGWaR0o9OKCr4nGjwhbEZE';
+
+// Tạo client với cấu hình Header tường minh để trị lỗi 406
+const _supabase = supabase.createClient(SB_URL, SB_KEY, {
+  auth: { persistSession: false }, // Tắt lưu session để tránh lỗi 401 do cache cũ
+  global: { headers: { 'Content-Type': 'application/json' } }
+});
+
+async function testConnection() {
+    console.log("Đang thử kết nối...");
     
-    <input type="text" id="user" placeholder="Tên đăng nhập">
-    <input type="password" id="pass" placeholder="Mật khẩu">
-    <button onclick="handleAction()">Tải Game & Lên Cấp</button>
+    // Thử đọc 1 dòng duy nhất để check 401/406
+    const { data, error, status } = await _supabase
+        .from('users_rank')
+        .select('*')
+        .limit(1);
 
-    <div id="status" style="margin-top: 20px; color: blue;"></div>
-
-    <script>
-        const _supabase = supabase.createClient('https://uxkzytnuvzwefuvaqgwx.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4a3p5dG51dnp3ZWZ1dmFxZ3d4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3MjI4ODQsImV4cCI6MjA5NDI5ODg4NH0.z8IcOGVPXmF3KHFYMiIH1pGWaR0o9OKCr4nGjwhbEZE');
-
-        async function handleAction() {
-            const username = document.getElementById('user').value;
-            const password = document.getElementById('pass').value;
-            const status = document.getElementById('status');
-
-            if (!username || !password) {
-                status.innerText = "Nhập đủ tên với pass đã ông ơi!";
-                return;
-            }
-
-            status.innerText = "Đang xử lý...";
-
-            let { data: user, error } = await _supabase
-                .from('users_rank')
-                .select('*')
-                .eq('username', username)
-                .single();
-
-            if (user) {
-    
-                if (user.password !== password) {
-                    status.innerText = "Sai mật khẩu rồi!";
-                    return;
-                }
-
+    if (error) {
+        console.error("LỖI RỒI BRO:");
+        console.error("- Mã lỗi:", error.code);
+        console.error("- Thông điệp:", error.message);
+        console.error("- HTTP Status:", status);
         
-                const newCount = user.download_count + 1;
-                
-    
-                let newLevel = "Tân thủ";
-                if (newCount >= 10) newLevel = "Dân chơi";
-                if (newCount >= 50) newLevel = "Lão làng";
+        if (status === 401) alert("Vẫn sai Key hoặc Key bị chặn!");
+        if (status === 406) alert("Database từ chối định dạng này (Lỗi 406)!");
+    } else {
+        console.log("NGON LUÔN! Kết nối thành công:", data);
+        alert("Kết nối thành công rồi nhé!");
+    }
+}
 
-                const { error: upError } = await _supabase
-                    .from('users_rank')
-                    .update({ download_count: newCount, level: newLevel })
-                    .eq('username', username);
-
-                if (!upError) {
-                    status.innerText = `Thành công! Bạn đã tải ${newCount} lần. Cấp hiện tại: ${newLevel}`;
-                }
-            } else {
-                const { error: inError } = await _supabase
-                    .from('users_rank')
-                    .insert([{ username, password, download_count: 1, level: "Tân thủ" }]);
-
-                if (!inError) {
-                    status.innerText = "Tạo tài khoản mới thành công! Cấp: Tân thủ";
-                }
-            }
-        }
-    </script>
-</body>
-</html>
+// Gọi hàm test ngay khi trang load
+testConnection();
