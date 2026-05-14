@@ -1,42 +1,29 @@
 ---
-layout: pages
+layout: page
 title: "3DCG"
 ---
 
 <div class="game-grid">
-  {% for post in site.posts %}
-    {% comment %} 
-       1. Tách chuỗi genre thành danh sách để kiểm tra chính xác từng tag
-    {% endcomment %}
-    {% assign genre_list = post.genre | downcase | split: "," %}
-    {% assign target = "3dcg" %}
-    {% assign found = false %}
+  {% comment %} 
+     Dùng where_exp để lọc ngay từ đầu, chỉ lấy những bài có chứa tag 3dcg.
+     Cách này bỏ qua toàn bộ vòng lặp kiểm tra thủ công.
+  {% endcomment %}
+  
+  {% assign target = "3dcg" %}
+  {% assign filtered_posts = site.posts | where_exp: "item", "item.genre downcase contains target" %}
 
-    {% for item in genre_list %}
-      {% assign clean_item = item | strip %}
-      {% if clean_item == target %}
-        {% assign found = true %}
-      {% endif %}
-    {% endfor %}
-
-    {% comment %} 
-       2. Nếu tìm thấy tag chuẩn thì mới render card 1 lần duy nhất
-    {% endcomment %}
-    {% if found %}
-      <div class="post-item">
-        <a href="{{ post.url }}">
-          <div class="post-thumbnail-container">
-            {% if post.image %}
-              <img src="{{ post.image }}" alt="{{ post.title }}" class="post-thumbnail">
-            {% else %}
-              <img src="/path/to/default-image.jpg" alt="{{ post.title }}" class="post-thumbnail">
-            {% endif %}
-          </div>
-          <div class="post-info">
-            <span class="post-title">{{ post.title }}</span>
-          </div>
-        </a>
-      </div>
-    {% endif %}
+  {% for post in filtered_posts %}
+    <div class="post-item">
+      <a href="{{ post.url }}">
+        <div class="post-thumbnail-container">
+          {% if post.image %}
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="post-thumbnail">
+          {% endif %}
+        </div>
+        <div class="post-info">
+          <span class="post-title">{{ post.title }}</span>
+        </div>
+      </a>
+    </div>
   {% endfor %}
 </div>
