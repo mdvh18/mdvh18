@@ -15,7 +15,7 @@ platform: "APK/PC"
 dungluong: "1.6GB"
 phienban: "v0.054 Rework"
 dev: "EHFaR"
-genre: "3dcg, Mind Control, Handjb, Romance, Graphic violence, Animated"
+genre: "3DCG, Mind Control, Handjb, Romance, Graphic violence, Animated"
 
 linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS9sL0w0aWN3RGNC"
 linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L20yTDU4UFlw"
