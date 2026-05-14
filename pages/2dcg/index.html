@@ -5,8 +5,8 @@ title: "Thể loại: 2DCG"
 
   {% for post in site.posts %}
     {% comment %} 
-       1. Lấy chuỗi genre, ví dụ: "Parody, 3dcg"
-       2. Chuyển tất cả về chữ thường: "parody, 3dcg"
+       1. Lấy chuỗi genre, ví dụ: "2dcg"
+       2. Chuyển tất cả về chữ thường: "2dcg"
        3. Tách thành danh sách bằng dấu phẩy
     {% endcomment %}
     {% assign genre_list = post.genre | downcase | split: "," %}
