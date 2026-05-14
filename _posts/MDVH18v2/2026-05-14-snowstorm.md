@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "snowstorm"
-date: 2026-05-14 12:30:00 +0700
+date: 2026-05-15 12:30:00 +0700
 title: "Việt Hóa SnowStorm v0.12 - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["Compressed", "APK"]
