@@ -15,7 +15,7 @@ platform: "APK/PC"
 dungluong: "272MB"
 phienban: "Final"
 dev: "Naughty Sister"
-genre: "3dcg, animated, male protagonist, vaginal sex, oral sex, sex toys, big ass, big tits, creampie"
+genre: "3DCG, Animated, Male protagonist, Vaginal sex, Oral sex, Sex toys, Big ass, Big tits, Creampie"
 
 linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2JHSnIyemNt"
 linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L1ExVU1pbnR4"
