@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "kozoneone"
-date: 2026-05-15 12:30:00 +0700
+date: 2026-05-15 08:00:00 +0700
 title: "Việt Hóa K.O. Zone One v0.3 - MDVH18"
 tags: [all, mdvh18, allvh, pc]
 typegame: ["PC"]
