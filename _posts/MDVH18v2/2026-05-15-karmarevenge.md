@@ -1,7 +1,7 @@
 ---
 layout: game
 pitu_id: "karmarevenge"
-date: 2026-05-15 17:30:00 +0700
+date: 2026-05-15 17:00:00 +0700
 title: "Việt Hóa Karma's Revenge - MDVH18"
 tags: [all, mdvh18, allvh, pc, apk]
 typegame: ["PC", "APK"]
