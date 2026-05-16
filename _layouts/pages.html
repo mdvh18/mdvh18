@@ -141,13 +141,7 @@
 {% endif %}
 
 {% if page.tags %}
-  <div class="tags">
-    {% for tag in page.tags %}
-      {% unless tag == "apk" %}
-        <span class="tag">{{ tag }}</span>
-      {% endunless %}
-    {% endfor %}
-  </div>
+  {% assign posts = posts | where_exp: "post", "post.tags contains page.tags[0]" %}
 {% endif %}
 
 {% for post in posts %}
