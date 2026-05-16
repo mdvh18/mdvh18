@@ -1245,3 +1245,18 @@ img {
         pointer-events: none;
     }
 }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.tag {
+  padding: 4px 10px;
+  background: #2a2a2a;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
