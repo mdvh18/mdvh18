@@ -17,7 +17,7 @@ phienban: "S1 Ch.1-5 Final"
 dev: "Oceanlab"
 genre: "3DCG, Male protagonist, Animated, Big tits, Big ass, Graphic violence, Incest, Mobile game, Romance, School setting, Virgin"
 
-linkpixelapk: "https://mdvh18.github.io/download.html?url="
-linkpixelpc: "https://mdvh18.github.io/download.html?url="
-linkteraapkpc: "https://mdvh18.github.io/download.html?url="
+linkpixelapk: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2ttN2pjbWJh"
+linkpixelpc: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L1lRNzc2aVo1"
+linkgofile: "https://mdvh18.github.io/download.html?url=aHR0cHM6Ly9nb2ZpbGUuaW8vZC81blpHcVE="
 ---
