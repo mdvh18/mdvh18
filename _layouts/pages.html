@@ -141,7 +141,11 @@
 {% endif %}
 
 {% if page.tags %}
-  {% assign posts = posts | where_exp: "post", "post.tags contains page.tags[0]" %}
+  <div class="tags">
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
 {% endif %}
 
 {% if page.tags %}
