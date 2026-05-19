@@ -8,7 +8,7 @@ typegame: ["PC"]
 namebanner: "[Việt Hóa] Aria Sucuse v1.20 Completed - [576MB]"
 mota: |
  Đây là một trò chơi trong đó bạn sẽ có một cuộc chiến với một nữ quỷ succubus trong vòng 10 ngày cho đến khi hợp đồng nô lệ được chính thức ký kết.
-gametype: "Visual Novel"
+gametype: "Sandbox"
 language: "Tiếng Việt"
 mdvh18: "MDVH18"
 platform: "PC"
