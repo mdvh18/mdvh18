@@ -13,7 +13,7 @@ language: "Tiếng Việt"
 mdvh18: "MDVH18"
 platform: "APK/PC"
 dungluong: "2.6GB"
-phienban: "v0.19a"
+phienban: "v0.20"
 dev: "Saxonado Studios"
 genre: "2DCG, Big Ass, Big Tits, Male Protagonist, Netorare, Handjb, Oral Sex, Swinging"
 
